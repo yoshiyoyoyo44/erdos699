@@ -11,7 +11,19 @@ The previous provisional i >= 304 computations are not used.
 The remaining smaller indices are 3 <= i <= 204; the problem is not solved.
 Further Lean verification is deferred at the user's request.
 
-The latest i=3 continuation is **`i3_2adic_and_square_continuation.md`**.
+The latest i=3 continuation is **`i3_all_square_branches.md`**.
+It extends the exclusion of integer-square j(n-j)/(n-1) to **every odd M**,
+using the previously established necessary conditions for a counterexample.
+The new lemma is proved for all u >= 16, without an upper bound on u or M.
+It also records a necessary quartic square identity for a nonsquare branch
+and explains why the associated Vieta step does not give a positive descent.
+The nonsquare branches remain unresolved; this is not a complete proof.
+
+```text
+python audit_i3_all_square.py
+```
+
+The previous continuation is **`i3_2adic_and_square_continuation.md`**.
 It proves, for a putative counterexample with even j=2^v J (J odd),
 
     2^(4v) M^3 < 2^(u+1),  hence v <= floor(u/4).

@@ -1,0 +1,40 @@
+{
+  "status": "all assertions passed; finite audit, not a complete proof of Erd\u0151s 699",
+  "symbolic_identities": 3,
+  "u_range": [
+    4,
+    20
+  ],
+  "M_rows": 152,
+  "ell_checks": 173667,
+  "integer_square_hits": 22,
+  "hits_with_T_dividing_j": 10,
+  "hits_also_satisfying_v_bound": [
+    {
+      "u": 4,
+      "M": 1,
+      "n": 16,
+      "j": 6,
+      "ell": 2
+    },
+    {
+      "u": 8,
+      "M": 3,
+      "n": 768,
+      "j": 118,
+      "ell": 10
+    }
+  ],
+  "hits_for_u_at_least_16": 0,
+  "relaxed_example": {
+    "n": 76672,
+    "j": 26775,
+    "L": 17425,
+    "H": 5255,
+    "q": 9350,
+    "q_prime": 32472,
+    "R": 303621120,
+    "other_q_root": "-1097734/63"
+  },
+  "lean_calls": 0
+}

@@ -17,6 +17,8 @@ FILES = [
     'verification_large_indices.json', 'explore_large_indices.py',
     'i3_2adic_and_square_continuation.md', 'audit_i3_2adic_square.py',
     'verification_i3_2adic_square.json', 'explore_square_parameters.py',
+    'i3_all_square_branches.md', 'audit_i3_all_square.py',
+    'verification_i3_all_square.json',
 ]
 
 manifest = {name: hashlib.sha256(Path(name).read_bytes()).hexdigest() for name in FILES}

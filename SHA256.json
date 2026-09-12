@@ -1,5 +1,5 @@
 {
-  "README.md": "dadb1d95a76ca016f23cdffda72e019734642babee55299b8d67e7723c517b1c",
+  "README.md": "cd4dfe4c241aea710a08300db501138f09a9a204bbd805b0fdaba914116df34d",
   "erdos699_continuation_2026-09-12.md": "2e87215c1fc7b0b62a5bb921375214b6ee0088915af2818eb21689286e683593",
   "source_progress.md": "7e93a138c42097447a19a559aebc339ec3bd564bac2b2579edc819ff729bd936",
   "AlgebraCertificates.lean": "cfcbede49380abab1513b37a989d70b5be5b7a9591ff8e91c895db26bc2cdabc",
@@ -11,7 +11,7 @@
   "replay_certificate.py": "20ac4692a94660675199a43d7137e91e8335bade5796f1317b1ae0c676bec9d2",
   "explore_descent.py": "fad47ae7989392afd5c705cecc7ed77d6cf221064e252f4cd5e81e1f9103ff3b",
   "explore_invariants.py": "0b1c19115fe96ef7dce3de5803dfc7160dfbd0df30dc2906223913e2f4da8845",
-  "package_results.py": "6b54e30d2cbceda641bc51e711bde7601c0d5ba846f8f34f754590f5e98e6aa1",
+  "package_results.py": "c45bcd7cbe2bc71d0a0b6571a48031ca4b07859840c3d84a0c9d63b135d32297",
   "i3_original_replay.json": "92f8a193b6535b26f46b125bdd8ca468fcc6335467a774ed9a9156d1f6f69eaa",
   "i3_u42.json": "2d63ef0ef5fe1f03c088e4c2a752199baf7f57b715e46e272d2fc8cd37fb4d54",
   "prime_certificates.json": "3de02ad4cd80530f8dc76e955dd3b18c9cc2988a93e42fdc4aa5c2782f1f77a2",
@@ -29,5 +29,8 @@
   "i3_2adic_and_square_continuation.md": "43ea9c377a0bd7705970df496c250ebbaf396b25f858001ca7f0ad09abcf3af4",
   "audit_i3_2adic_square.py": "65d1f44c1d9a23f6cf42fe1e7b8edf61548d4292f66588776266e873eac7d098",
   "verification_i3_2adic_square.json": "9048a2543beb44405e52e4bb880c6e30b35e26d27e6eeebe869ab72d349d5272",
-  "explore_square_parameters.py": "dc6bc6b7aca0910430e5aae56a7af3d06a215761b9b0bebb27d3a3d2d7121986"
+  "explore_square_parameters.py": "dc6bc6b7aca0910430e5aae56a7af3d06a215761b9b0bebb27d3a3d2d7121986",
+  "i3_all_square_branches.md": "20ca66d613314f8dafc27458df4ba09b7fcf0d22337f3aff77d28a9be5dd36bf",
+  "audit_i3_all_square.py": "a859ad7b826f72a0a5d73fca357f4f74f2e22b70725534152af437e1e3d4a1a3",
+  "verification_i3_all_square.json": "8dc29ad1e20fbf90488d9d4bb4826663401b6e13b0429509ab99b90b43f8f7c9"
 }
