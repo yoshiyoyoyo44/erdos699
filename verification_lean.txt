@@ -1,0 +1,3 @@
+'Erdos699Algebra.cross_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos699Algebra.quartic_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos699Algebra.cofactor_product' depends on axioms: [propext, Classical.choice, Quot.sound]

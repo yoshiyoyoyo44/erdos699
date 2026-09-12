@@ -1,0 +1,18 @@
+{
+  "README.md": "01b85d644c5e2e315bb1a32495612c05c67a2a0436b81e2ae199ad51fcb96996",
+  "erdos699_continuation_2026-09-12.md": "2e87215c1fc7b0b62a5bb921375214b6ee0088915af2818eb21689286e683593",
+  "source_progress.md": "7e93a138c42097447a19a559aebc339ec3bd564bac2b2579edc819ff729bd936",
+  "AlgebraCertificates.lean": "cfcbede49380abab1513b37a989d70b5be5b7a9591ff8e91c895db26bc2cdabc",
+  "verification_lean.txt": "6d5d4300bd03a087e9499e89867f5e330b49318ee7db812ce020716288f29c0e",
+  "verification_summary.json": "318e7371dd8c1802fe8862a1df433dc590a5e376dcede4130669eb72c81390b0",
+  "audit_algebra.py": "75d3e4582defde73e32fe534f11f763aa82291f8edda3e0809d98b71fa698ecc",
+  "sieve_i3.py": "6160d43dac10004b2a10ae28d1b249abbad653eb2d98e60744c562f578760fae",
+  "make_certificate.py": "6b238bf724bd4340ba57a8baf3c60770e1132da2353b45580acad5174a5ea5ee",
+  "replay_certificate.py": "20ac4692a94660675199a43d7137e91e8335bade5796f1317b1ae0c676bec9d2",
+  "explore_descent.py": "fad47ae7989392afd5c705cecc7ed77d6cf221064e252f4cd5e81e1f9103ff3b",
+  "explore_invariants.py": "0b1c19115fe96ef7dce3de5803dfc7160dfbd0df30dc2906223913e2f4da8845",
+  "package_results.py": "f3fa9febba6e0fde89001a65c619dfc2cb27a7dffadf2d830516dbd828781a56",
+  "i3_original_replay.json": "92f8a193b6535b26f46b125bdd8ca468fcc6335467a774ed9a9156d1f6f69eaa",
+  "i3_u42.json": "2d63ef0ef5fe1f03c088e4c2a752199baf7f57b715e46e272d2fc8cd37fb4d54",
+  "prime_certificates.json": "3de02ad4cd80530f8dc76e955dd3b18c9cc2988a93e42fdc4aa5c2782f1f77a2"
+}
