@@ -1,0 +1,38 @@
+{
+  "rational_constant": "16777216/8899821",
+  "r1_complete_power_cases": [
+    {
+      "d": 5,
+      "sign": 1,
+      "power": 2,
+      "u": 5
+    },
+    {
+      "d": 15,
+      "sign": 1,
+      "power": 16,
+      "u": 8
+    }
+  ],
+  "r2_complete_exponents": [
+    0,
+    1
+  ],
+  "square_cases": [
+    [
+      96,
+      20,
+      16,
+      25
+    ],
+    [
+      768,
+      118,
+      100,
+      173
+    ]
+  ],
+  "valuation_identity_checks": 16129,
+  "complete_proof_of_erdos699": false,
+  "new_lean_verification": false
+}

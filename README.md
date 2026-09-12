@@ -11,6 +11,23 @@ The previous provisional i >= 304 computations are not used.
 The remaining smaller indices are 3 <= i <= 204; the problem is not solved.
 Further Lean verification is deferred at the user's request.
 
+The latest i=3 continuation is **`i3_2adic_and_square_continuation.md`**.
+It proves, for a putative counterexample with even j=2^v J (J odd),
+
+    2^(4v) M^3 < 2^(u+1),  hence v <= floor(u/4).
+
+For odd j, put w=max(v_2(j-1),v_2(n-j-1)); it proves 2^w M^3 < 2^u.
+It also completely classifies the integer-square cases of j(n-j)/(n-1)
+when n=3*2^u: only (n,j)=(96,20),(768,118) occur, and both are excluded.
+Together with the preceding proof for n=2^u, this rules out the square
+branches for M=1 and M=3 without an upper bound on u.
+
+Audit these new identities and the finite arithmetic in the classification:
+
+```text
+python audit_i3_2adic_square.py
+```
+
 `erdos699_continuation_2026-09-12.md` preserves the preceding continuation,
 corrections to the supplied note, and the earlier i=3 finite certificates.
 
@@ -85,6 +102,8 @@ argument and the finite verifier are not formalized in Lean.
 
 `explore_descent.py` and `explore_invariants.py` are reproducible exploratory
 calculations; they are not needed to replay the finite certificates.
+`explore_square_parameters.py` tests a proposed broader square exclusion
+after removing the special shape of n. Its finite search is not used as a proof.
 
 The original supplied note is preserved as `source_progress.md`.
 No claim of literature priority is made.

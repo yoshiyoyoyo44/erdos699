@@ -1,5 +1,5 @@
 {
-  "README.md": "6ab2098e9a42c0b89e5fba7172c78805d24dae99c8d99990a98e39b3c82f64e2",
+  "README.md": "dadb1d95a76ca016f23cdffda72e019734642babee55299b8d67e7723c517b1c",
   "erdos699_continuation_2026-09-12.md": "2e87215c1fc7b0b62a5bb921375214b6ee0088915af2818eb21689286e683593",
   "source_progress.md": "7e93a138c42097447a19a559aebc339ec3bd564bac2b2579edc819ff729bd936",
   "AlgebraCertificates.lean": "cfcbede49380abab1513b37a989d70b5be5b7a9591ff8e91c895db26bc2cdabc",
@@ -11,7 +11,7 @@
   "replay_certificate.py": "20ac4692a94660675199a43d7137e91e8335bade5796f1317b1ae0c676bec9d2",
   "explore_descent.py": "fad47ae7989392afd5c705cecc7ed77d6cf221064e252f4cd5e81e1f9103ff3b",
   "explore_invariants.py": "0b1c19115fe96ef7dce3de5803dfc7160dfbd0df30dc2906223913e2f4da8845",
-  "package_results.py": "2f137baca37f47502ab37d408bd8055026b5e504421b20c4ef7e9d7c627d7558",
+  "package_results.py": "6b54e30d2cbceda641bc51e711bde7601c0d5ba846f8f34f754590f5e98e6aa1",
   "i3_original_replay.json": "92f8a193b6535b26f46b125bdd8ca468fcc6335467a774ed9a9156d1f6f69eaa",
   "i3_u42.json": "2d63ef0ef5fe1f03c088e4c2a752199baf7f57b715e46e272d2fc8cd37fb4d54",
   "prime_certificates.json": "3de02ad4cd80530f8dc76e955dd3b18c9cc2988a93e42fdc4aa5c2782f1f77a2",
@@ -25,5 +25,9 @@
   "large_index_certificate.json": "f856ff6839579be62452f3dcea8eae02891ed3414024485b45f1f6815152a180",
   "prime_gap_certificate.json": "971aa28b2a6d32ddeaacd16e4a2026dde53e20eafecc100fff19d90684b0d823",
   "verification_large_indices.json": "fda061820ad9a79d5541cae1f879202ef3f94d67e2504b7246781d9b2ac3241f",
-  "explore_large_indices.py": "3f0d424b174be649f0ae65076b0bb6e0916d6d2a1854f870361cb8650f336f4f"
+  "explore_large_indices.py": "3f0d424b174be649f0ae65076b0bb6e0916d6d2a1854f870361cb8650f336f4f",
+  "i3_2adic_and_square_continuation.md": "43ea9c377a0bd7705970df496c250ebbaf396b25f858001ca7f0ad09abcf3af4",
+  "audit_i3_2adic_square.py": "65d1f44c1d9a23f6cf42fe1e7b8edf61548d4292f66588776266e873eac7d098",
+  "verification_i3_2adic_square.json": "9048a2543beb44405e52e4bb880c6e30b35e26d27e6eeebe869ab72d349d5272",
+  "explore_square_parameters.py": "dc6bc6b7aca0910430e5aae56a7af3d06a215761b9b0bebb27d3a3d2d7121986"
 }
