@@ -2,17 +2,50 @@
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
-Read `erdos699_continuation_2026-09-12.md` for the Japanese proof writeup,
-corrections to the supplied note, exact scope of the computations, and remaining gaps.
+Read **`discriminant_continuation.md` for the latest Japanese proof writeup**.
+It proves the assertion for **every smaller index i >= 205**, using a general
+discriminant formula, two stated published prime estimates, and finite certificates
+checked with rational intervals and deterministic integer arithmetic.
+The previous provisional i >= 304 computations are not used.
+
+The remaining smaller indices are 3 <= i <= 204; the problem is not solved.
+Further Lean verification is deferred at the user's request.
+
+`erdos699_continuation_2026-09-12.md` preserves the preceding continuation,
+corrections to the supplied note, and the earlier i=3 finite certificates.
 
 The continuation proves, with the stated elementary arguments and finite certificates,
 that any counterexample at the smaller index i=3 must satisfy
 
-    n = 2^u M,  u >= 43,  M odd,  M^3 < 2^(u+1).
+    n = 2^u M,  u >= 43,  M odd,  M^3 < 2^(u-2).
 
 It also gives an unconditional n^(3/4) lower bound for the gcd when i=3,
 and excludes the branches where either normalized adjacent modulus is a prime power.
 The two-modulus condition alone does not close the unbounded case.
+`i3_square_branch.md` additionally excludes n=2^u when j(n-j)/(n-1)
+is an integer square, by a proof without an upper bound on u.
+
+## Replay the new large-index proof
+
+Python standard library only, with assertions enabled:
+
+```text
+python replay_large_indices.py
+```
+
+This reconstructs all 38,025 checked intervals for 205 <= i <= 899,
+checks the analytic tail for i >= 900, independently sieves prime gaps,
+and eliminates the final 12 residue pairs. It relies on the two published
+prime estimates explicitly quoted in the proof, not on unrecorded gap data.
+
+To regenerate the certificates (NumPy for the prime sieve generator), or audit
+the discriminant identities (SymPy):
+
+```text
+python certify_large_indices.py
+python certify_prime_gaps.py
+python audit_discriminant.py
+```
 
 ## Replay the finite certificates
 

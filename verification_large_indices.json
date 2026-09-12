@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "all_indices_at_least": 205,
+  "finite_indices": 695,
+  "rationally_checked_segments": 38025,
+  "prime_sieve_limit": 33564431,
+  "residue_pairs_eliminated": 12,
+  "uses_external_prime_estimates": true,
+  "complete_proof_of_erdos699": false,
+  "new_lean_verification": false
+}

@@ -1,0 +1,41 @@
+{
+  "symbolic_degrees": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "numeric_discriminants": 126,
+  "gcd_checks": 9409,
+  "odd_part_checks": 2401,
+  "uniform_M_cubic_constant": "2097152/8899821",
+  "square_branch_cases": [
+    [
+      16,
+      6,
+      4
+    ],
+    [
+      64,
+      28,
+      16
+    ],
+    [
+      256,
+      120,
+      64
+    ],
+    [
+      1024,
+      496,
+      256
+    ],
+    [
+      4096,
+      2016,
+      1024
+    ]
+  ],
+  "complete_proof_of_erdos699": false,
+  "new_lean_verification": false
+}

@@ -10,6 +10,11 @@ FILES = [
     'audit_algebra.py', 'sieve_i3.py', 'make_certificate.py', 'replay_certificate.py',
     'explore_descent.py', 'explore_invariants.py', 'package_results.py',
     'i3_original_replay.json', 'i3_u42.json', 'prime_certificates.json',
+    'discriminant_continuation.md', 'i3_square_branch.md',
+    'audit_discriminant.py', 'verification_discriminant.json',
+    'certify_large_indices.py', 'certify_prime_gaps.py', 'replay_large_indices.py',
+    'large_index_certificate.json', 'prime_gap_certificate.json',
+    'verification_large_indices.json', 'explore_large_indices.py',
 ]
 
 manifest = {name: hashlib.sha256(Path(name).read_bytes()).hexdigest() for name in FILES}
