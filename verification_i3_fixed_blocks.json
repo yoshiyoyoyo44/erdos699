@@ -1,0 +1,1525 @@
+{
+  "symbolic_identities": 10,
+  "completeness_dependency": "Magma 2.29-10, full Mordell-Weil proof flags and IntegralPoints; not independently certified by this Python audit",
+  "boundary": [
+    {
+      "positive_t": [
+        1
+      ],
+      "integer_points_up_to_sign": 10,
+      "free_rank": 2,
+      "quartic_coefficients": [
+        96,
+        -144,
+        57
+      ]
+    },
+    {
+      "positive_t": [
+        1,
+        2,
+        83
+      ],
+      "integer_points_up_to_sign": 15,
+      "free_rank": 2,
+      "quartic_coefficients": [
+        12,
+        -36,
+        33
+      ]
+    }
+  ],
+  "fixed_blocks": [
+    {
+      "role": "A",
+      "value": 5,
+      "cases": [
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 0
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 6,
+          "free_rank": 1,
+          "case": 1
+        },
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 37,
+          "free_rank": 3,
+          "case": 2
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 6,
+          "free_rank": 1,
+          "case": 3
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 1,
+          "case": 4
+        },
+        {
+          "positive_t": [
+            1,
+            2
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 1,
+          "case": 5
+        },
+        {
+          "positive_t": [
+            1,
+            121
+          ],
+          "integer_points_up_to_sign": 12,
+          "free_rank": 2,
+          "case": 6
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 10,
+          "free_rank": 2,
+          "case": 7
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 8
+        },
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 26,
+          "free_rank": 2,
+          "case": 9
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 5,
+          "free_rank": 1,
+          "case": 10
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 11
+        },
+        {
+          "positive_t": [
+            2
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 12
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 1,
+          "free_rank": 0,
+          "case": 13
+        }
+      ],
+      "magma_version": "2.29-10",
+      "source_sha256": "472f919e823f93d127dc93c4b411907c20ee6570166fabe5972980463e7d539a",
+      "transcript_sha256": "84aebdbea2b5c1ad3593bfed3c8bb7583d9d6690936dd3ea910f9db4c6f59fa0"
+    },
+    {
+      "role": "A",
+      "value": 7,
+      "cases": [
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 7,
+          "free_rank": 2,
+          "case": 0
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 1
+        },
+        {
+          "positive_t": [
+            1,
+            11
+          ],
+          "integer_points_up_to_sign": 7,
+          "free_rank": 2,
+          "case": 2
+        },
+        {
+          "positive_t": [
+            1,
+            5
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 2,
+          "case": 3
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 4
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 5,
+          "free_rank": 1,
+          "case": 5
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 12,
+          "free_rank": 2,
+          "case": 6
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 11,
+          "free_rank": 2,
+          "case": 7
+        },
+        {
+          "positive_t": [
+            1,
+            2
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 1,
+          "case": 8
+        },
+        {
+          "positive_t": [
+            1,
+            5
+          ],
+          "integer_points_up_to_sign": 11,
+          "free_rank": 2,
+          "case": 9
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 10
+        },
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 2,
+          "case": 11
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 12
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 13
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 14
+        },
+        {
+          "positive_t": [
+            1,
+            11
+          ],
+          "integer_points_up_to_sign": 8,
+          "free_rank": 2,
+          "case": 15
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 7,
+          "free_rank": 2,
+          "case": 16
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 2,
+          "case": 17
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 1,
+          "free_rank": 0,
+          "case": 18
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 2,
+          "free_rank": 1,
+          "case": 19
+        }
+      ],
+      "magma_version": "2.29-10",
+      "source_sha256": "af3cdadcf283a43e4587757b8ea379f4677455da0a3f52fa29ac5f6aabdca8e9",
+      "transcript_sha256": "e42d3b81ebfb5cc7c67497007cc2a03b1ebddb9b53cad66a769c4f43879c42ce"
+    },
+    {
+      "role": "A",
+      "value": 9,
+      "cases": [
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 10,
+          "free_rank": 2,
+          "case": 0
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 5,
+          "free_rank": 1,
+          "case": 1
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 2
+        },
+        {
+          "positive_t": [
+            1,
+            2
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 1,
+          "case": 3
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 4
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 5
+        }
+      ],
+      "magma_version": "2.29-10",
+      "source_sha256": "f27c6a53294e5a84f91dcc107e4c0e27c35cbe66248073880fb7533de1c06c1f",
+      "transcript_sha256": "d0f33cc3082a34785fc71a72f2a66034187066e6c4c42668f6903708ee7cfe2e"
+    },
+    {
+      "role": "B",
+      "value": 5,
+      "cases": [
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 0
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 2,
+          "case": 1
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 2
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 3
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 4
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 11,
+          "free_rank": 2,
+          "case": 5
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 8,
+          "free_rank": 2,
+          "case": 6
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 7
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 11,
+          "free_rank": 2,
+          "case": 8
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 9
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 10
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 11
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 12
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 13
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 2,
+          "case": 14
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 15
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 15,
+          "free_rank": 2,
+          "case": 16
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 17
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 18
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 19
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 20
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 21
+        },
+        {
+          "positive_t": [
+            1,
+            2,
+            83
+          ],
+          "integer_points_up_to_sign": 18,
+          "free_rank": 2,
+          "case": 22
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 23
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 24
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 6,
+          "free_rank": 2,
+          "case": 25
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 7,
+          "free_rank": 2,
+          "case": 26
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 27
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 28
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 29
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 30
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 31
+        },
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 55,
+          "free_rank": 4,
+          "case": 32
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": false,
+          "case": 33
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 6,
+          "free_rank": 2,
+          "case": 34
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 1,
+          "free_rank": 0,
+          "case": 35
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 36
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 2,
+          "case": 37
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 1,
+          "free_rank": 0,
+          "case": 38
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 39
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 1,
+          "free_rank": 0,
+          "case": 40
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 41
+        }
+      ],
+      "magma_version": "2.29-10",
+      "source_sha256": "b71ef5ebded7f6f9c5cd6bf739487505474f80c3ec53ebdf66c6947e0d223ad6",
+      "transcript_sha256": "bd28a94a684a355cf7098ab8efbc6fefa80ef1d9e0b5d64561cb3680a4cde607"
+    },
+    {
+      "role": "B",
+      "value": 7,
+      "cases": [
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 0
+        },
+        {
+          "positive_t": [
+            1,
+            2
+          ],
+          "integer_points_up_to_sign": 5,
+          "free_rank": 2,
+          "case": 1
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 2
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 8,
+          "free_rank": 2,
+          "case": 3
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 4
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 5
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 6
+        },
+        {
+          "positive_t": [
+            1,
+            2
+          ],
+          "integer_points_up_to_sign": 5,
+          "free_rank": 2,
+          "case": 7
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 8
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 9
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 10
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 2,
+          "case": 11
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 12
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 13
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 14
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 15
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 16
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 17
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 18
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 19
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 20
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 21
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 22
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 23
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 24
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 25
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 26
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 27
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 28
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 29
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 30
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 31
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 32
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 33
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 34
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 35
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 36
+        },
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 6,
+          "free_rank": 2,
+          "case": 37
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 38
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 39
+        },
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 5,
+          "free_rank": 2,
+          "case": 40
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 41
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 13,
+          "free_rank": 2,
+          "case": 42
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 43
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 44
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 45
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 46
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 47
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 48
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 49
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 50
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 51
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 52
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 53
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 54
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 55
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 56
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 57
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 58
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 59
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 60
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 61
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 62
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 63
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 64
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 65
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 66
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 67
+        }
+      ],
+      "magma_version": "2.29-10",
+      "source_sha256": "704e8a979954c00dec6f06d6a4428a73a8b32433bbb67c1f544cb2ddf47be102",
+      "transcript_sha256": "526083b36e09836256ee59e78e5fcc0c52a74232feeb1597a7bef3a2b3d95467"
+    },
+    {
+      "role": "B",
+      "value": 9,
+      "cases": [
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 0
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 1
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 2
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 3
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 4
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 5
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 6
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 7
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 8
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 11,
+          "free_rank": 2,
+          "case": 9
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 10
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 11
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 12
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 13
+        },
+        {
+          "positive_t": [],
+          "arithmetic_exclusion": true,
+          "modular_exclusion": true,
+          "case": 14
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 6,
+          "free_rank": 2,
+          "case": 15
+        }
+      ],
+      "magma_version": "2.29-10",
+      "source_sha256": "02188d42c4bbd12133f8add87303f98ee265ca08bb44cb3a9ad57a5dce0af139",
+      "transcript_sha256": "20d9b20f31382ba1e06fba9e568761cce3e5808c06d6555ed625c7844872d76c"
+    },
+    {
+      "role": "C",
+      "value": 5,
+      "cases": [
+        {
+          "positive_t": [
+            1,
+            4,
+            179
+          ],
+          "integer_points_up_to_sign": 11,
+          "free_rank": 2,
+          "case": 0
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 1
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 2
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 9,
+          "free_rank": 2,
+          "case": 3
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 4
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 5
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 6
+        },
+        {
+          "positive_t": [
+            1,
+            4,
+            179
+          ],
+          "integer_points_up_to_sign": 15,
+          "free_rank": 2,
+          "case": 7
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 1,
+          "free_rank": 0,
+          "case": 8
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 1,
+          "free_rank": 0,
+          "case": 9
+        }
+      ],
+      "magma_version": "2.29-10",
+      "source_sha256": "e14735749cdd269cc4aa201520431b63d56c8c9a63054410363261e0a715d084",
+      "transcript_sha256": "9af803d6d36465f1dbcad28d82028e9a43221c73c3c9dfece53cbad3f76c60f5"
+    },
+    {
+      "role": "C",
+      "value": 7,
+      "cases": [
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 6,
+          "free_rank": 2,
+          "case": 0
+        },
+        {
+          "positive_t": [
+            1,
+            2
+          ],
+          "integer_points_up_to_sign": 7,
+          "free_rank": 2,
+          "case": 1
+        },
+        {
+          "positive_t": [
+            1,
+            2
+          ],
+          "integer_points_up_to_sign": 7,
+          "free_rank": 2,
+          "case": 2
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 3
+        },
+        {
+          "positive_t": [
+            1,
+            2
+          ],
+          "integer_points_up_to_sign": 8,
+          "free_rank": 2,
+          "case": 4
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 19,
+          "free_rank": 3,
+          "case": 5
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 6
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 7
+        },
+        {
+          "positive_t": [
+            1,
+            10
+          ],
+          "integer_points_up_to_sign": 6,
+          "free_rank": 2,
+          "case": 8
+        },
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 7,
+          "free_rank": 2,
+          "case": 9
+        },
+        {
+          "positive_t": [
+            1,
+            4
+          ],
+          "integer_points_up_to_sign": 7,
+          "free_rank": 2,
+          "case": 10
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 2,
+          "case": 11
+        },
+        {
+          "positive_t": [
+            1,
+            8,
+            3443
+          ],
+          "integer_points_up_to_sign": 23,
+          "free_rank": 3,
+          "case": 12
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 2,
+          "free_rank": 1,
+          "case": 13
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 14
+        },
+        {
+          "positive_t": [],
+          "integer_points_up_to_sign": 1,
+          "free_rank": 0,
+          "case": 15
+        }
+      ],
+      "magma_version": "2.29-10",
+      "source_sha256": "c44549305c5d09bc9618cef6f45a9c8834d848cd8a9d531bc0d036eb3a34c0fe",
+      "transcript_sha256": "92a7daedb4ef3f61f446ea57bbb3265017f4f30f47cbd17095bf6344f0269a8d"
+    },
+    {
+      "role": "C",
+      "value": 9,
+      "cases": [
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 0
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 1
+        },
+        {
+          "positive_t": [
+            1,
+            611
+          ],
+          "integer_points_up_to_sign": 4,
+          "free_rank": 1,
+          "case": 2
+        },
+        {
+          "positive_t": [
+            1
+          ],
+          "integer_points_up_to_sign": 3,
+          "free_rank": 1,
+          "case": 3
+        }
+      ],
+      "magma_version": "2.29-10",
+      "source_sha256": "460895809f3bdf4199e0ee883ae778339a16cff30ca007d946514dc145b46b47",
+      "transcript_sha256": "eee1adae4aa0e4637b8e0f5f547b739096c23dba26fa0a1040b2acabd1246f6a"
+    }
+  ],
+  "modular_certificates": {
+    "B5": 38,
+    "B7": 60,
+    "B9": 10
+  }
+}

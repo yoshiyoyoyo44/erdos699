@@ -1,9 +1,69 @@
-# Erdős 699 — 2026-09-12 continuation
+# Erdős 699 — 2026-09-12–13 continuation
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
-Read **`discriminant_continuation.md` for the latest Japanese proof writeup**.
-It proves the assertion for **every smaller index i >= 205**, using a general
+**成果の全体像と今後の方向：[これまでの成果と、次に進む五つの方向](STATUS_AND_DIRECTIONS.md)**
+
+2026-09-13時点では、全ての i≥205 を扱い、i=3 の反例候補には
+u≥49、A,B,C≥11 などの条件を得ています。固定した F に対して
+min(A,B,C)≤F の候補は有限ですが、三因子が同時に増える一般の場合は残ります。
+次は Kummer 条件の全桁を使う方法を第一候補とし、因子の一様な上限、
+形を保存する降下、4≤i≤204 の縮小、固定因子の族の排除を研究方針にしています。
+詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
+
+Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
+[latest proof](i3_boundary_and_fixed_blocks.md) ·
+[integrated nonsquare proof](i3_nonsquare_merged_continuation.md) ·
+[complete artifact ZIP](erdos699_continuation_2026-09-12.zip).
+
+Read **`i3_boundary_and_fixed_blocks.md` for the latest Japanese continuation**.
+It proves a general reduction: fixing any one of the residue blocks A, B, C
+gives finitely many nonsingular elliptic curves. Siegel's theorem then implies
+that, for every fixed F, only finitely many candidates have min(A,B,C) <= F.
+This does not supply a uniform F or solve the case where all three blocks grow.
+
+The new integer-ratio identities give delta1*delta2*C > 4*T by an elementary proof.
+Two boundary quartics exclude the previously remaining B=1 branch at M=1,
+using Magma's complete integer-point routines with proved full Mordell--Weil
+groups. Consequently omega(Q2) >= 3 now holds for **every M**.
+The additional fixed-block audits exclude A,B,C in {5,7,9}, giving **A,B,C >= 11**.
+The input covers 196 parameter cases; periodic congruence certificates already
+exclude 38/42, 60/68, and 10/16 cases for B=5,7,9 respectively.
+
+```text
+python audit_i3_fixed_blocks.py
+```
+
+This checks all symbolic identities, parameter coverage, periodic congruence
+certificates, transcript provenance, and the exact arithmetic of returned
+points. Completeness of the Mordell--Weil groups and integer-point lists still
+depends on Magma 2.29-10; the Python audit does not reprove those steps.
+The detailed note gives the exact dependencies and commands to rerun Magma.
+
+**`i3_nonsquare_merged_continuation.md` is the preceding integrated writeup**.
+It merges the supplied beyond-GitHub handoff with the previous local results,
+corrects the overloaded C notation, and proves the previously missing integer
+quotients without assuming gcd(B,g)=gcd(C,h)=1. It also gives stronger size and
+2-adic bounds, and proves omega(Q2) >= 3 for every remaining branch with M > 1.
+The original handoff is preserved byte-for-byte in
+`source_nonsquare_handoff_2026-09-12.md`.
+
+The finite i=3 certificates now exclude **every u <= 48** under the established
+necessary conditions. The extension checks all 75,046 pairs (u,M) for 43 <= u <= 48,
+excludes all 595 first-congruence candidates, and recursively verifies 177,312
+primes using a standard-library-only replay. Thus a counterexample must satisfy
+
+    n = 2^u M,  u >= 49,  M odd,  M^3 < 2^(u-2).
+
+The branch-specific bounds in the integrated note are stronger still.
+The additional integer quotients do not yet give a self-similar infinite descent.
+
+```text
+python audit_i3_nonsquare_lifts.py
+python replay_certificate.py i3_u43_to_u48.json --primes prime_certificates_u48.json --output verification_u48.json
+```
+
+`discriminant_continuation.md` proves the assertion for **every smaller index i >= 205**, using a general
 discriminant formula, two stated published prime estimates, and finite certificates
 checked with rational intervals and deterministic integer arithmetic.
 The previous provisional i >= 304 computations are not used.
@@ -11,7 +71,7 @@ The previous provisional i >= 304 computations are not used.
 The remaining smaller indices are 3 <= i <= 204; the problem is not solved.
 Further Lean verification is deferred at the user's request.
 
-The latest i=3 continuation is **`i3_all_square_branches.md`**.
+The preceding i=3 continuation is **`i3_all_square_branches.md`**.
 It extends the exclusion of integer-square j(n-j)/(n-1) to **every odd M**,
 using the previously established necessary conditions for a counterexample.
 The new lemma is proved for all u >= 16, without an upper bound on u or M.
@@ -43,8 +103,8 @@ python audit_i3_2adic_square.py
 `erdos699_continuation_2026-09-12.md` preserves the preceding continuation,
 corrections to the supplied note, and the earlier i=3 finite certificates.
 
-The continuation proves, with the stated elementary arguments and finite certificates,
-that any counterexample at the smaller index i=3 must satisfy
+The previous continuation established, with the stated elementary arguments and
+finite certificates, the following bound, now superseded by u >= 49 above:
 
     n = 2^u M,  u >= 43,  M odd,  M^3 < 2^(u-2).
 
@@ -82,6 +142,7 @@ Python standard library only, with assertions enabled (do not use `python -O`):
 
 ```text
 python replay_certificate.py i3_original_replay.json i3_u42.json
+python replay_certificate.py i3_u43_to_u48.json --primes prime_certificates_u48.json --output verification_u48.json
 ```
 
 The verifier independently reconstructs all CRT roots and checks every odd M
@@ -98,6 +159,12 @@ python sieve_i3.py --max-u 42 --output i3_u42.json
 python make_certificate.py i3_original_replay.json i3_u42.json
 python replay_certificate.py i3_original_replay.json i3_u42.json
 python audit_algebra.py
+```
+
+To regenerate the new extension and its separate prime certificates:
+
+```text
+python extend_i3_certificate.py
 ```
 
 `AlgebraCertificates.lean` verifies three algebraic identities only.

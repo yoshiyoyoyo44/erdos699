@@ -1,0 +1,42 @@
+// Two fixed quartics arising ONLY from the B=1 boundary branch at M=1.
+// This is not a full solution of Erdős 699.
+SetSeed(699);
+// The default class-group proof bound is unconditional (Minkowski).
+print "CASE_I_QUARTIC";
+IntegralQuarticPoints([96,0,-144,0,57],[1,3]);
+print "CASE_II_QUARTIC";
+IntegralQuarticPoints([12,0,-36,0,33],[1,3]);
+
+// Second formulation (same Magma backend): each quartic point maps to a point
+// of Y^2 = X^3 + b X^2 + a c X by X=a*t^2, Y=a*t*y.
+// Explicitly require the FULL Mordell--Weil group, then pass its free basis.
+for data in [[96,-144,57],[12,-36,33]] do
+    aa, bb, cc := Explode(data);
+    E := EllipticCurve([0,bb,0,aa*cc,0]);
+    G, mp, rank_proved, group_proved := MordellWeilGroup(E);
+    print "ELLIPTIC_MODEL", aInvariants(E);
+    print "GROUP", G;
+    print "PROOF_FLAGS", rank_proved, group_proved;
+    assert rank_proved and group_proved;
+    basis := [mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+    print "FREE_BASIS", basis;
+    points := IntegralPoints(E: FBasis:=basis, SafetyFactor:=2);
+    print "INTEGRAL_POINTS", points;
+    ts := {};
+    for P in points do
+        xx := Integers()!P[1];
+        if xx gt 0 and xx mod aa eq 0 then
+            square, t := IsSquare(xx div aa);
+            if square and t gt 0 then
+                yy := P[2]/(aa*t);
+                if Denominator(yy) eq 1 then
+                    assert yy^2 eq aa*t^4+bb*t^2+cc;
+                    Include(~ts,t);
+                end if;
+            end if;
+        end if;
+    end for;
+    print "POSITIVE_T", ts;
+    assert ts eq (aa eq 96 select {1} else {1,2,83});
+end for;
+print "BOUNDARY_QUARTICS_COMPLETE";

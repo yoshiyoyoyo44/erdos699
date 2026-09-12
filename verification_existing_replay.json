@@ -1,0 +1,262 @@
+[
+  {
+    "file": "i3_original_replay.json",
+    "max_u": 12,
+    "rows": 4088,
+    "CRT_candidates": 34,
+    "survivors": 0,
+    "primes_recursively_verified": 3418,
+    "per_u": [
+      {
+        "u": 4,
+        "rows": 8,
+        "CRT_candidates": 2
+      },
+      {
+        "u": 5,
+        "rows": 16,
+        "CRT_candidates": 1
+      },
+      {
+        "u": 6,
+        "rows": 32,
+        "CRT_candidates": 2
+      },
+      {
+        "u": 7,
+        "rows": 64,
+        "CRT_candidates": 1
+      },
+      {
+        "u": 8,
+        "rows": 128,
+        "CRT_candidates": 6
+      },
+      {
+        "u": 9,
+        "rows": 256,
+        "CRT_candidates": 3
+      },
+      {
+        "u": 10,
+        "rows": 512,
+        "CRT_candidates": 7
+      },
+      {
+        "u": 11,
+        "rows": 1024,
+        "CRT_candidates": 1
+      },
+      {
+        "u": 12,
+        "rows": 2048,
+        "CRT_candidates": 11
+      }
+    ]
+  },
+  {
+    "file": "i3_u42.json",
+    "max_u": 42,
+    "rows": 50024,
+    "CRT_candidates": 1006,
+    "survivors": 0,
+    "primes_recursively_verified": 96745,
+    "per_u": [
+      {
+        "u": 4,
+        "rows": 2,
+        "CRT_candidates": 2
+      },
+      {
+        "u": 5,
+        "rows": 2,
+        "CRT_candidates": 1
+      },
+      {
+        "u": 6,
+        "rows": 3,
+        "CRT_candidates": 1
+      },
+      {
+        "u": 7,
+        "rows": 3,
+        "CRT_candidates": 0
+      },
+      {
+        "u": 8,
+        "rows": 4,
+        "CRT_candidates": 6
+      },
+      {
+        "u": 9,
+        "rows": 5,
+        "CRT_candidates": 2
+      },
+      {
+        "u": 10,
+        "rows": 6,
+        "CRT_candidates": 6
+      },
+      {
+        "u": 11,
+        "rows": 8,
+        "CRT_candidates": 1
+      },
+      {
+        "u": 12,
+        "rows": 10,
+        "CRT_candidates": 9
+      },
+      {
+        "u": 13,
+        "rows": 13,
+        "CRT_candidates": 3
+      },
+      {
+        "u": 14,
+        "rows": 16,
+        "CRT_candidates": 7
+      },
+      {
+        "u": 15,
+        "rows": 20,
+        "CRT_candidates": 9
+      },
+      {
+        "u": 16,
+        "rows": 25,
+        "CRT_candidates": 13
+      },
+      {
+        "u": 17,
+        "rows": 32,
+        "CRT_candidates": 4
+      },
+      {
+        "u": 18,
+        "rows": 40,
+        "CRT_candidates": 8
+      },
+      {
+        "u": 19,
+        "rows": 51,
+        "CRT_candidates": 3
+      },
+      {
+        "u": 20,
+        "rows": 64,
+        "CRT_candidates": 28
+      },
+      {
+        "u": 21,
+        "rows": 81,
+        "CRT_candidates": 8
+      },
+      {
+        "u": 22,
+        "rows": 102,
+        "CRT_candidates": 18
+      },
+      {
+        "u": 23,
+        "rows": 128,
+        "CRT_candidates": 11
+      },
+      {
+        "u": 24,
+        "rows": 161,
+        "CRT_candidates": 39
+      },
+      {
+        "u": 25,
+        "rows": 203,
+        "CRT_candidates": 16
+      },
+      {
+        "u": 26,
+        "rows": 256,
+        "CRT_candidates": 19
+      },
+      {
+        "u": 27,
+        "rows": 323,
+        "CRT_candidates": 17
+      },
+      {
+        "u": 28,
+        "rows": 406,
+        "CRT_candidates": 62
+      },
+      {
+        "u": 29,
+        "rows": 512,
+        "CRT_candidates": 25
+      },
+      {
+        "u": 30,
+        "rows": 645,
+        "CRT_candidates": 44
+      },
+      {
+        "u": 31,
+        "rows": 813,
+        "CRT_candidates": 17
+      },
+      {
+        "u": 32,
+        "rows": 1024,
+        "CRT_candidates": 42
+      },
+      {
+        "u": 33,
+        "rows": 1290,
+        "CRT_candidates": 23
+      },
+      {
+        "u": 34,
+        "rows": 1625,
+        "CRT_candidates": 24
+      },
+      {
+        "u": 35,
+        "rows": 2048,
+        "CRT_candidates": 33
+      },
+      {
+        "u": 36,
+        "rows": 2580,
+        "CRT_candidates": 163
+      },
+      {
+        "u": 37,
+        "rows": 3251,
+        "CRT_candidates": 35
+      },
+      {
+        "u": 38,
+        "rows": 4096,
+        "CRT_candidates": 28
+      },
+      {
+        "u": 39,
+        "rows": 5161,
+        "CRT_candidates": 43
+      },
+      {
+        "u": 40,
+        "rows": 6502,
+        "CRT_candidates": 129
+      },
+      {
+        "u": 41,
+        "rows": 8192,
+        "CRT_candidates": 36
+      },
+      {
+        "u": 42,
+        "rows": 10321,
+        "CRT_candidates": 71
+      }
+    ]
+  }
+]

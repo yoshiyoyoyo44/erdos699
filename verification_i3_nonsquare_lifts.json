@@ -1,0 +1,110 @@
+{
+  "status": "all assertions passed; finite audit, not a complete proof",
+  "symbolic_identities": 10,
+  "max_n": 1000000,
+  "n_step": 16,
+  "first_candidates": 173844,
+  "normalized_rows": 1,
+  "branch_counts": {
+    "(1, 1, 'T=1')": 1
+  },
+  "examples": [
+    {
+      "n": 76672,
+      "j": 26775,
+      "T": 1,
+      "delta1": 1,
+      "delta2": 1,
+      "A": 11,
+      "B": 85,
+      "C": 41,
+      "R": 1217,
+      "S": 63,
+      "a": 2,
+      "b": 72,
+      "g": 5,
+      "h": 1,
+      "eta": 1,
+      "zeta": 49,
+      "gcd_B_g": 5,
+      "gcd_C_h": 1
+    }
+  ],
+  "examples_with_repeated_block_primes": [
+    {
+      "n": 76672,
+      "j": 26775,
+      "T": 1,
+      "delta1": 1,
+      "delta2": 1,
+      "A": 11,
+      "B": 85,
+      "C": 41,
+      "R": 1217,
+      "S": 63,
+      "a": 2,
+      "b": 72,
+      "g": 5,
+      "h": 1,
+      "eta": 1,
+      "zeta": 49,
+      "gcd_B_g": 5,
+      "gcd_C_h": 1
+    }
+  ],
+  "regression_example": {
+    "n": 76672,
+    "j": 26775,
+    "T": 1,
+    "delta1": 1,
+    "delta2": 1,
+    "A": 11,
+    "B": 85,
+    "C": 41,
+    "R": 1217,
+    "S": 63,
+    "a": 2,
+    "b": 72,
+    "g": 5,
+    "h": 1,
+    "eta": 1,
+    "zeta": 49,
+    "gcd_B_g": 5,
+    "gcd_C_h": 1
+  },
+  "constants": [
+    {
+      "gamma": 1,
+      "delta1": 1,
+      "delta2": 1,
+      "v1": "1/48",
+      "v_at_least_2": "1/112",
+      "odd_j_w_weighted": "1/32"
+    },
+    {
+      "gamma": 1,
+      "delta1": 1,
+      "delta2": 3,
+      "v1": "3/16",
+      "v_at_least_2": "9/112",
+      "odd_j_w_weighted": "9/32"
+    },
+    {
+      "gamma": 1,
+      "delta1": 3,
+      "delta2": 1,
+      "v1": "27/16",
+      "v_at_least_2": "27/80",
+      "odd_j_w_weighted": "27/32"
+    },
+    {
+      "gamma": 3,
+      "delta1": 1,
+      "delta2": 1,
+      "v1": "27/16",
+      "v_at_least_2": "81/112",
+      "odd_j_w_weighted": "81/32"
+    }
+  ],
+  "lean_calls": 0
+}

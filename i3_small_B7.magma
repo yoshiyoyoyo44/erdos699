@@ -1,0 +1,3980 @@
+// Complete integer-point audit for NECESSARY equations at a fixed block.
+// No GRH class-group option is enabled; default proof is unconditional.
+SetSeed(699);
+print "CASE_0", 7;
+aa:=56; bb:=-168; cc:=161;
+TT:=1; KK:=7; rr:=2; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 1 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_0_COMPLETE";
+print "CASE_1", 7;
+aa:=224; bb:=-336; cc:=161;
+TT:=1; KK:=7; rr:=2; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_1_COMPLETE";
+print "CASE_2", 7;
+aa:=84; bb:=-252; cc:=217;
+TT:=1; KK:=7; rr:=3; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 1 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_2_COMPLETE";
+print "CASE_3", 7;
+aa:=336; bb:=-504; cc:=217;
+TT:=1; KK:=7; rr:=3; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_3_COMPLETE";
+print "CASE_4", 7;
+aa:=112; bb:=-336; cc:=273;
+TT:=1; KK:=7; rr:=4; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 1 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_4_COMPLETE";
+print "CASE_5", 7;
+aa:=448; bb:=-672; cc:=273;
+TT:=1; KK:=7; rr:=4; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_5_COMPLETE";
+print "CASE_6", 7;
+aa:=140; bb:=-420; cc:=329;
+TT:=1; KK:=7; rr:=5; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 1 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_6_COMPLETE";
+print "CASE_7", 7;
+aa:=560; bb:=-840; cc:=329;
+TT:=1; KK:=7; rr:=5; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_7_COMPLETE";
+print "CASE_8", 7;
+aa:=3500; bb:=-2100; cc:=329;
+TT:=5; KK:=7; rr:=5; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (5*4^mm-2) mod 7 eq 0 and
+ ex3(5*4^mm-1) eq 1 and ex3(5*5*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_8_COMPLETE";
+print "CASE_9", 7;
+aa:=14000; bb:=-4200; cc:=329;
+TT:=5; KK:=7; rr:=5; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (10*4^mm-2) mod 7 eq 0 and
+ ex3(10*4^mm-1) eq 1 and ex3(5*10*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_9_COMPLETE";
+print "CASE_10", 7;
+aa:=168; bb:=-504; cc:=385;
+TT:=1; KK:=7; rr:=6; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 1 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_10_COMPLETE";
+print "CASE_11", 7;
+aa:=672; bb:=-1008; cc:=385;
+TT:=1; KK:=7; rr:=6; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_11_COMPLETE";
+print "CASE_12", 7;
+aa:=2016; bb:=-3024; cc:=1449;
+TT:=1; KK:=21; rr:=6; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_12_COMPLETE";
+print "CASE_13", 7;
+aa:=2352; bb:=-3528; cc:=1617;
+TT:=1; KK:=21; rr:=7; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_13_COMPLETE";
+print "CASE_14", 7;
+aa:=2688; bb:=-4032; cc:=1785;
+TT:=1; KK:=21; rr:=8; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_14_COMPLETE";
+print "CASE_15", 7;
+aa:=3024; bb:=-4536; cc:=1953;
+TT:=1; KK:=21; rr:=9; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_15_COMPLETE";
+print "CASE_16", 7;
+aa:=3360; bb:=-5040; cc:=2121;
+TT:=1; KK:=21; rr:=10; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_16_COMPLETE";
+print "CASE_17", 7;
+aa:=21000; bb:=-12600; cc:=2121;
+TT:=5; KK:=21; rr:=10; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (5*4^mm-2) mod 21 eq 0 and
+ ex3(5*4^mm-1) eq 1 and ex3(5*5*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_17_COMPLETE";
+print "CASE_18", 7;
+aa:=3696; bb:=-5544; cc:=2289;
+TT:=1; KK:=21; rr:=11; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_18_COMPLETE";
+print "CASE_19", 7;
+aa:=111804; bb:=-30492; cc:=2289;
+TT:=11; KK:=21; rr:=11; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|13];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (11*4^mm-2) mod 21 eq 0 and
+ ex3(11*4^mm-1) eq 1 and ex3(5*11*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_19_COMPLETE";
+print "CASE_20", 7;
+aa:=4032; bb:=-6048; cc:=2457;
+TT:=1; KK:=21; rr:=12; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_20_COMPLETE";
+print "CASE_21", 7;
+aa:=4368; bb:=-6552; cc:=2625;
+TT:=1; KK:=21; rr:=13; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_21_COMPLETE";
+print "CASE_22", 7;
+aa:=738192; bb:=-85176; cc:=2625;
+TT:=13; KK:=21; rr:=13; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (26*4^mm-2) mod 21 eq 0 and
+ ex3(26*4^mm-1) eq 1 and ex3(5*26*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_22_COMPLETE";
+print "CASE_23", 7;
+aa:=4704; bb:=-7056; cc:=2793;
+TT:=1; KK:=21; rr:=14; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_23_COMPLETE";
+print "CASE_24", 7;
+aa:=5040; bb:=-7560; cc:=2961;
+TT:=1; KK:=21; rr:=15; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_24_COMPLETE";
+print "CASE_25", 7;
+aa:=31500; bb:=-18900; cc:=2961;
+TT:=5; KK:=21; rr:=15; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (5*4^mm-2) mod 21 eq 0 and
+ ex3(5*4^mm-1) eq 1 and ex3(5*5*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_25_COMPLETE";
+print "CASE_26", 7;
+aa:=5376; bb:=-8064; cc:=3129;
+TT:=1; KK:=21; rr:=16; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_26_COMPLETE";
+print "CASE_27", 7;
+aa:=5712; bb:=-8568; cc:=3297;
+TT:=1; KK:=21; rr:=17; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_27_COMPLETE";
+print "CASE_28", 7;
+aa:=412692; bb:=-72828; cc:=3297;
+TT:=17; KK:=21; rr:=17; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (17*4^mm-2) mod 21 eq 0 and
+ ex3(17*4^mm-1) eq 1 and ex3(5*17*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_28_COMPLETE";
+print "CASE_29", 7;
+aa:=6048; bb:=-9072; cc:=3465;
+TT:=1; KK:=21; rr:=18; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_29_COMPLETE";
+print "CASE_30", 7;
+aa:=6384; bb:=-9576; cc:=3633;
+TT:=1; KK:=21; rr:=19; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_30_COMPLETE";
+print "CASE_31", 7;
+aa:=2304624; bb:=-181944; cc:=3633;
+TT:=19; KK:=21; rr:=19; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (38*4^mm-2) mod 21 eq 0 and
+ ex3(38*4^mm-1) eq 1 and ex3(5*38*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_31_COMPLETE";
+print "CASE_32", 7;
+aa:=6720; bb:=-10080; cc:=3801;
+TT:=1; KK:=21; rr:=20; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (2*4^mm-2) mod 21 eq 0 and
+ ex3(2*4^mm-1) eq 1 and ex3(5*2*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_32_COMPLETE";
+print "CASE_33", 7;
+aa:=42000; bb:=-25200; cc:=3801;
+TT:=5; KK:=21; rr:=20; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 21 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (5*4^mm-2) mod 21 eq 0 and
+ ex3(5*4^mm-1) eq 1 and ex3(5*5*4^mm-1) eq 3];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_33_COMPLETE";
+print "CASE_34", 7;
+aa:=504; bb:=-1512; cc:=1449;
+TT:=1; KK:=21; rr:=6; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|11,13,17];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_34_COMPLETE";
+print "CASE_35", 7;
+aa:=588; bb:=-1764; cc:=1617;
+TT:=1; KK:=21; rr:=7; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|11,13];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_35_COMPLETE";
+print "CASE_36", 7;
+aa:=672; bb:=-2016; cc:=1785;
+TT:=1; KK:=21; rr:=8; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|5,11,19,29,31,43,61];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_36_COMPLETE";
+print "CASE_37", 7;
+aa:=756; bb:=-2268; cc:=1953;
+TT:=1; KK:=21; rr:=9; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_37_COMPLETE";
+print "CASE_38", 7;
+aa:=840; bb:=-2520; cc:=2121;
+TT:=1; KK:=21; rr:=10; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|13,17];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_38_COMPLETE";
+print "CASE_39", 7;
+aa:=84000; bb:=-25200; cc:=2121;
+TT:=5; KK:=21; rr:=10; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (10*4^mm-2) mod 7 eq 0 and
+ ex3(10*4^mm-1) eq 3 and ex3(5*10*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_39_COMPLETE";
+print "CASE_40", 7;
+aa:=924; bb:=-2772; cc:=2289;
+TT:=1; KK:=21; rr:=11; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_40_COMPLETE";
+print "CASE_41", 7;
+aa:=447216; bb:=-60984; cc:=2289;
+TT:=11; KK:=21; rr:=11; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (22*4^mm-2) mod 7 eq 0 and
+ ex3(22*4^mm-1) eq 3 and ex3(5*22*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_41_COMPLETE";
+print "CASE_42", 7;
+aa:=1008; bb:=-3024; cc:=2457;
+TT:=1; KK:=21; rr:=12; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_42_COMPLETE";
+print "CASE_43", 7;
+aa:=1092; bb:=-3276; cc:=2625;
+TT:=1; KK:=21; rr:=13; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|5,11,17,19,27];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_43_COMPLETE";
+print "CASE_44", 7;
+aa:=184548; bb:=-42588; cc:=2625;
+TT:=13; KK:=21; rr:=13; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (13*4^mm-2) mod 7 eq 0 and
+ ex3(13*4^mm-1) eq 3 and ex3(5*13*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_44_COMPLETE";
+print "CASE_45", 7;
+aa:=1176; bb:=-3528; cc:=2793;
+TT:=1; KK:=21; rr:=14; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|5,11,13];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_45_COMPLETE";
+print "CASE_46", 7;
+aa:=1260; bb:=-3780; cc:=2961;
+TT:=1; KK:=21; rr:=15; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|11,13,17,19,29,31,37];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_46_COMPLETE";
+print "CASE_47", 7;
+aa:=126000; bb:=-37800; cc:=2961;
+TT:=5; KK:=21; rr:=15; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (10*4^mm-2) mod 7 eq 0 and
+ ex3(10*4^mm-1) eq 3 and ex3(5*10*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_47_COMPLETE";
+print "CASE_48", 7;
+aa:=1344; bb:=-4032; cc:=3129;
+TT:=1; KK:=21; rr:=16; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|11,13,17,19,27];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_48_COMPLETE";
+print "CASE_49", 7;
+aa:=1428; bb:=-4284; cc:=3297;
+TT:=1; KK:=21; rr:=17; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|11,13];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_49_COMPLETE";
+print "CASE_50", 7;
+aa:=1650768; bb:=-145656; cc:=3297;
+TT:=17; KK:=21; rr:=17; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (34*4^mm-2) mod 7 eq 0 and
+ ex3(34*4^mm-1) eq 3 and ex3(5*34*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_50_COMPLETE";
+print "CASE_51", 7;
+aa:=1512; bb:=-4536; cc:=3465;
+TT:=1; KK:=21; rr:=18; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|5,11,13];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_51_COMPLETE";
+print "CASE_52", 7;
+aa:=1596; bb:=-4788; cc:=3633;
+TT:=1; KK:=21; rr:=19; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|5,11,13];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_52_COMPLETE";
+print "CASE_53", 7;
+aa:=576156; bb:=-90972; cc:=3633;
+TT:=19; KK:=21; rr:=19; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (19*4^mm-2) mod 7 eq 0 and
+ ex3(19*4^mm-1) eq 3 and ex3(5*19*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_53_COMPLETE";
+print "CASE_54", 7;
+aa:=1680; bb:=-5040; cc:=3801;
+TT:=1; KK:=21; rr:=20; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|11,13];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_54_COMPLETE";
+print "CASE_55", 7;
+aa:=168000; bb:=-50400; cc:=3801;
+TT:=5; KK:=21; rr:=20; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (10*4^mm-2) mod 7 eq 0 and
+ ex3(10*4^mm-1) eq 3 and ex3(5*10*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_55_COMPLETE";
+print "CASE_56", 7;
+aa:=504; bb:=-504; cc:=161;
+TT:=1; KK:=7; rr:=2; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (3*4^mm-2) mod 7 eq 0 and
+ ex3(3*4^mm-1) eq 1 and ex3(5*3*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_56_COMPLETE";
+print "CASE_57", 7;
+aa:=2016; bb:=-1008; cc:=161;
+TT:=1; KK:=7; rr:=2; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (6*4^mm-2) mod 7 eq 0 and
+ ex3(6*4^mm-1) eq 1 and ex3(5*6*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_57_COMPLETE";
+print "CASE_58", 7;
+aa:=756; bb:=-756; cc:=217;
+TT:=1; KK:=7; rr:=3; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (3*4^mm-2) mod 7 eq 0 and
+ ex3(3*4^mm-1) eq 1 and ex3(5*3*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_58_COMPLETE";
+print "CASE_59", 7;
+aa:=3024; bb:=-1512; cc:=217;
+TT:=1; KK:=7; rr:=3; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (6*4^mm-2) mod 7 eq 0 and
+ ex3(6*4^mm-1) eq 1 and ex3(5*6*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_59_COMPLETE";
+print "CASE_60", 7;
+aa:=1008; bb:=-1008; cc:=273;
+TT:=1; KK:=7; rr:=4; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (3*4^mm-2) mod 7 eq 0 and
+ ex3(3*4^mm-1) eq 1 and ex3(5*3*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_60_COMPLETE";
+print "CASE_61", 7;
+aa:=4032; bb:=-2016; cc:=273;
+TT:=1; KK:=7; rr:=4; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (6*4^mm-2) mod 7 eq 0 and
+ ex3(6*4^mm-1) eq 1 and ex3(5*6*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_61_COMPLETE";
+print "CASE_62", 7;
+aa:=1260; bb:=-1260; cc:=329;
+TT:=1; KK:=7; rr:=5; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (3*4^mm-2) mod 7 eq 0 and
+ ex3(3*4^mm-1) eq 1 and ex3(5*3*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_62_COMPLETE";
+print "CASE_63", 7;
+aa:=5040; bb:=-2520; cc:=329;
+TT:=1; KK:=7; rr:=5; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (6*4^mm-2) mod 7 eq 0 and
+ ex3(6*4^mm-1) eq 1 and ex3(5*6*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_63_COMPLETE";
+print "CASE_64", 7;
+aa:=31500; bb:=-6300; cc:=329;
+TT:=5; KK:=7; rr:=5; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|3];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (15*4^mm-2) mod 7 eq 0 and
+ ex3(15*4^mm-1) eq 1 and ex3(5*15*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_64_COMPLETE";
+print "CASE_65", 7;
+aa:=126000; bb:=-12600; cc:=329;
+TT:=5; KK:=7; rr:=5; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|3];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (30*4^mm-2) mod 7 eq 0 and
+ ex3(30*4^mm-1) eq 1 and ex3(5*30*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_65_COMPLETE";
+print "CASE_66", 7;
+aa:=1512; bb:=-1512; cc:=385;
+TT:=1; KK:=7; rr:=6; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (3*4^mm-2) mod 7 eq 0 and
+ ex3(3*4^mm-1) eq 1 and ex3(5*3*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_66_COMPLETE";
+print "CASE_67", 7;
+aa:=6048; bb:=-3024; cc:=385;
+TT:=1; KK:=7; rr:=6; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (6*4^mm-2) mod 7 eq 0 and
+ ex3(6*4^mm-1) eq 1 and ex3(5*6*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_67_COMPLETE";
+print "SMALL_B7_COMPLETE";

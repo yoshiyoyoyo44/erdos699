@@ -58,12 +58,21 @@ def replay(filename, primes_filename):
 
     records = {(r['u'], r['M']): r for r in data['certificates']}
     assert len(records) == len(data['certificates'])
-    assert data['method'] in ('original M<2^u', 'new M^3<2^(u+1)')
+    assert data['method'] in ('original M<2^u', 'new M^3<2^(u+1)',
+                              'discriminant M^3<2^(u-2)')
+    min_u = 43 if data['method'].startswith('discriminant') else 4
+    assert data.get('min_u', min_u) == min_u
+    assert data['max_u'] >= min_u
     expected, total_candidates = set(), 0
     per_u = []
-    for u in range(4, data['max_u']+1):
+    for u in range(min_u, data['max_u']+1):
         a = 2**u
-        bound = a-1 if data['method'].startswith('original') else cube_root(2*a-1)
+        if data['method'].startswith('original'):
+            bound = a-1
+        elif data['method'].startswith('discriminant'):
+            bound = cube_root(a//4-1)
+        else:
+            bound = cube_root(2*a-1)
         nrows, first_stage = 0, 0
         for M in range(1, bound+1, 2):
             expected.add((u, M))
@@ -119,6 +128,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('files', nargs='+')
     ap.add_argument('--primes', default='prime_certificates.json')
+    ap.add_argument('--output', default='verification_summary.json')
     args = ap.parse_args()
     results = [replay(f, args.primes) for f in args.files]
-    Path('verification_summary.json').write_text(json.dumps(results, indent=2), encoding='utf-8')
+    Path(args.output).write_text(json.dumps(results, indent=2), encoding='utf-8')

@@ -1,0 +1,362 @@
+SetSeed(699);
+print "CASE_54", 7;
+aa:=1680; bb:=-5040; cc:=3801;
+TT:=1; KK:=21; rr:=20; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|11,13];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (1*4^mm-2) mod 7 eq 0 and
+ ex3(1*4^mm-1) eq 3 and ex3(5*1*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_54_COMPLETE";
+print "CASE_55", 7;
+aa:=168000; bb:=-50400; cc:=3801;
+TT:=5; KK:=21; rr:=20; dd:=3; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (10*4^mm-2) mod 7 eq 0 and
+ ex3(10*4^mm-1) eq 3 and ex3(5*10*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_55_COMPLETE";
+print "CASE_56", 7;
+aa:=504; bb:=-504; cc:=161;
+TT:=1; KK:=7; rr:=2; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (3*4^mm-2) mod 7 eq 0 and
+ ex3(3*4^mm-1) eq 1 and ex3(5*3*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_56_COMPLETE";
+print "CASE_57", 7;
+aa:=2016; bb:=-1008; cc:=161;
+TT:=1; KK:=7; rr:=2; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (6*4^mm-2) mod 7 eq 0 and
+ ex3(6*4^mm-1) eq 1 and ex3(5*6*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_57_COMPLETE";
+print "CASE_58", 7;
+aa:=756; bb:=-756; cc:=217;
+TT:=1; KK:=7; rr:=3; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (3*4^mm-2) mod 7 eq 0 and
+ ex3(3*4^mm-1) eq 1 and ex3(5*3*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_58_COMPLETE";
+print "CASE_59", 7;
+aa:=3024; bb:=-1512; cc:=217;
+TT:=1; KK:=7; rr:=3; dd:=1; FF:=7;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+period:=2520; moduli:=[Integers()|];
+assert 4^period mod 9 eq 1 and 4^period mod 7 eq 1;
+ex3:=func<zz | zz mod 3 eq 0 and zz mod 9 ne 0 select 3 else 1>;
+residues:=[mm:mm in [0..period-1] | (6*4^mm-2) mod 7 eq 0 and
+ ex3(6*4^mm-1) eq 1 and ex3(5*6*4^mm-1) eq 1];
+for modulus in moduli do
+ assert 4^period mod modulus eq 1;
+ squares:={xx^2 mod modulus:xx in [0..modulus-1]};
+ residues:=[mm:mm in residues | (aa*4^(2*mm)+bb*4^mm+cc) mod modulus in squares];
+end for;
+assert #residues eq 0;
+print "MODULAR_CERT",period,moduli;
+print "MODULAR_EXCLUSION";
+if true then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_59_COMPLETE";
+print "BATCH_54_60_COMPLETE";

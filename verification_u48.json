@@ -1,0 +1,42 @@
+[
+  {
+    "file": "i3_u43_to_u48.json",
+    "max_u": 48,
+    "rows": 75046,
+    "CRT_candidates": 595,
+    "survivors": 0,
+    "primes_recursively_verified": 177312,
+    "per_u": [
+      {
+        "u": 43,
+        "rows": 6502,
+        "CRT_candidates": 34
+      },
+      {
+        "u": 44,
+        "rows": 8192,
+        "CRT_candidates": 121
+      },
+      {
+        "u": 45,
+        "rows": 10321,
+        "CRT_candidates": 63
+      },
+      {
+        "u": 46,
+        "rows": 13004,
+        "CRT_candidates": 53
+      },
+      {
+        "u": 47,
+        "rows": 16384,
+        "CRT_candidates": 33
+      },
+      {
+        "u": 48,
+        "rows": 20643,
+        "CRT_candidates": 291
+      }
+    ]
+  }
+]

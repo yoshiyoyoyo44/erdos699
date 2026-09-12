@@ -3,8 +3,10 @@ import hashlib
 import json
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
+import xml.etree.ElementTree as ET
 
 FILES = [
+    'STATUS_AND_DIRECTIONS.md',
     'README.md', 'erdos699_continuation_2026-09-12.md', 'source_progress.md',
     'AlgebraCertificates.lean', 'verification_lean.txt', 'verification_summary.json',
     'audit_algebra.py', 'sieve_i3.py', 'make_certificate.py', 'replay_certificate.py',
@@ -19,7 +21,26 @@ FILES = [
     'verification_i3_2adic_square.json', 'explore_square_parameters.py',
     'i3_all_square_branches.md', 'audit_i3_all_square.py',
     'verification_i3_all_square.json',
+    'source_nonsquare_handoff_2026-09-12.md', 'i3_nonsquare_merged_continuation.md',
+    'audit_i3_nonsquare_lifts.py', 'verification_i3_nonsquare_lifts.json',
+    'extend_i3_certificate.py', 'i3_u43_to_u48.json', 'prime_certificates_u48.json',
+    'verification_u48.json', 'verification_existing_replay.json',
+    'i3_boundary_and_fixed_blocks.md', 'i3_boundary_quartics.magma',
+    'magma_boundary_quartics.xml', 'make_small_block_magma.py',
+    'run_magma_audit.py', 'run_magma_batches.py', 'audit_i3_fixed_blocks.py',
+    'verification_i3_fixed_blocks.json', 'certify_fixed_block_modular.py',
+    'fixed_block_modular_exclusions.json',
 ]
+
+for role in 'ABC':
+    for value in (5,7,9):
+        FILES += [f'small_{role}{value}_cases.json', f'i3_small_{role}{value}.magma',
+                  f'magma_small_{role}{value}.xml']
+        root = ET.parse(f'magma_small_{role}{value}.xml').getroot()
+        if root.get('aggregate') == 'true':
+            for entry in root.find('sources'):
+                FILES += [entry.get('input'), entry.get('response')]
+assert len(FILES) == len(set(FILES))
 
 manifest = {name: hashlib.sha256(Path(name).read_bytes()).hexdigest() for name in FILES}
 Path('SHA256.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')

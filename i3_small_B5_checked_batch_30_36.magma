@@ -1,0 +1,284 @@
+SetSeed(699);
+print "CASE_30", 5;
+aa:=319440; bb:=-43560; cc:=1545;
+TT:=11; KK:=15; rr:=11; dd:=3; FF:=5;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+1 ge 49};
+end if;
+print "CASE_30_COMPLETE";
+print "CASE_31", 5;
+aa:=720; bb:=-2160; cc:=1665;
+TT:=1; KK:=15; rr:=12; dd:=3; FF:=5;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_31_COMPLETE";
+print "CASE_32", 5;
+aa:=780; bb:=-2340; cc:=1785;
+TT:=1; KK:=15; rr:=13; dd:=3; FF:=5;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_32_COMPLETE";
+print "CASE_33", 5;
+aa:=131820; bb:=-30420; cc:=1785;
+TT:=13; KK:=15; rr:=13; dd:=3; FF:=5;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_33_COMPLETE";
+print "CASE_34", 5;
+aa:=840; bb:=-2520; cc:=1905;
+TT:=1; KK:=15; rr:=14; dd:=3; FF:=5;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_34_COMPLETE";
+print "CASE_35", 5;
+aa:=41160; bb:=-17640; cc:=1905;
+TT:=7; KK:=15; rr:=14; dd:=3; FF:=5;
+options:=[];
+for b0 in Divisors(2*rr div TT) do
+ h0:=(2*rr div TT) div b0;
+ vv:=Valuation(h0,2);
+ need:=dd*(vv eq 0 select 0 else (vv eq 1 select 3 else -1));
+ for a0 in Divisors(2*(KK-rr)) do
+  z0:=2*(KK-rr) div a0;
+  if (a0+h0) mod 2 eq 1 and (b0+h0) mod 2 eq 1 and
+     (z0-h0) mod 2 eq 0 and (a0*b0-need) mod 8 eq 0 and
+     exists{x0:x0 in [0..TT^2*FF-1] | (a0*b0*x0^2+dd) mod (TT^2*FF) eq 0} then
+    Append(~options,<a0,b0,h0,z0>);
+  end if;
+ end for;
+end for;
+print "BOUNDARY_OPTIONS",options;
+if #options eq 0 then
+ print "ARITHMETIC_EXCLUSION";
+else
+E:=EllipticCurve([0,bb,0,aa*cc,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "INTEGRAL_POINTS",points;
+ts:={};
+for P in points do
+  xx:=Integers()!P[1];
+  if xx gt 0 and xx mod aa eq 0 then
+    square,t:=IsSquare(xx div aa);
+    if square and t gt 0 then
+      yy:=P[2]/(aa*t);
+      if Denominator(yy) eq 1 then
+        assert yy^2 eq aa*t^4+bb*t^2+cc;
+        Include(~ts,t);
+      end if;
+    end if;
+  end if;
+end for;
+print "POSITIVE_T",ts;
+assert not exists{t:t in ts | t eq 2^Valuation(t,2) and 2*Valuation(t,2)+0 ge 49};
+end if;
+print "CASE_35_COMPLETE";
+print "BATCH_30_36_COMPLETE";
