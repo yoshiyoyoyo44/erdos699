@@ -1,0 +1,16 @@
+[
+  {
+    "lam": 2,
+    "delta1": 1,
+    "delta2": 1,
+    "input": "i3_endpoint_l2_d11.magma",
+    "response": "magma_endpoint_l2_d11.xml"
+  },
+  {
+    "lam": 2,
+    "delta1": 1,
+    "delta2": 3,
+    "input": "i3_endpoint_l2_d13.magma",
+    "response": "magma_endpoint_l2_d13.xml"
+  }
+]

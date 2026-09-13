@@ -4,21 +4,47 @@ This is a partial mathematical result, not a solution of Erdős Problem 699.
 
 **成果の全体像と今後の方向：[これまでの成果と、次に進む五つの方向](STATUS_AND_DIRECTIONS.md)**
 
-2026-09-13の二つの追加資料を統合し、Kummer の全桁条件を一般の T に整理しました。
-新しく、中心距離 c=n/2−j から正の奇数 w を導入し、T が w−δ₁²δ₂ の単約数になることと、
-任意の固定 W₀ に対して w≤W₀ の候補が有限個になることを証明しています。
-主要分岐では c>61^(1/4)Q^(3/4) と、一般の T で j>2^(5/4)T^(1/4)Q^(3/4) が必要です。
+二つの追加資料の統合後、中心側の w と添字側の λ それぞれについて、
+T や指数を分岐せずに一つの楕円曲線へ還元しました。
+これにより、任意の固定 K>0 に対し min{j,n/2−j}≤K n^(3/4) の候補は有限個と証明しています。
+さらに5曲線の整数点計算により、主要分岐の必要条件は
+c=n/2−j>125^(1/4)Q^(3/4)、j>2^(3/2)Q^(3/4) に強まりました。
 全ての i≥205、i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
-三因子と w がともに増える一般の場合、および4≤i≤204は残ります。
+三因子・w・λ が増える一般の場合、および4≤i≤204は残ります。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
-[latest integration and center proof](i3_integrated_digits_and_center.md) ·
+[latest direct-curve proof](i3_direct_center_and_endpoint_curves.md) ·
+[digit integration](i3_integrated_digits_and_center.md) ·
 [fixed-block proof](i3_boundary_and_fixed_blocks.md) ·
 [integrated nonsquare proof](i3_nonsquare_merged_continuation.md) ·
 [complete artifact ZIP](erdos699_continuation_2026-09-12.zip).
 
-Read **`i3_integrated_digits_and_center.md` for the latest Japanese continuation**.
+Read **`i3_direct_center_and_endpoint_curves.md` for the latest Japanese continuation**.
+Eliminating n gives one nonsingular elliptic curve for each fixed center cofactor w,
+and one for each fixed endpoint cofactor lambda=rho*(rho-delta1)/Q. This proves
+finiteness in each bounded-cofactor range without splitting T or the exponent.
+As a consequence, for every fixed K>0, only finitely many candidates satisfy
+
+    min(j,n/2-j) <= K*n^(3/4).
+
+An elementary doubling argument also proves that every center curve has positive
+rank, so a rank-zero exclusion strategy cannot apply to this family.
+Five Magma runs with proved full Mordell--Weil groups exclude w=61,55,37 in their
+respective branches and lambda=2 in every branch (the delta1=3 endpoint case is
+excluded modulo 3). The new w lower bounds are 125,119,229. Integer-point
+completeness depends on Magma; the general finiteness proof uses Siegel's theorem.
+An additional w=317 attempt timed out and is explicitly excluded from these claims.
+
+```text
+python audit_i3_center_curve.py
+```
+
+This checks nine symbolic identities and discriminants, exact arithmetic for all
+55 returned points, both-sign inverse maps, and the new residue deductions.
+The source, raw responses, and the incomplete attempt are preserved separately.
+
+**`i3_integrated_digits_and_center.md` is the preceding Japanese continuation**.
 It integrates both new attachments, proves the general-T endpoint bounds, and derives
 
     r = (4c^2-1)/Q1,  w = (r+delta1)(r-3delta1)/(4Q),  c = n/2-j,
@@ -29,7 +55,8 @@ It integrates both new attachments, proves the general-T endpoint bounds, and de
 The degenerate value w=delta1^2*delta2 is excluded for every M by an elementary
 factorization. The remaining fixed-w cases map to finitely many nonsingular
 Mordell curves, so Siegel's theorem proves finiteness for each fixed bound on w.
-No new complete integer-point enumeration or Magma run is claimed.
+That earlier note did not enumerate the integer points; the five completed
+calculations in the latest note are described above.
 The attached relaxed infinite family proves that the weakened factor identities
 and high v2(n) alone cannot bound min(A,B,C); every member fails the genuine
 normalization and has an odd common prime divisor.

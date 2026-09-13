@@ -1,0 +1,22 @@
+// Direct center curve: w=55, delta1=1, delta2=3.
+// No conjectural class-group bound is enabled.
+SetSeed(699);
+w:=55; d1:=1; d2:=3; c0:=d1^2*d2;
+print "CENTER_CASE",w,d1,d2;
+E:=EllipticCurve([0,-10*w*c0,0,8*w^2*c0*(w+2*c0),0]);
+assert Discriminant(E) eq 4096*w^6*c0^3*(w+2*c0)^2*(9*c0-8*w);
+P:=E![2*w*c0,4*w^2*c0,1];
+assert (2*P)[1] eq (2*w+3*c0)^2/4;
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for R in points do
+    assert R[3] eq 1;
+    print "POINT",Integers()!R[1],Integers()!R[2];
+end for;
+print "CENTER_CASE_COMPLETE",w,d1,d2;

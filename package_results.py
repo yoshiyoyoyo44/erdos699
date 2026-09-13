@@ -34,7 +34,14 @@ FILES = [
     'source_kummer_all_digits_progress_2026-09-13.md',
     'i3_integrated_digits_and_center.md', 'audit_i3_integrated_digits.py',
     'verification_i3_integrated_digits.json',
+    'i3_direct_center_and_endpoint_curves.md', 'make_center_curve_magma.py',
+    'audit_i3_center_curve.py', 'center_curve_cases.json',
+    'endpoint_curve_cases.json', 'verification_i3_center_curve.json',
 ]
+
+for case_file in ('center_curve_cases.json', 'endpoint_curve_cases.json'):
+    for row in json.loads(Path(case_file).read_text(encoding='utf-8')):
+        FILES += [row['input'], row['response']]
 
 for role in 'ABC':
     for value in (5,7,9):

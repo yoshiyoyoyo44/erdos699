@@ -1,0 +1,34 @@
+[
+  {
+    "w": 61,
+    "delta1": 1,
+    "delta2": 1,
+    "input": "i3_center_w61_d11.magma",
+    "response": "magma_center_w61_d11.xml",
+    "role": "required_complete"
+  },
+  {
+    "w": 55,
+    "delta1": 1,
+    "delta2": 3,
+    "input": "i3_center_w55_d13.magma",
+    "response": "magma_center_w55_d13.xml",
+    "role": "required_complete"
+  },
+  {
+    "w": 37,
+    "delta1": 3,
+    "delta2": 1,
+    "input": "i3_center_w37_d31.magma",
+    "response": "magma_center_w37_d31.xml",
+    "role": "required_complete"
+  },
+  {
+    "w": 317,
+    "delta1": 1,
+    "delta2": 1,
+    "input": "i3_center_w317_d11.magma",
+    "response": "magma_center_w317_d11.xml",
+    "role": "regression_attempt"
+  }
+]
