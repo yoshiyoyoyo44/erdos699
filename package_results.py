@@ -61,6 +61,12 @@ FILES = [
     'certify_i3_gap13.py', 'replay_i3_gap13.py', 'i3_gap13_certificate.json',
     'gap13_curve_cases.json', 'verification_i3_gap13.json',
     'audit_i3_descent.py', 'verification_i3_descent.json',
+    'source_i3_full_digit_kummer_2026-09-14.md',
+    'source_pure_power_i3_2026-09-14.md', 'source_i119_hankel_2026-09-14.md',
+    'i3_digit_reciprocity_and_W_continuation.md', 'audit_i3_digit_reciprocity.py',
+    'verification_i3_digit_reciprocity.json',
+    'i119_hankel_content_continuation.md', 'audit_i119_hankel.py',
+    'verification_i119_hankel.json',
 ]
 
 for batch in range(7):

@@ -1,8 +1,21 @@
-# Erdős 699 — 2026-09-12–13 continuation
+# Erdős 699 — 2026-09-12–14 continuation
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
 **成果の全体像と今後の方向：[これまでの成果と、次に進む五つの方向](STATUS_AND_DIRECTIONS.md)**
+
+**2026-09-14：追加の3種類の資料を検証・統合し、その先の一般的な制約を証明しました。**
+i=3 では、4|j のとき T の素因数で対応する商の桁和が4となるものは高々一つです。
+二つ存在すると平方剰余の相互法則に矛盾します。純粋冪の W の式も一般の M に拡張し、
+添付の弱い条件を満たす u=613+2028k の無限族は、分割した式を使って法53で全て排除しました。
+[全桁・相互法則・W の新稿](i3_digit_reciprocity_and_W_continuation.md)。
+
+i=119 の Hankel 案では、共通因子を定数まで明示し、全ての最大小行列式と局所付値を
+一般次数で証明しました。固定した中央からの差についての係数 gcd の上界も得ています。
+一方、中央の成長次数を全ての j,y に拡張する一般次数の予想には、r=2 の無限反例族を示しました。
+r=60 の一様な g₆₀≪n³⁰ は未証明です。
+[Hankel 還元の証明と残る上界](i119_hankel_content_continuation.md)。
+今回も i=3・i=119 全体や問題699の完全解決は主張していません。
 
 さらに解決作業を進め、**i=119ではn≤10^87の全範囲を排除**しました。
 資料で探索段階だったA=100の近接計算を、213万組の厳密な不等式と全指数の還元で証明し、
@@ -33,6 +46,8 @@ i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
+[new digit/reciprocity proof](i3_digit_reciprocity_and_W_continuation.md) ·
+[new Hankel/content proof](i119_hankel_content_continuation.md) ·
 [latest i=119 proof](i119_a100_continuation.md) ·
 [latest critical-index proof](critical_indices_and_handoff_integration.md) ·
 [latest i=3 gap proof](i3_gap13_and_descent_continuation.md) ·
@@ -42,6 +57,16 @@ Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
 [fixed-block proof](i3_boundary_and_fixed_blocks.md) ·
 [integrated nonsquare proof](i3_nonsquare_merged_continuation.md) ·
 [complete artifact ZIP](erdos699_continuation_2026-09-12.zip).
+
+The latest 2026-09-14 notes are **`i3_digit_reciprocity_and_W_continuation.md`**
+and **`i119_hankel_content_continuation.md`**. They prove additional necessary
+conditions and exact general identities; they do not solve i=3 or the remaining
+i=119 tail. The inherited complete finite-exclusion ranges remain unchanged.
+
+```text
+python audit_i3_digit_reciprocity.py
+python audit_i119_hankel.py
+```
 
 Read **`critical_indices_and_handoff_integration.md` and
 `i3_gap13_and_descent_continuation.md` for the latest Japanese continuations**.

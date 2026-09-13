@@ -1,0 +1,56 @@
+{
+  "status": "verified",
+  "minors": {
+    "small_exact_minors": 54,
+    "r60_modular_minors": 12,
+    "r60_exact_kernel_relations": 60,
+    "exact_translation_coefficients": 115
+  },
+  "local_content": {
+    "local_valuation_cases": 3840,
+    "positive_cases": 1550
+  },
+  "polynomial_content": {
+    "polynomial_gcd_cases": 72,
+    "r2_counterfamily": [
+      {
+        "parameter": 2,
+        "j": 7,
+        "y": 15,
+        "n": 22,
+        "g2": 21
+      },
+      {
+        "parameter": 3,
+        "j": 13,
+        "y": 40,
+        "n": 53,
+        "g2": 78
+      },
+      {
+        "parameter": 10,
+        "j": 111,
+        "y": 1111,
+        "n": 1222,
+        "g2": 6105
+      },
+      {
+        "parameter": 100,
+        "j": 10101,
+        "y": 1010101,
+        "n": 1020202,
+        "g2": 51010050
+      },
+      {
+        "parameter": 1000,
+        "j": 1001001,
+        "y": 1001001001,
+        "n": 1002002002,
+        "g2": 501001000500
+      }
+    ]
+  },
+  "uniform_r60_n30_bound_proved": false,
+  "complete_i119_solution": false,
+  "inherited_proved_n_cutoff": "10^87"
+}

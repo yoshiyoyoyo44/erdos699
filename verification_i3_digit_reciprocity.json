@@ -1,0 +1,79 @@
+{
+  "status": "verified",
+  "symbolic_identities": 2,
+  "digits": {
+    "additions": 322400,
+    "prefixes": 93660,
+    "relaxed_example": [
+      {
+        "p": 17,
+        "N": 4510,
+        "J": 1575,
+        "digit_sums": [
+          23,
+          23,
+          30
+        ],
+        "binomial_valuation": 1
+      },
+      {
+        "p": 41,
+        "N": 1870,
+        "J": 653,
+        "digit_sums": [
+          53,
+          57,
+          30
+        ],
+        "binomial_valuation": 2
+      }
+    ]
+  },
+  "sparse": {
+    "sparse_gcd_checks": 6528,
+    "reciprocity_implications": 199,
+    "illustrative_split": {
+      "p": 3,
+      "X": 4,
+      "Y": 12,
+      "erdos_candidate": false
+    }
+  },
+  "unequal_valuation_checks": 1440,
+  "weak_family": {
+    "examples": [
+      {
+        "u": 613,
+        "K_mod53": 32,
+        "ab_mod53": 18,
+        "discriminant_mod53": 22
+      },
+      {
+        "u": 2641,
+        "K_mod53": 32,
+        "ab_mod53": 18,
+        "discriminant_mod53": 22
+      },
+      {
+        "u": 4669,
+        "K_mod53": 32,
+        "ab_mod53": 18,
+        "discriminant_mod53": 22
+      },
+      {
+        "u": 6697,
+        "K_mod53": 32,
+        "ab_mod53": 18,
+        "discriminant_mod53": 22
+      }
+    ],
+    "period": 2028,
+    "obstructing_prime": 53,
+    "nonresidue": 22,
+    "all_k_excluded_by_split": true,
+    "family_is_erdos_counterexamples": false
+  },
+  "pure_power_u179_scan_independently_replayed": false,
+  "complete_i3_solution": false,
+  "complete_erdos699_solution": false
+}
