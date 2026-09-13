@@ -30,6 +30,10 @@ FILES = [
     'run_magma_audit.py', 'run_magma_batches.py', 'audit_i3_fixed_blocks.py',
     'verification_i3_fixed_blocks.json', 'certify_fixed_block_modular.py',
     'fixed_block_modular_exclusions.json',
+    'source_direction2_progress_2026-09-13.md',
+    'source_kummer_all_digits_progress_2026-09-13.md',
+    'i3_integrated_digits_and_center.md', 'audit_i3_integrated_digits.py',
+    'verification_i3_integrated_digits.json',
 ]
 
 for role in 'ABC':

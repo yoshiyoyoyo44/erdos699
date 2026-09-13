@@ -1,0 +1,204 @@
+{
+  "status": "all assertions passed; finite audit, not a solution",
+  "symbolic_identities": [
+    "compressed product",
+    "unitary odd-part expansion",
+    "family RS",
+    "family j-1",
+    "family n-j",
+    "family n-j-1",
+    "family determinant",
+    "family center",
+    "family linear S",
+    "family linear R",
+    "family cubic",
+    "center elimination",
+    "center residue compression",
+    "center square completion",
+    "central factors",
+    "central quotient from blocks",
+    "central cofactor product",
+    "center reconstruction",
+    "center unitary identity",
+    "rho residue compression",
+    "degenerate center factorization",
+    "w=5 size contradiction",
+    "Mordell map",
+    "fixed-w curve coefficients",
+    "central fourth-power congruence with odd denominator"
+  ],
+  "digits": {
+    "primes": [
+      3,
+      5,
+      7,
+      11,
+      13
+    ],
+    "exact_binomial_checks": 82355,
+    "quotient_lift_checks": 346698,
+    "signed_membership_checks": 227250,
+    "signed_gap_checks": 1500,
+    "regression_witnesses": [
+      {
+        "p": 17,
+        "valuation_choose_3": 1,
+        "valuation_choose_j": 1
+      },
+      {
+        "p": 41,
+        "valuation_choose_3": 1,
+        "valuation_choose_j": 2
+      },
+      {
+        "p": 599,
+        "valuation_choose_3": 1,
+        "valuation_choose_j": 1
+      }
+    ]
+  },
+  "obstruction_family": {
+    "relaxed_rows": 513,
+    "normalized_positive_rows": 0,
+    "regression": {
+      "m": 0,
+      "n": 76672,
+      "j": 26775,
+      "Q": 38335,
+      "c": 11561,
+      "rho": 4675,
+      "r": 6973,
+      "z0": 3486,
+      "w": 317,
+      "ec": 1,
+      "fc": 317
+    },
+    "hensel_levels": 128,
+    "hensel_samples": [
+      {
+        "exponent": 1,
+        "least_root": 0,
+        "sample_m": 2,
+        "valuation_n": 3
+      },
+      {
+        "exponent": 2,
+        "least_root": 0,
+        "sample_m": 4,
+        "valuation_n": 4
+      },
+      {
+        "exponent": 8,
+        "least_root": 32,
+        "sample_m": 288,
+        "valuation_n": 10
+      },
+      {
+        "exponent": 16,
+        "least_root": 51744,
+        "sample_m": 117280,
+        "valuation_n": 19
+      },
+      {
+        "exponent": 32,
+        "least_root": 644074016,
+        "sample_m": 4939041312,
+        "valuation_n": 34
+      },
+      {
+        "exponent": 64,
+        "least_root": 11769043821497928224,
+        "sample_m": 30215787895207479840,
+        "valuation_n": 69
+      },
+      {
+        "exponent": 128,
+        "least_root": 180119096394378215803715983217317366304,
+        "sample_m": 520401463315316679267090590649085577760,
+        "valuation_n": 130
+      }
+    ],
+    "scope": "The family audit does not test any genuine T>1 positive candidate."
+  },
+  "preliminary_square_constants": [
+    {
+      "delta1": 1,
+      "delta2": 1,
+      "Q_mod_128": 127,
+      "excluded_below": 29,
+      "exceptions_requiring_proof": [
+        1
+      ]
+    },
+    {
+      "delta1": 1,
+      "delta2": 3,
+      "Q_mod_128": 85,
+      "excluded_below": 23,
+      "exceptions_requiring_proof": [
+        3
+      ]
+    },
+    {
+      "delta1": 3,
+      "delta2": 1,
+      "Q_mod_128": 127,
+      "excluded_below": 37,
+      "exceptions_requiring_proof": [
+        5,
+        9
+      ]
+    }
+  ],
+  "stronger_fourth_power_constants": [
+    {
+      "delta1": 1,
+      "delta2": 1,
+      "c0": 1,
+      "odd_j_min_w": 61,
+      "even_j_min_w": 961,
+      "odd_c_residues_mod_64": [
+        61
+      ],
+      "even_c_residues_mod_1024": [
+        1,
+        961
+      ]
+    },
+    {
+      "delta1": 1,
+      "delta2": 3,
+      "c0": 3,
+      "odd_j_min_w": 55,
+      "even_j_min_w": 835,
+      "odd_c_residues_mod_64": [
+        55
+      ],
+      "even_c_residues_mod_1024": [
+        3,
+        835
+      ]
+    },
+    {
+      "delta1": 3,
+      "delta2": 1,
+      "c0": 9,
+      "odd_j_min_w": 37,
+      "even_j_min_w": 457,
+      "odd_c_residues_mod_64": [
+        37
+      ],
+      "even_c_residues_mod_1024": [
+        9,
+        457
+      ]
+    }
+  ],
+  "unitary_and_curves": {
+    "unitary_congruence_checks": 34,
+    "Mordell_map_checks": 96,
+    "integer_point_completeness": "Not computed; finiteness uses Siegel in the proof."
+  },
+  "magma_calls": 0,
+  "lean_calls": 0
+}

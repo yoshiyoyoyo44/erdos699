@@ -4,19 +4,48 @@ This is a partial mathematical result, not a solution of Erdős Problem 699.
 
 **成果の全体像と今後の方向：[これまでの成果と、次に進む五つの方向](STATUS_AND_DIRECTIONS.md)**
 
-2026-09-13時点では、全ての i≥205 を扱い、i=3 の反例候補には
-u≥49、A,B,C≥11 などの条件を得ています。固定した F に対して
-min(A,B,C)≤F の候補は有限ですが、三因子が同時に増える一般の場合は残ります。
-次は Kummer 条件の全桁を使う方法を第一候補とし、因子の一様な上限、
-形を保存する降下、4≤i≤204 の縮小、固定因子の族の排除を研究方針にしています。
+2026-09-13の二つの追加資料を統合し、Kummer の全桁条件を一般の T に整理しました。
+新しく、中心距離 c=n/2−j から正の奇数 w を導入し、T が w−δ₁²δ₂ の単約数になることと、
+任意の固定 W₀ に対して w≤W₀ の候補が有限個になることを証明しています。
+主要分岐では c>61^(1/4)Q^(3/4) と、一般の T で j>2^(5/4)T^(1/4)Q^(3/4) が必要です。
+全ての i≥205、i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
+三因子と w がともに増える一般の場合、および4≤i≤204は残ります。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
-[latest proof](i3_boundary_and_fixed_blocks.md) ·
+[latest integration and center proof](i3_integrated_digits_and_center.md) ·
+[fixed-block proof](i3_boundary_and_fixed_blocks.md) ·
 [integrated nonsquare proof](i3_nonsquare_merged_continuation.md) ·
 [complete artifact ZIP](erdos699_continuation_2026-09-12.zip).
 
-Read **`i3_boundary_and_fixed_blocks.md` for the latest Japanese continuation**.
+Read **`i3_integrated_digits_and_center.md` for the latest Japanese continuation**.
+It integrates both new attachments, proves the general-T endpoint bounds, and derives
+
+    r = (4c^2-1)/Q1,  w = (r+delta1)(r-3delta1)/(4Q),  c = n/2-j,
+    T | (w-delta1^2*delta2),  gcd(T,(w-delta1^2*delta2)/T) = 1,
+    w = (delta*A-2*s)(delta*B*C-2*A*a*b),
+    w = delta1^2*delta2*(1-4c^4) (mod n/2).
+
+The degenerate value w=delta1^2*delta2 is excluded for every M by an elementary
+factorization. The remaining fixed-w cases map to finitely many nonsingular
+Mordell curves, so Siegel's theorem proves finiteness for each fixed bound on w.
+No new complete integer-point enumeration or Magma run is claimed.
+The attached relaxed infinite family proves that the weakened factor identities
+and high v2(n) alone cannot bound min(A,B,C); every member fails the genuine
+normalization and has an odd common prime divisor.
+
+```text
+python audit_i3_integrated_digits.py
+```
+
+This audits 25 symbolic identities/divisibilities, 346,698 quotient-lift cases,
+227,250 signed-digit membership cases, 1,500 signed gaps, the obstruction family,
+and the new center congruences. The unbounded statements are proved in the note;
+finite checks do not replace those proofs. Both attachments are preserved in
+`source_direction2_progress_2026-09-13.md` and
+`source_kummer_all_digits_progress_2026-09-13.md`.
+
+**`i3_boundary_and_fixed_blocks.md` is the preceding Japanese continuation**.
 It proves a general reduction: fixing any one of the residue blocks A, B, C
 gives finitely many nonsingular elliptic curves. Siegel's theorem then implies
 that, for every fixed F, only finitely many candidates have min(A,B,C) <= F.
