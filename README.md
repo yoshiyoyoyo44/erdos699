@@ -14,11 +14,12 @@ This is a partial mathematical result, not a solution of Erdős Problem 699.
 最後の432組の有限排除を、独立した整数・有理数の検証器で確認した結果です。
 詳細は [新資料の統合と臨界添字の証明](critical_indices_and_handoff_integration.md) を参照してください。
 
-i=3 では、正確な付値 v₂(w−c₀)=4v₂(j)+2 を証明し、
-資料で未完了だった g=9 の四曲線も排除しました。偶数 j の必要条件は
-**u≥4v₂(j)+10**。全265ケースを再検証しています。
-[差 g の新しい証明](i3_exact_gap_and_g9_continuation.md)に、
-資料の二つの Pell 付値予想への反例と、訂正した研究方針も記録しました。
+i=3 の最新資料も検証し、そこで未解決だった **g=13 の56ケースを全て排除**しました。
+偶数 j の必要条件は **u≥4v₂(j)+14** です。g=10,…,13 の5099ケースを独立に再検証し、
+最後の56曲線では Magma の完全な群と全整数点計算を使用、245点を整数演算で検算しました。
+[g=13と降下案の検証](i3_gap13_and_descent_continuation.md)には、
+有限個の合同式が止まる理由の証明と、降下式が既存の因子積に一致することも記録しています。
+主枝全体の無限降下は未完成です。
 
 前回までに、二つの追加資料を統合し、中心側の w と添字側の λ それぞれについて、
 T や指数を分岐せずに一つの楕円曲線へ還元しました。
@@ -34,7 +35,7 @@ i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
 [latest i=119 proof](i119_a100_continuation.md) ·
 [latest critical-index proof](critical_indices_and_handoff_integration.md) ·
-[latest i=3 gap proof](i3_exact_gap_and_g9_continuation.md) ·
+[latest i=3 gap proof](i3_gap13_and_descent_continuation.md) ·
 [interval proof](interval_valuation_continuation.md) ·
 [direct-curve proof](i3_direct_center_and_endpoint_curves.md) ·
 [digit integration](i3_integrated_digits_and_center.md) ·
@@ -43,22 +44,25 @@ Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
 [complete artifact ZIP](erdos699_continuation_2026-09-12.zip).
 
 Read **`critical_indices_and_handoff_integration.md` and
-`i3_exact_gap_and_g9_continuation.md` for the latest Japanese continuations**.
+`i3_gap13_and_descent_continuation.md` for the latest Japanese continuations**.
 The first certifies i=96,100,120 through a cofactor bound and a complete
 bounded-coefficient close-power calculation. Its initial exponent bound uses
 Matveev's theorem; 435 prime pairs and 74,976 inhomogeneous cases are replayed with
 independent 320-bit rational logarithm intervals. All 432 remaining finite pairs
 are excluded by Kummer congruences.
 
-The second proves v2(w-c0)=4*v2(j)+2 and u>=4*v2(j)+10 for even j.
-Layers g=4..8 use elementary congruences and factorizations. Four complete Magma
-integral-point calculations close the remaining g=9 cases. The two proposed Pell
-valuation identities in the attachment fail at indices 681 and 343 and are not used.
+The second raises the even-j bound to u>=4*v2(j)+14. Its 5,099 additional cases
+use congruences and factorizations, with 56 complete Magma integral-point
+calculations closing g=13. A separate audit shows why the proposed descent
+still lacks a preserved second divisibility condition. The preceding g<=9
+proof and its correction of the two false Pell valuation identities remain available.
 
 ```text
 python replay_near_collisions.py
 python replay_critical_indices.py
 python replay_i3_gap_layers.py
+python replay_i3_gap13.py
+python audit_i3_descent.py
 python replay_near_collisions_a100.py
 python replay_i119_finite.py
 ```

@@ -1,0 +1,19 @@
+{
+  "status": "verified",
+  "symbolic_identities": 8,
+  "constructed_modular_examples": 540,
+  "general_shift_failure": {
+    "original_n": 175492,
+    "original_j": 60606,
+    "s": 20930,
+    "t": 14456,
+    "smaller_n": 87746,
+    "smaller_j": 10465,
+    "second_condition_remainder": 27840,
+    "pure_power_of_two": false,
+    "erdos_counterexample": false
+  },
+  "independent_new_constraint_from_D_E": false,
+  "complete_descent": false,
+  "complete_i3_solution": false
+}

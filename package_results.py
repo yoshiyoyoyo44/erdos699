@@ -57,7 +57,14 @@ FILES = [
     'near_collision_a100_certificate.json', 'replay_near_collisions_a100.py',
     'verification_near_collisions_a100.json', 'certify_i119_finite.py',
     'i119_finite_certificate.json', 'replay_i119_finite.py', 'verification_i119_finite.json',
+    'source_pure_power_descent_2026-09-13.md', 'i3_gap13_and_descent_continuation.md',
+    'certify_i3_gap13.py', 'replay_i3_gap13.py', 'i3_gap13_certificate.json',
+    'gap13_curve_cases.json', 'verification_i3_gap13.json',
+    'audit_i3_descent.py', 'verification_i3_descent.json',
 ]
+
+for batch in range(7):
+    FILES += [f'i3_gap13_batch{batch}.magma', f'magma_gap13_batch{batch}.xml']
 
 for case_file in ('center_curve_cases.json', 'endpoint_curve_cases.json', 'gap_curve_cases.json'):
     for row in json.loads(Path(case_file).read_text(encoding='utf-8')):

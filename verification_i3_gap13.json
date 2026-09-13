@@ -1,0 +1,388 @@
+{
+  "status": "verified",
+  "case_count": 5099,
+  "layers": {
+    "10": {
+      "factor": 53,
+      "modular": 127,
+      "two_adic": 126
+    },
+    "11": {
+      "two_adic": 276,
+      "modular": 277,
+      "factor": 78
+    },
+    "12": {
+      "two_adic": 596,
+      "modular": 600,
+      "factor": 119
+    },
+    "13": {
+      "two_adic": 1325,
+      "elliptic": 56,
+      "factor": 199,
+      "modular": 1267
+    }
+  },
+  "period": 360,
+  "modular_residue_exclusions": 265558,
+  "curve_count": 56,
+  "curve_points_checked": 245,
+  "curves": {
+    "15": {
+      "a4": 15135,
+      "rank": 3,
+      "point_count": 5,
+      "inverse": []
+    },
+    "31": {
+      "a4": 30783,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "47": {
+      "a4": 45919,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "79": {
+      "a4": 74655,
+      "rank": 3,
+      "point_count": 6,
+      "inverse": []
+    },
+    "95": {
+      "a4": 88255,
+      "rank": 3,
+      "point_count": 3,
+      "inverse": []
+    },
+    "111": {
+      "a4": 101343,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "127": {
+      "a4": 113919,
+      "rank": 3,
+      "point_count": 3,
+      "inverse": []
+    },
+    "143": {
+      "a4": 125983,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "159": {
+      "a4": 137535,
+      "rank": 3,
+      "point_count": 8,
+      "inverse": []
+    },
+    "175": {
+      "a4": 148575,
+      "rank": 3,
+      "point_count": 7,
+      "inverse": []
+    },
+    "191": {
+      "a4": 159103,
+      "rank": 2,
+      "point_count": 4,
+      "inverse": []
+    },
+    "207": {
+      "a4": 169119,
+      "rank": 2,
+      "point_count": 4,
+      "inverse": []
+    },
+    "223": {
+      "a4": 178623,
+      "rank": 2,
+      "point_count": 5,
+      "inverse": [
+        {
+          "v": 1,
+          "abs_Z": 3823
+        }
+      ]
+    },
+    "239": {
+      "a4": 187615,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "255": {
+      "a4": 196095,
+      "rank": 3,
+      "point_count": 4,
+      "inverse": []
+    },
+    "271": {
+      "a4": 204063,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "287": {
+      "a4": 211519,
+      "rank": 3,
+      "point_count": 8,
+      "inverse": [
+        {
+          "v": 1,
+          "abs_Z": 4337
+        }
+      ]
+    },
+    "303": {
+      "a4": 218463,
+      "rank": 3,
+      "point_count": 5,
+      "inverse": []
+    },
+    "319": {
+      "a4": 224895,
+      "rank": 3,
+      "point_count": 5,
+      "inverse": []
+    },
+    "335": {
+      "a4": 230815,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "351": {
+      "a4": 236223,
+      "rank": 3,
+      "point_count": 4,
+      "inverse": []
+    },
+    "367": {
+      "a4": 241119,
+      "rank": 4,
+      "point_count": 5,
+      "inverse": []
+    },
+    "383": {
+      "a4": 245503,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "415": {
+      "a4": 252735,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "431": {
+      "a4": 255583,
+      "rank": 3,
+      "point_count": 4,
+      "inverse": []
+    },
+    "447": {
+      "a4": 257919,
+      "rank": 3,
+      "point_count": 3,
+      "inverse": []
+    },
+    "463": {
+      "a4": 259743,
+      "rank": 3,
+      "point_count": 4,
+      "inverse": []
+    },
+    "479": {
+      "a4": 261055,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "511": {
+      "a4": 262143,
+      "rank": 3,
+      "point_count": 7,
+      "inverse": []
+    },
+    "527": {
+      "a4": 261919,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "543": {
+      "a4": 261183,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "559": {
+      "a4": 259935,
+      "rank": 3,
+      "point_count": 6,
+      "inverse": []
+    },
+    "575": {
+      "a4": 258175,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "591": {
+      "a4": 255903,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "607": {
+      "a4": 253119,
+      "rank": 3,
+      "point_count": 4,
+      "inverse": []
+    },
+    "623": {
+      "a4": 249823,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "639": {
+      "a4": 246015,
+      "rank": 4,
+      "point_count": 19,
+      "inverse": []
+    },
+    "655": {
+      "a4": 241695,
+      "rank": 2,
+      "point_count": 3,
+      "inverse": []
+    },
+    "671": {
+      "a4": 236863,
+      "rank": 3,
+      "point_count": 3,
+      "inverse": []
+    },
+    "687": {
+      "a4": 231519,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "703": {
+      "a4": 225663,
+      "rank": 3,
+      "point_count": 8,
+      "inverse": [
+        {
+          "v": 0,
+          "abs_Z": 1697
+        }
+      ]
+    },
+    "719": {
+      "a4": 219295,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "751": {
+      "a4": 205023,
+      "rank": 3,
+      "point_count": 4,
+      "inverse": []
+    },
+    "767": {
+      "a4": 197119,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "783": {
+      "a4": 188703,
+      "rank": 3,
+      "point_count": 6,
+      "inverse": []
+    },
+    "815": {
+      "a4": 170335,
+      "rank": 3,
+      "point_count": 6,
+      "inverse": []
+    },
+    "831": {
+      "a4": 160383,
+      "rank": 3,
+      "point_count": 4,
+      "inverse": []
+    },
+    "847": {
+      "a4": 149919,
+      "rank": 2,
+      "point_count": 4,
+      "inverse": []
+    },
+    "863": {
+      "a4": 138943,
+      "rank": 3,
+      "point_count": 3,
+      "inverse": []
+    },
+    "879": {
+      "a4": 127455,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "895": {
+      "a4": 115455,
+      "rank": 3,
+      "point_count": 4,
+      "inverse": []
+    },
+    "911": {
+      "a4": 102943,
+      "rank": 3,
+      "point_count": 3,
+      "inverse": []
+    },
+    "927": {
+      "a4": 89919,
+      "rank": 2,
+      "point_count": 5,
+      "inverse": []
+    },
+    "959": {
+      "a4": 62335,
+      "rank": 1,
+      "point_count": 3,
+      "inverse": []
+    },
+    "991": {
+      "a4": 32703,
+      "rank": 3,
+      "point_count": 3,
+      "inverse": []
+    },
+    "1007": {
+      "a4": 17119,
+      "rank": 3,
+      "point_count": 6,
+      "inverse": []
+    }
+  },
+  "even_j_necessary_bound": "u >= 4*v2(j)+14",
+  "g10_through_g12_magma_dependency": false,
+  "g13_magma_dependency": true,
+  "complete_i3_solution": false
+}

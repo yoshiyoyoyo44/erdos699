@@ -1,0 +1,161 @@
+// Fixed-gap auxiliary curve y^2=x^3+137535*x.
+// Full group proof flags are required; no GRH setting is used.
+SetSeed(699);
+a4:=137535;
+print "GAP_CURVE",a4;
+E:=EllipticCurve([0,0,0,a4,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for P in points do
+    assert P[3] eq 1;
+    print "POINT",Integers()!P[1],Integers()!P[2];
+end for;
+print "GAP_CURVE_COMPLETE",a4;
+
+// Fixed-gap auxiliary curve y^2=x^3+148575*x.
+// Full group proof flags are required; no GRH setting is used.
+SetSeed(699);
+a4:=148575;
+print "GAP_CURVE",a4;
+E:=EllipticCurve([0,0,0,a4,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for P in points do
+    assert P[3] eq 1;
+    print "POINT",Integers()!P[1],Integers()!P[2];
+end for;
+print "GAP_CURVE_COMPLETE",a4;
+
+// Fixed-gap auxiliary curve y^2=x^3+159103*x.
+// Full group proof flags are required; no GRH setting is used.
+SetSeed(699);
+a4:=159103;
+print "GAP_CURVE",a4;
+E:=EllipticCurve([0,0,0,a4,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for P in points do
+    assert P[3] eq 1;
+    print "POINT",Integers()!P[1],Integers()!P[2];
+end for;
+print "GAP_CURVE_COMPLETE",a4;
+
+// Fixed-gap auxiliary curve y^2=x^3+169119*x.
+// Full group proof flags are required; no GRH setting is used.
+SetSeed(699);
+a4:=169119;
+print "GAP_CURVE",a4;
+E:=EllipticCurve([0,0,0,a4,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for P in points do
+    assert P[3] eq 1;
+    print "POINT",Integers()!P[1],Integers()!P[2];
+end for;
+print "GAP_CURVE_COMPLETE",a4;
+
+// Fixed-gap auxiliary curve y^2=x^3+178623*x.
+// Full group proof flags are required; no GRH setting is used.
+SetSeed(699);
+a4:=178623;
+print "GAP_CURVE",a4;
+E:=EllipticCurve([0,0,0,a4,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for P in points do
+    assert P[3] eq 1;
+    print "POINT",Integers()!P[1],Integers()!P[2];
+end for;
+print "GAP_CURVE_COMPLETE",a4;
+
+// Fixed-gap auxiliary curve y^2=x^3+187615*x.
+// Full group proof flags are required; no GRH setting is used.
+SetSeed(699);
+a4:=187615;
+print "GAP_CURVE",a4;
+E:=EllipticCurve([0,0,0,a4,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for P in points do
+    assert P[3] eq 1;
+    print "POINT",Integers()!P[1],Integers()!P[2];
+end for;
+print "GAP_CURVE_COMPLETE",a4;
+
+// Fixed-gap auxiliary curve y^2=x^3+196095*x.
+// Full group proof flags are required; no GRH setting is used.
+SetSeed(699);
+a4:=196095;
+print "GAP_CURVE",a4;
+E:=EllipticCurve([0,0,0,a4,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for P in points do
+    assert P[3] eq 1;
+    print "POINT",Integers()!P[1],Integers()!P[2];
+end for;
+print "GAP_CURVE_COMPLETE",a4;
+
+// Fixed-gap auxiliary curve y^2=x^3+204063*x.
+// Full group proof flags are required; no GRH setting is used.
+SetSeed(699);
+a4:=204063;
+print "GAP_CURVE",a4;
+E:=EllipticCurve([0,0,0,a4,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for P in points do
+    assert P[3] eq 1;
+    print "POINT",Integers()!P[1],Integers()!P[2];
+end for;
+print "GAP_CURVE_COMPLETE",a4;
+
+print "G13_BATCH_COMPLETE";

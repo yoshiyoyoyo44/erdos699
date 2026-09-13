@@ -1,0 +1,394 @@
+[
+  {
+    "m": 15,
+    "q": 1009,
+    "a4": 15135,
+    "input": "i3_gap13_batch0.magma",
+    "response": "magma_gap13_batch0.xml"
+  },
+  {
+    "m": 31,
+    "q": 993,
+    "a4": 30783,
+    "input": "i3_gap13_batch0.magma",
+    "response": "magma_gap13_batch0.xml"
+  },
+  {
+    "m": 47,
+    "q": 977,
+    "a4": 45919,
+    "input": "i3_gap13_batch0.magma",
+    "response": "magma_gap13_batch0.xml"
+  },
+  {
+    "m": 79,
+    "q": 945,
+    "a4": 74655,
+    "input": "i3_gap13_batch0.magma",
+    "response": "magma_gap13_batch0.xml"
+  },
+  {
+    "m": 95,
+    "q": 929,
+    "a4": 88255,
+    "input": "i3_gap13_batch0.magma",
+    "response": "magma_gap13_batch0.xml"
+  },
+  {
+    "m": 111,
+    "q": 913,
+    "a4": 101343,
+    "input": "i3_gap13_batch0.magma",
+    "response": "magma_gap13_batch0.xml"
+  },
+  {
+    "m": 127,
+    "q": 897,
+    "a4": 113919,
+    "input": "i3_gap13_batch0.magma",
+    "response": "magma_gap13_batch0.xml"
+  },
+  {
+    "m": 143,
+    "q": 881,
+    "a4": 125983,
+    "input": "i3_gap13_batch0.magma",
+    "response": "magma_gap13_batch0.xml"
+  },
+  {
+    "m": 159,
+    "q": 865,
+    "a4": 137535,
+    "input": "i3_gap13_batch1.magma",
+    "response": "magma_gap13_batch1.xml"
+  },
+  {
+    "m": 175,
+    "q": 849,
+    "a4": 148575,
+    "input": "i3_gap13_batch1.magma",
+    "response": "magma_gap13_batch1.xml"
+  },
+  {
+    "m": 191,
+    "q": 833,
+    "a4": 159103,
+    "input": "i3_gap13_batch1.magma",
+    "response": "magma_gap13_batch1.xml"
+  },
+  {
+    "m": 207,
+    "q": 817,
+    "a4": 169119,
+    "input": "i3_gap13_batch1.magma",
+    "response": "magma_gap13_batch1.xml"
+  },
+  {
+    "m": 223,
+    "q": 801,
+    "a4": 178623,
+    "input": "i3_gap13_batch1.magma",
+    "response": "magma_gap13_batch1.xml"
+  },
+  {
+    "m": 239,
+    "q": 785,
+    "a4": 187615,
+    "input": "i3_gap13_batch1.magma",
+    "response": "magma_gap13_batch1.xml"
+  },
+  {
+    "m": 255,
+    "q": 769,
+    "a4": 196095,
+    "input": "i3_gap13_batch1.magma",
+    "response": "magma_gap13_batch1.xml"
+  },
+  {
+    "m": 271,
+    "q": 753,
+    "a4": 204063,
+    "input": "i3_gap13_batch1.magma",
+    "response": "magma_gap13_batch1.xml"
+  },
+  {
+    "m": 287,
+    "q": 737,
+    "a4": 211519,
+    "input": "i3_gap13_batch2.magma",
+    "response": "magma_gap13_batch2.xml"
+  },
+  {
+    "m": 303,
+    "q": 721,
+    "a4": 218463,
+    "input": "i3_gap13_batch2.magma",
+    "response": "magma_gap13_batch2.xml"
+  },
+  {
+    "m": 319,
+    "q": 705,
+    "a4": 224895,
+    "input": "i3_gap13_batch2.magma",
+    "response": "magma_gap13_batch2.xml"
+  },
+  {
+    "m": 335,
+    "q": 689,
+    "a4": 230815,
+    "input": "i3_gap13_batch2.magma",
+    "response": "magma_gap13_batch2.xml"
+  },
+  {
+    "m": 351,
+    "q": 673,
+    "a4": 236223,
+    "input": "i3_gap13_batch2.magma",
+    "response": "magma_gap13_batch2.xml"
+  },
+  {
+    "m": 367,
+    "q": 657,
+    "a4": 241119,
+    "input": "i3_gap13_batch2.magma",
+    "response": "magma_gap13_batch2.xml"
+  },
+  {
+    "m": 383,
+    "q": 641,
+    "a4": 245503,
+    "input": "i3_gap13_batch2.magma",
+    "response": "magma_gap13_batch2.xml"
+  },
+  {
+    "m": 415,
+    "q": 609,
+    "a4": 252735,
+    "input": "i3_gap13_batch2.magma",
+    "response": "magma_gap13_batch2.xml"
+  },
+  {
+    "m": 431,
+    "q": 593,
+    "a4": 255583,
+    "input": "i3_gap13_batch3.magma",
+    "response": "magma_gap13_batch3.xml"
+  },
+  {
+    "m": 447,
+    "q": 577,
+    "a4": 257919,
+    "input": "i3_gap13_batch3.magma",
+    "response": "magma_gap13_batch3.xml"
+  },
+  {
+    "m": 463,
+    "q": 561,
+    "a4": 259743,
+    "input": "i3_gap13_batch3.magma",
+    "response": "magma_gap13_batch3.xml"
+  },
+  {
+    "m": 479,
+    "q": 545,
+    "a4": 261055,
+    "input": "i3_gap13_batch3.magma",
+    "response": "magma_gap13_batch3.xml"
+  },
+  {
+    "m": 511,
+    "q": 513,
+    "a4": 262143,
+    "input": "i3_gap13_batch3.magma",
+    "response": "magma_gap13_batch3.xml"
+  },
+  {
+    "m": 527,
+    "q": 497,
+    "a4": 261919,
+    "input": "i3_gap13_batch3.magma",
+    "response": "magma_gap13_batch3.xml"
+  },
+  {
+    "m": 543,
+    "q": 481,
+    "a4": 261183,
+    "input": "i3_gap13_batch3.magma",
+    "response": "magma_gap13_batch3.xml"
+  },
+  {
+    "m": 559,
+    "q": 465,
+    "a4": 259935,
+    "input": "i3_gap13_batch3.magma",
+    "response": "magma_gap13_batch3.xml"
+  },
+  {
+    "m": 575,
+    "q": 449,
+    "a4": 258175,
+    "input": "i3_gap13_batch4.magma",
+    "response": "magma_gap13_batch4.xml"
+  },
+  {
+    "m": 591,
+    "q": 433,
+    "a4": 255903,
+    "input": "i3_gap13_batch4.magma",
+    "response": "magma_gap13_batch4.xml"
+  },
+  {
+    "m": 607,
+    "q": 417,
+    "a4": 253119,
+    "input": "i3_gap13_batch4.magma",
+    "response": "magma_gap13_batch4.xml"
+  },
+  {
+    "m": 623,
+    "q": 401,
+    "a4": 249823,
+    "input": "i3_gap13_batch4.magma",
+    "response": "magma_gap13_batch4.xml"
+  },
+  {
+    "m": 639,
+    "q": 385,
+    "a4": 246015,
+    "input": "i3_gap13_batch4.magma",
+    "response": "magma_gap13_batch4.xml"
+  },
+  {
+    "m": 655,
+    "q": 369,
+    "a4": 241695,
+    "input": "i3_gap13_batch4.magma",
+    "response": "magma_gap13_batch4.xml"
+  },
+  {
+    "m": 671,
+    "q": 353,
+    "a4": 236863,
+    "input": "i3_gap13_batch4.magma",
+    "response": "magma_gap13_batch4.xml"
+  },
+  {
+    "m": 687,
+    "q": 337,
+    "a4": 231519,
+    "input": "i3_gap13_batch4.magma",
+    "response": "magma_gap13_batch4.xml"
+  },
+  {
+    "m": 703,
+    "q": 321,
+    "a4": 225663,
+    "input": "i3_gap13_batch5.magma",
+    "response": "magma_gap13_batch5.xml"
+  },
+  {
+    "m": 719,
+    "q": 305,
+    "a4": 219295,
+    "input": "i3_gap13_batch5.magma",
+    "response": "magma_gap13_batch5.xml"
+  },
+  {
+    "m": 751,
+    "q": 273,
+    "a4": 205023,
+    "input": "i3_gap13_batch5.magma",
+    "response": "magma_gap13_batch5.xml"
+  },
+  {
+    "m": 767,
+    "q": 257,
+    "a4": 197119,
+    "input": "i3_gap13_batch5.magma",
+    "response": "magma_gap13_batch5.xml"
+  },
+  {
+    "m": 783,
+    "q": 241,
+    "a4": 188703,
+    "input": "i3_gap13_batch5.magma",
+    "response": "magma_gap13_batch5.xml"
+  },
+  {
+    "m": 815,
+    "q": 209,
+    "a4": 170335,
+    "input": "i3_gap13_batch5.magma",
+    "response": "magma_gap13_batch5.xml"
+  },
+  {
+    "m": 831,
+    "q": 193,
+    "a4": 160383,
+    "input": "i3_gap13_batch5.magma",
+    "response": "magma_gap13_batch5.xml"
+  },
+  {
+    "m": 847,
+    "q": 177,
+    "a4": 149919,
+    "input": "i3_gap13_batch5.magma",
+    "response": "magma_gap13_batch5.xml"
+  },
+  {
+    "m": 863,
+    "q": 161,
+    "a4": 138943,
+    "input": "i3_gap13_batch6.magma",
+    "response": "magma_gap13_batch6.xml"
+  },
+  {
+    "m": 879,
+    "q": 145,
+    "a4": 127455,
+    "input": "i3_gap13_batch6.magma",
+    "response": "magma_gap13_batch6.xml"
+  },
+  {
+    "m": 895,
+    "q": 129,
+    "a4": 115455,
+    "input": "i3_gap13_batch6.magma",
+    "response": "magma_gap13_batch6.xml"
+  },
+  {
+    "m": 911,
+    "q": 113,
+    "a4": 102943,
+    "input": "i3_gap13_batch6.magma",
+    "response": "magma_gap13_batch6.xml"
+  },
+  {
+    "m": 927,
+    "q": 97,
+    "a4": 89919,
+    "input": "i3_gap13_batch6.magma",
+    "response": "magma_gap13_batch6.xml"
+  },
+  {
+    "m": 959,
+    "q": 65,
+    "a4": 62335,
+    "input": "i3_gap13_batch6.magma",
+    "response": "magma_gap13_batch6.xml"
+  },
+  {
+    "m": 991,
+    "q": 33,
+    "a4": 32703,
+    "input": "i3_gap13_batch6.magma",
+    "response": "magma_gap13_batch6.xml"
+  },
+  {
+    "m": 1007,
+    "q": 17,
+    "a4": 17119,
+    "input": "i3_gap13_batch6.magma",
+    "response": "magma_gap13_batch6.xml"
+  }
+]
