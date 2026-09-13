@@ -1,0 +1,24 @@
+{
+  "status": "verified",
+  "new_indices": [
+    96,
+    100,
+    120
+  ],
+  "finite_bounds": {
+    "96": 1771656,
+    "100": 1771660,
+    "120": 1991759
+  },
+  "residual_pairs_by_i": {
+    "100": 162,
+    "96": 234,
+    "120": 36
+  },
+  "residual_pairs": 432,
+  "largest_anchor_candidate_count": 42,
+  "cofactor_valuation_checks": 93546,
+  "analytic_tail_requires": "replay_near_collisions.py and its Matveev specialization",
+  "combined_range": "all i >= 120 and i=96,97,100,101",
+  "complete_solution": false
+}

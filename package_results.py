@@ -40,9 +40,26 @@ FILES = [
     'interval_valuation_continuation.md', 'certify_interval_indices.py',
     'replay_interval_indices.py', 'interval_index_certificate.json',
     'verification_interval_indices.json', 'explore_interval_valuations.py',
+    'source_critical_indices_handoff_2026-09-13.md',
+    'source_i3_gap_handoff_2026-09-13.md',
+    'critical_indices_and_handoff_integration.md',
+    'near_collision_arithmetic.py', 'certify_near_collisions.py',
+    'near_collision_certificate.json', 'replay_near_collisions.py',
+    'verification_near_collisions.json', 'certify_critical_indices.py',
+    'critical_index_certificate.json', 'replay_critical_indices.py',
+    'verification_critical_indices.json',
+    'i3_exact_gap_and_g9_continuation.md', 'explore_gap_layers.py',
+    'certify_i3_gap_layers.py', 'i3_gap_certificate.json',
+    'replay_i3_gap_layers.py', 'verification_i3_gap_layers.json',
+    'make_gap_curve_magma.py', 'gap_curve_cases.json',
+    'audit_handoff_algebra.py', 'verification_handoff_algebra.json',
+    'i119_a100_continuation.md', 'certify_near_collisions_a100.py',
+    'near_collision_a100_certificate.json', 'replay_near_collisions_a100.py',
+    'verification_near_collisions_a100.json', 'certify_i119_finite.py',
+    'i119_finite_certificate.json', 'replay_i119_finite.py', 'verification_i119_finite.json',
 ]
 
-for case_file in ('center_curve_cases.json', 'endpoint_curve_cases.json'):
+for case_file in ('center_curve_cases.json', 'endpoint_curve_cases.json', 'gap_curve_cases.json'):
     for row in json.loads(Path(case_file).read_text(encoding='utf-8')):
         FILES += [row['input'], row['response']]
 

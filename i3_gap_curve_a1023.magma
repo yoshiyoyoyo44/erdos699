@@ -1,0 +1,19 @@
+// Fixed-gap auxiliary curve y^2=x^3+1023*x.
+// Full group proof flags are required; no GRH setting is used.
+SetSeed(699);
+a4:=1023;
+print "GAP_CURVE",a4;
+E:=EllipticCurve([0,0,0,a4,0]);
+G,mp,rank_proved,group_proved:=MordellWeilGroup(E);
+print "PROOF_FLAGS",rank_proved,group_proved;
+assert rank_proved and group_proved;
+basis:=[mp(G.i):i in [1..Ngens(G)] | Order(G.i) eq 0];
+print "RANK",#basis;
+print "FREE_BASIS",basis;
+points:=IntegralPoints(E:FBasis:=basis,SafetyFactor:=2);
+print "POINT_COUNT",#points;
+for P in points do
+    assert P[3] eq 1;
+    print "POINT",Integers()!P[1],Integers()!P[2];
+end for;
+print "GAP_CURVE_COMPLETE",a4;

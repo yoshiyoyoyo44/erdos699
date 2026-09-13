@@ -1,0 +1,7974 @@
+{
+  "schema": 1,
+  "indices": [
+    96,
+    100,
+    120
+  ],
+  "upper_bounds": {
+    "96": 1771656,
+    "100": 1771660,
+    "120": 1991759
+  },
+  "sieve_limit": 1991859,
+  "prime_count": 148352,
+  "last_prime": 1991849,
+  "long_gaps": [
+    [
+      370261,
+      370373
+    ],
+    [
+      396733,
+      396833
+    ],
+    [
+      492113,
+      492227
+    ],
+    [
+      604073,
+      604171
+    ],
+    [
+      838249,
+      838349
+    ],
+    [
+      1098847,
+      1098953
+    ],
+    [
+      1139993,
+      1140091
+    ],
+    [
+      1313467,
+      1313567
+    ],
+    [
+      1349533,
+      1349651
+    ],
+    [
+      1357201,
+      1357333
+    ],
+    [
+      1388483,
+      1388587
+    ],
+    [
+      1444309,
+      1444411
+    ],
+    [
+      1468277,
+      1468387
+    ],
+    [
+      1561919,
+      1562051
+    ],
+    [
+      1648081,
+      1648181
+    ],
+    [
+      1655707,
+      1655807
+    ],
+    [
+      1664123,
+      1664227
+    ],
+    [
+      1671781,
+      1671907
+    ],
+    [
+      1761187,
+      1761289
+    ],
+    [
+      1775069,
+      1775171
+    ],
+    [
+      1889831,
+      1889957
+    ],
+    [
+      1895359,
+      1895479
+    ]
+  ],
+  "exceptions": [
+    {
+      "i": 96,
+      "n": 370357,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 10,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370358,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 11,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370359,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 12,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370360,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 13,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370361,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 14,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370362,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 15,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370363,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 16,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370364,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 17,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370365,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 18,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370366,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 19,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370367,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 20,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370368,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 21,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370369,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 22,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370370,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 23,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370371,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 123457,
+          "e": 1,
+          "r": 0,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 370372,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 123457,
+          "e": 1,
+          "r": 1,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 396829,
+      "anchor": {
+        "p": 198413,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 132263,
+          "e": 1,
+          "r": 40,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 396830,
+      "anchor": {
+        "p": 198413,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 132263,
+          "e": 1,
+          "r": 41,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 396831,
+      "anchor": {
+        "p": 198413,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 132263,
+          "e": 1,
+          "r": 42,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 396832,
+      "anchor": {
+        "p": 198413,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 132263,
+          "e": 1,
+          "r": 43,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492209,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 15
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 164057,
+          "e": 1,
+          "r": 38,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492210,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 16
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 164057,
+          "e": 1,
+          "r": 39,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492211,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 17
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 164057,
+          "e": 1,
+          "r": 40,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492212,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 18
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 164057,
+          "e": 1,
+          "r": 41,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492213,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 19
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 0,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492214,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 20
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 1,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492215,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 2,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492216,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 3,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492217,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 4,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492218,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 24
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 5,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492219,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 25
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 6,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492220,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 26
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 7,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492221,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 27
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 8,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492222,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 28
+      },
+      "initial_count": 15,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 9,
+          "eliminated": 15
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492223,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 29
+      },
+      "initial_count": 15,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 10,
+          "eliminated": 15
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492224,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 30
+      },
+      "initial_count": 16,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 11,
+          "eliminated": 16
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492225,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 31
+      },
+      "initial_count": 16,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 12,
+          "eliminated": 16
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 492226,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 32
+      },
+      "initial_count": 17,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 13,
+          "eliminated": 17
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 604169,
+      "anchor": {
+        "p": 302053,
+        "e": 1,
+        "r": 63
+      },
+      "initial_count": 32,
+      "constraints": [
+        {
+          "p": 201389,
+          "e": 1,
+          "r": 2,
+          "eliminated": 32
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 604170,
+      "anchor": {
+        "p": 302053,
+        "e": 1,
+        "r": 64
+      },
+      "initial_count": 33,
+      "constraints": [
+        {
+          "p": 201389,
+          "e": 1,
+          "r": 3,
+          "eliminated": 33
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 838345,
+      "anchor": {
+        "p": 419171,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 279443,
+          "e": 1,
+          "r": 16,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 838346,
+      "anchor": {
+        "p": 419171,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 279443,
+          "e": 1,
+          "r": 17,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 838347,
+      "anchor": {
+        "p": 419171,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 279443,
+          "e": 1,
+          "r": 18,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 838348,
+      "anchor": {
+        "p": 419171,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 279443,
+          "e": 1,
+          "r": 19,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098943,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 45
+      },
+      "initial_count": 23,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 4,
+          "eliminated": 23
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098944,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 46
+      },
+      "initial_count": 24,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 5,
+          "eliminated": 24
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098945,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 47
+      },
+      "initial_count": 24,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 6,
+          "eliminated": 24
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098946,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 48
+      },
+      "initial_count": 25,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 7,
+          "eliminated": 25
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098947,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 49
+      },
+      "initial_count": 25,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 8,
+          "eliminated": 25
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098948,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 50
+      },
+      "initial_count": 26,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 9,
+          "eliminated": 26
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098949,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 51
+      },
+      "initial_count": 26,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 10,
+          "eliminated": 26
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098950,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 52
+      },
+      "initial_count": 27,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 11,
+          "eliminated": 27
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098951,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 53
+      },
+      "initial_count": 27,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 12,
+          "eliminated": 27
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1098952,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 54
+      },
+      "initial_count": 28,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 13,
+          "eliminated": 28
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1140089,
+      "anchor": {
+        "p": 570043,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 379999,
+          "e": 1,
+          "r": 92,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1140090,
+      "anchor": {
+        "p": 570043,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 379999,
+          "e": 1,
+          "r": 93,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1313563,
+      "anchor": {
+        "p": 656771,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 437849,
+          "e": 1,
+          "r": 16,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1313564,
+      "anchor": {
+        "p": 656771,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 437849,
+          "e": 1,
+          "r": 17,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1313565,
+      "anchor": {
+        "p": 656771,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 437849,
+          "e": 1,
+          "r": 18,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1313566,
+      "anchor": {
+        "p": 656783,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 437849,
+          "e": 1,
+          "r": 19,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349629,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 76,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349630,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 77,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349631,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 78,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349632,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 79,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349633,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 80,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349634,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 81,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349635,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 82,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349636,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 83,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349637,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 0,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349638,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 12
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 1,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349639,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 2,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349640,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 3,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349641,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 15
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 4,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349642,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 16
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 5,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349643,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 17
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 6,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349644,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 18
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 7,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349645,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 19
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 8,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349646,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 20
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 9,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349647,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 10,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349648,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 11,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349649,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 12,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1349650,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 24
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 13,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357297,
+      "anchor": {
+        "p": 678647,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 452401,
+          "e": 1,
+          "r": 94,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357298,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 452401,
+          "e": 1,
+          "r": 95,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357299,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 44,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357300,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 45,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357301,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 46,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357302,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 47,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357303,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 48,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357304,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 49,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357305,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 50,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357306,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 51,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357307,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 52,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357308,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 53,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357309,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 54,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357310,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 55,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357311,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 56,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357312,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 57,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357313,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 58,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357314,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 59,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357315,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 0,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357316,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 1,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357317,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 2,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357318,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 3,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357319,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 4,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357320,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 5,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357321,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 6,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357322,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 7,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357323,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 8,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357324,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 0,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 9,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357325,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 1,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 10,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357326,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 2,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 11,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357327,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 3,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 12,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357328,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 4,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 13,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357329,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 0,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357330,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 12
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 1,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357331,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 2,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1357332,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 3,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1388579,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 25
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 26,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1388580,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 26
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 27,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1388581,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 27
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 28,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1388582,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 28
+      },
+      "initial_count": 15,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 29,
+          "eliminated": 15
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1388583,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 29
+      },
+      "initial_count": 15,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 30,
+          "eliminated": 15
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1388584,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 30
+      },
+      "initial_count": 16,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 31,
+          "eliminated": 16
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1388585,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 31
+      },
+      "initial_count": 16,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 32,
+          "eliminated": 16
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1388586,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 32
+      },
+      "initial_count": 17,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 33,
+          "eliminated": 17
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1444405,
+      "anchor": {
+        "p": 722173,
+        "e": 1,
+        "r": 59
+      },
+      "initial_count": 30,
+      "constraints": [
+        {
+          "p": 481447,
+          "e": 1,
+          "r": 64,
+          "eliminated": 30
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1444406,
+      "anchor": {
+        "p": 722173,
+        "e": 1,
+        "r": 60
+      },
+      "initial_count": 31,
+      "constraints": [
+        {
+          "p": 481447,
+          "e": 1,
+          "r": 65,
+          "eliminated": 31
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1444407,
+      "anchor": {
+        "p": 722173,
+        "e": 1,
+        "r": 61
+      },
+      "initial_count": 31,
+      "constraints": [
+        {
+          "p": 481469,
+          "e": 1,
+          "r": 0,
+          "eliminated": 31
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1444408,
+      "anchor": {
+        "p": 722173,
+        "e": 1,
+        "r": 62
+      },
+      "initial_count": 32,
+      "constraints": [
+        {
+          "p": 481469,
+          "e": 1,
+          "r": 1,
+          "eliminated": 32
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1444409,
+      "anchor": {
+        "p": 722173,
+        "e": 1,
+        "r": 63
+      },
+      "initial_count": 32,
+      "constraints": [
+        {
+          "p": 481469,
+          "e": 1,
+          "r": 2,
+          "eliminated": 32
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1444410,
+      "anchor": {
+        "p": 722173,
+        "e": 1,
+        "r": 64
+      },
+      "initial_count": 33,
+      "constraints": [
+        {
+          "p": 481469,
+          "e": 1,
+          "r": 3,
+          "eliminated": 33
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468373,
+      "anchor": {
+        "p": 734177,
+        "e": 1,
+        "r": 19
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 2,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468374,
+      "anchor": {
+        "p": 734177,
+        "e": 1,
+        "r": 20
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 3,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468375,
+      "anchor": {
+        "p": 734177,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 4,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468376,
+      "anchor": {
+        "p": 734177,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 5,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468377,
+      "anchor": {
+        "p": 734177,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 6,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468378,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 7,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468379,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 8,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468380,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 9,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468381,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 10,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468382,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 11,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468383,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 12,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468384,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 13,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468385,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 14,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1468386,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 15,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562015,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 68,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562016,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 69,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562017,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 70,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562018,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 71,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562019,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 72,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562020,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 73,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562021,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 74,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562022,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 75,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562023,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 76,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562024,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 77,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562025,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 78,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562026,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 12
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 79,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562027,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 80,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562028,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 81,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562029,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 15
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 82,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562030,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 16
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 83,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562031,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 17
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 84,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562032,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 18
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 85,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562033,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 19
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 86,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562034,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 20
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 87,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562035,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 88,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562036,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 89,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562037,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 0,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562038,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 24
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 1,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562039,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 25
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 2,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562040,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 26
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 3,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562041,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 27
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 4,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562042,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 5,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562043,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 6,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562044,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 7,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562045,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 8,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562046,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 9,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562047,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 10,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562048,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 11,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562049,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 12,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1562050,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 13,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1648177,
+      "anchor": {
+        "p": 824081,
+        "e": 1,
+        "r": 15
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 549391,
+          "e": 1,
+          "r": 4,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1648178,
+      "anchor": {
+        "p": 824081,
+        "e": 1,
+        "r": 16
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 549391,
+          "e": 1,
+          "r": 5,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1648179,
+      "anchor": {
+        "p": 824081,
+        "e": 1,
+        "r": 17
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 549391,
+          "e": 1,
+          "r": 6,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1648180,
+      "anchor": {
+        "p": 824081,
+        "e": 1,
+        "r": 18
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 549391,
+          "e": 1,
+          "r": 7,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1655803,
+      "anchor": {
+        "p": 827899,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 551933,
+          "e": 1,
+          "r": 4,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1655804,
+      "anchor": {
+        "p": 827899,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 551933,
+          "e": 1,
+          "r": 5,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1655805,
+      "anchor": {
+        "p": 827899,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 551933,
+          "e": 1,
+          "r": 6,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1655806,
+      "anchor": {
+        "p": 827903,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 551933,
+          "e": 1,
+          "r": 7,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1664219,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 26,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1664220,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 27,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1664221,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 28,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1664222,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 29,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1664223,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 30,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1664224,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 31,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1664225,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 32,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1664226,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 33,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671877,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 34,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671878,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 35,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671879,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 36,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671880,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 37,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671881,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 38,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671882,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 39,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671883,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 40,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671884,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 41,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671885,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 42,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671886,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 12
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 43,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671887,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 44,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671888,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 45,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671889,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 15
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 46,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671890,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 16
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 47,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671891,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 17
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 48,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671892,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 18
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 49,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671893,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 19
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 50,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671894,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 20
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 51,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671895,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 52,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671896,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 53,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671897,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 54,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671898,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 24
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 55,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671899,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 25
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 56,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671900,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 26
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 57,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671901,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 27
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 58,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671902,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 59,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671903,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 60,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671904,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 61,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671905,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 62,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1671906,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 63,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1761283,
+      "anchor": {
+        "p": 880603,
+        "e": 1,
+        "r": 77
+      },
+      "initial_count": 39,
+      "constraints": [
+        {
+          "p": 587087,
+          "e": 1,
+          "r": 22,
+          "eliminated": 39
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1761284,
+      "anchor": {
+        "p": 880603,
+        "e": 1,
+        "r": 78
+      },
+      "initial_count": 40,
+      "constraints": [
+        {
+          "p": 587087,
+          "e": 1,
+          "r": 23,
+          "eliminated": 40
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1761285,
+      "anchor": {
+        "p": 880603,
+        "e": 1,
+        "r": 79
+      },
+      "initial_count": 40,
+      "constraints": [
+        {
+          "p": 587087,
+          "e": 1,
+          "r": 24,
+          "eliminated": 40
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1761286,
+      "anchor": {
+        "p": 880603,
+        "e": 1,
+        "r": 80
+      },
+      "initial_count": 41,
+      "constraints": [
+        {
+          "p": 587087,
+          "e": 1,
+          "r": 25,
+          "eliminated": 41
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1761287,
+      "anchor": {
+        "p": 880603,
+        "e": 1,
+        "r": 81
+      },
+      "initial_count": 41,
+      "constraints": [
+        {
+          "p": 587087,
+          "e": 1,
+          "r": 26,
+          "eliminated": 41
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "n": 1761288,
+      "anchor": {
+        "p": 880603,
+        "e": 1,
+        "r": 82
+      },
+      "initial_count": 42,
+      "constraints": [
+        {
+          "p": 587087,
+          "e": 1,
+          "r": 27,
+          "eliminated": 42
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370361,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 14,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370362,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 15,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370363,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 16,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370364,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 17,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370365,
+      "anchor": {
+        "p": 185177,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 18,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370366,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 19,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370367,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 20,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370368,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 21,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370369,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 22,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370370,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 123449,
+          "e": 1,
+          "r": 23,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370371,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 123457,
+          "e": 1,
+          "r": 0,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 370372,
+      "anchor": {
+        "p": 185183,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 123457,
+          "e": 1,
+          "r": 1,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492213,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 19
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 0,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492214,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 20
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 1,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492215,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 2,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492216,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 3,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492217,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 4,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492218,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 24
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 5,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492219,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 25
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 6,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492220,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 26
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 7,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492221,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 27
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 8,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492222,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 28
+      },
+      "initial_count": 15,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 9,
+          "eliminated": 15
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492223,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 29
+      },
+      "initial_count": 15,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 10,
+          "eliminated": 15
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492224,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 30
+      },
+      "initial_count": 16,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 11,
+          "eliminated": 16
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492225,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 31
+      },
+      "initial_count": 16,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 12,
+          "eliminated": 16
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 492226,
+      "anchor": {
+        "p": 246097,
+        "e": 1,
+        "r": 32
+      },
+      "initial_count": 17,
+      "constraints": [
+        {
+          "p": 164071,
+          "e": 1,
+          "r": 13,
+          "eliminated": 17
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1098947,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 49
+      },
+      "initial_count": 25,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 8,
+          "eliminated": 25
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1098948,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 50
+      },
+      "initial_count": 26,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 9,
+          "eliminated": 26
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1098949,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 51
+      },
+      "initial_count": 26,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 10,
+          "eliminated": 26
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1098950,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 52
+      },
+      "initial_count": 27,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 11,
+          "eliminated": 27
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1098951,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 53
+      },
+      "initial_count": 27,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 12,
+          "eliminated": 27
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1098952,
+      "anchor": {
+        "p": 549449,
+        "e": 1,
+        "r": 54
+      },
+      "initial_count": 28,
+      "constraints": [
+        {
+          "p": 366313,
+          "e": 1,
+          "r": 13,
+          "eliminated": 28
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349633,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 80,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349634,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 81,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349635,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 82,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349636,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 449851,
+          "e": 1,
+          "r": 83,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349637,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 0,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349638,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 12
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 1,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349639,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 2,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349640,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 3,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349641,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 15
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 4,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349642,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 16
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 5,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349643,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 17
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 6,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349644,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 18
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 7,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349645,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 19
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 8,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349646,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 20
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 9,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349647,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 10,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349648,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 11,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349649,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 12,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1349650,
+      "anchor": {
+        "p": 674813,
+        "e": 1,
+        "r": 24
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 449879,
+          "e": 1,
+          "r": 13,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357301,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 452401,
+          "e": 1,
+          "r": 98,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357302,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 452401,
+          "e": 1,
+          "r": 99,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357303,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 48,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357304,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 49,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357305,
+      "anchor": {
+        "p": 678649,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 50,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357306,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 51,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357307,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 52,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357308,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 53,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357309,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 54,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357310,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 55,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357311,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 56,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357312,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 57,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357313,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 58,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357314,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 271451,
+          "e": 1,
+          "r": 59,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357315,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 0,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357316,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 1,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357317,
+      "anchor": {
+        "p": 678653,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 2,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357318,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 3,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357319,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 4,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357320,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 5,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357321,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 6,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357322,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 7,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357323,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 8,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357324,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 0,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 9,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357325,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 1,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 10,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357326,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 2,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 11,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357327,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 3,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 12,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357328,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 4,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 13,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357329,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 0,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357330,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 12
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 1,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357331,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 2,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1357332,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 3,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1388583,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 29
+      },
+      "initial_count": 15,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 30,
+          "eliminated": 15
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1388584,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 30
+      },
+      "initial_count": 16,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 31,
+          "eliminated": 16
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1388585,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 31
+      },
+      "initial_count": 16,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 32,
+          "eliminated": 16
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1388586,
+      "anchor": {
+        "p": 694277,
+        "e": 1,
+        "r": 32
+      },
+      "initial_count": 17,
+      "constraints": [
+        {
+          "p": 462851,
+          "e": 1,
+          "r": 33,
+          "eliminated": 17
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1444409,
+      "anchor": {
+        "p": 722173,
+        "e": 1,
+        "r": 63
+      },
+      "initial_count": 32,
+      "constraints": [
+        {
+          "p": 481469,
+          "e": 1,
+          "r": 2,
+          "eliminated": 32
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1444410,
+      "anchor": {
+        "p": 722173,
+        "e": 1,
+        "r": 64
+      },
+      "initial_count": 33,
+      "constraints": [
+        {
+          "p": 481469,
+          "e": 1,
+          "r": 3,
+          "eliminated": 33
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468377,
+      "anchor": {
+        "p": 734177,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 6,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468378,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 7,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468379,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 8,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468380,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 9,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468381,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 10,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468382,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 11,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468383,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 12,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468384,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 13,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468385,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 14,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1468386,
+      "anchor": {
+        "p": 734189,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 489457,
+          "e": 1,
+          "r": 15,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562019,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 72,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562020,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 73,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562021,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 74,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562022,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 75,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562023,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 76,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562024,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 77,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562025,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 78,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562026,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 12
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 79,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562027,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 80,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562028,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 81,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562029,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 15
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 82,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562030,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 16
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 83,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562031,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 17
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 84,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562032,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 18
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 85,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562033,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 19
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 86,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562034,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 20
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 87,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562035,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 88,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562036,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 520649,
+          "e": 1,
+          "r": 89,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562037,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 0,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562038,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 24
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 1,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562039,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 25
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 2,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562040,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 26
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 3,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562041,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 27
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 4,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562042,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 5,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562043,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 6,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562044,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 7,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562045,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 8,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562046,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 9,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562047,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 10,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562048,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 11,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562049,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 12,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1562050,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 13,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1664223,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 30,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1664224,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 31,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1664225,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 32,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1664226,
+      "anchor": {
+        "p": 832109,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 554731,
+          "e": 1,
+          "r": 33,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671881,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 38,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671882,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 39,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671883,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 40,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671884,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 41,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671885,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 42,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671886,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 12
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 43,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671887,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 44,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671888,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 45,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671889,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 15
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 46,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671890,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 16
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 47,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671891,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 17
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 48,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671892,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 18
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 49,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671893,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 19
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 50,
+          "eliminated": 10
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671894,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 20
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 51,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671895,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 21
+      },
+      "initial_count": 11,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 52,
+          "eliminated": 11
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671896,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 22
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 53,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671897,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 23
+      },
+      "initial_count": 12,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 54,
+          "eliminated": 12
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671898,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 24
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 55,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671899,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 25
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 56,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671900,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 26
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 57,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671901,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 27
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 58,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671902,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 59,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671903,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 60,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671904,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 61,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671905,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 62,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1671906,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 63,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1761287,
+      "anchor": {
+        "p": 880603,
+        "e": 1,
+        "r": 81
+      },
+      "initial_count": 41,
+      "constraints": [
+        {
+          "p": 587087,
+          "e": 1,
+          "r": 26,
+          "eliminated": 41
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "n": 1761288,
+      "anchor": {
+        "p": 880603,
+        "e": 1,
+        "r": 82
+      },
+      "initial_count": 42,
+      "constraints": [
+        {
+          "p": 587087,
+          "e": 1,
+          "r": 27,
+          "eliminated": 42
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357321,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 452401,
+          "e": 1,
+          "r": 118,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357322,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 452401,
+          "e": 1,
+          "r": 119,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357323,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 8,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357324,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 0,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 9,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357325,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 1,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 10,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357326,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 2,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 11,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357327,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 9
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 3,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 12,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357328,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 10
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 339331,
+          "e": 1,
+          "r": 4,
+          "eliminated": 3
+        },
+        {
+          "p": 271463,
+          "e": 1,
+          "r": 13,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357329,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 11
+      },
+      "initial_count": 6,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 0,
+          "eliminated": 6
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357330,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 12
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 1,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357331,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 2,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1357332,
+      "anchor": {
+        "p": 678659,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 452443,
+          "e": 1,
+          "r": 3,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562039,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 25
+      },
+      "initial_count": 13,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 2,
+          "eliminated": 13
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562040,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 26
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 3,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562041,
+      "anchor": {
+        "p": 781007,
+        "e": 1,
+        "r": 27
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 4,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562042,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 5,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562043,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 6,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562044,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 7,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562045,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 8,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562046,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 9,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562047,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 5
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 10,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562048,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 6
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 11,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562049,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 7
+      },
+      "initial_count": 4,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 12,
+          "eliminated": 4
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1562050,
+      "anchor": {
+        "p": 781021,
+        "e": 1,
+        "r": 8
+      },
+      "initial_count": 5,
+      "constraints": [
+        {
+          "p": 520679,
+          "e": 1,
+          "r": 13,
+          "eliminated": 5
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1671901,
+      "anchor": {
+        "p": 835937,
+        "e": 1,
+        "r": 27
+      },
+      "initial_count": 14,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 58,
+          "eliminated": 14
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1671902,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 0
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 59,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1671903,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 1
+      },
+      "initial_count": 1,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 60,
+          "eliminated": 1
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1671904,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 2
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 61,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1671905,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 3
+      },
+      "initial_count": 2,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 62,
+          "eliminated": 2
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1671906,
+      "anchor": {
+        "p": 835951,
+        "e": 1,
+        "r": 4
+      },
+      "initial_count": 3,
+      "constraints": [
+        {
+          "p": 557281,
+          "e": 1,
+          "r": 63,
+          "eliminated": 3
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1889951,
+      "anchor": {
+        "p": 944969,
+        "e": 1,
+        "r": 13
+      },
+      "initial_count": 7,
+      "constraints": [
+        {
+          "p": 629977,
+          "e": 1,
+          "r": 20,
+          "eliminated": 7
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1889952,
+      "anchor": {
+        "p": 944969,
+        "e": 1,
+        "r": 14
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 629977,
+          "e": 1,
+          "r": 21,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1889953,
+      "anchor": {
+        "p": 944969,
+        "e": 1,
+        "r": 15
+      },
+      "initial_count": 8,
+      "constraints": [
+        {
+          "p": 629977,
+          "e": 1,
+          "r": 22,
+          "eliminated": 8
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1889954,
+      "anchor": {
+        "p": 944969,
+        "e": 1,
+        "r": 16
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 629977,
+          "e": 1,
+          "r": 23,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1889955,
+      "anchor": {
+        "p": 944969,
+        "e": 1,
+        "r": 17
+      },
+      "initial_count": 9,
+      "constraints": [
+        {
+          "p": 629977,
+          "e": 1,
+          "r": 24,
+          "eliminated": 9
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "n": 1889956,
+      "anchor": {
+        "p": 944969,
+        "e": 1,
+        "r": 18
+      },
+      "initial_count": 10,
+      "constraints": [
+        {
+          "p": 629977,
+          "e": 1,
+          "r": 25,
+          "eliminated": 10
+        }
+      ]
+    }
+  ]
+}

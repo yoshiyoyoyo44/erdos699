@@ -1,0 +1,26 @@
+{
+  "status": "verified",
+  "A": 100,
+  "inhomogeneous_cases": 2131112,
+  "homogeneous_cases": 435,
+  "maximum_approximation_denominator": 52187660585645620059,
+  "normalized_exponents_less_than": 128,
+  "enumerated_exponents_less_than": 144,
+  "close_pairs": 4993247,
+  "maximum_close_value": 194871710,
+  "witness": {
+    "p": 11,
+    "q": 43,
+    "a": 10,
+    "b": 57,
+    "e": 7,
+    "f": 4,
+    "left": 194871710,
+    "right": 194871657,
+    "difference": 53
+  },
+  "i119_bootstrap_lower_exclusive": 194871828,
+  "i119_bootstrap_upper_inclusive": "10^87",
+  "i119_log_margin_lower": "91271945650013212655983414375292232957182198448351947526347624619514000394593843381292196704136633/126023235119333694861306280664003574761559566819042513426875454861510963821057792451354763129257984",
+  "all_i119_solved": false
+}

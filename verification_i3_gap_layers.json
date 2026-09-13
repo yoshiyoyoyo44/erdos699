@@ -1,0 +1,64 @@
+{
+  "status": "verified",
+  "case_count": 265,
+  "layers": {
+    "4": {
+      "factor": 3,
+      "modular": 1
+    },
+    "5": {
+      "modular": 3,
+      "factor": 4
+    },
+    "6": {
+      "modular": 8,
+      "factor": 7
+    },
+    "7": {
+      "factor": 13,
+      "modular": 19
+    },
+    "8": {
+      "factor": 19,
+      "modular": 45
+    },
+    "9": {
+      "elliptic": 4,
+      "factor": 32,
+      "modular": 107
+    }
+  },
+  "modular_residue_exclusions": 21926,
+  "period": 360,
+  "curve_points_checked": 37,
+  "g9_curve_inverse_v": {
+    "7": [
+      0,
+      4
+    ],
+    "23": [
+      0,
+      1
+    ],
+    "31": [],
+    "47": []
+  },
+  "pell_conjecture_counterexamples": {
+    "A": {
+      "index": 681,
+      "actual_v2": 13,
+      "claimed_v2": 14,
+      "residue_mod_131072": 90112
+    },
+    "B": {
+      "index": 343,
+      "actual_v2": 16,
+      "claimed_v2": 13,
+      "residue_mod_131072": 65536
+    }
+  },
+  "even_j_necessary_bound": "u >= 4*v2(j)+10",
+  "g4_through_g8_magma_dependency": false,
+  "g9_magma_dependency": true,
+  "complete_i3_solution": false
+}

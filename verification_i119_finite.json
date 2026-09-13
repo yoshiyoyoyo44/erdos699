@@ -1,0 +1,10 @@
+{
+  "status": "verified",
+  "i": 119,
+  "lower_range_upper": 194871828,
+  "interval_leaves": 62,
+  "small_pairs": 41,
+  "combined_with_a100_near_collision_proof": "no counterexample for n <= 10^87",
+  "requires_replay": "replay_near_collisions_a100.py",
+  "all_i119_solved": false
+}

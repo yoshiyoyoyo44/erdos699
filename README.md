@@ -4,10 +4,21 @@ This is a partial mathematical result, not a solution of Erdős Problem 699.
 
 **成果の全体像と今後の方向：[これまでの成果と、次に進む五つの方向](STATUS_AND_DIRECTIONS.md)**
 
-最新の区間付値評価により、成立範囲を **全ての i≥121、および i=97,101** へ広げました。
-今回の86添字は n の上限なしの結果です。11,521区間と830組の残余ケースを、
-生成器とは異なる対数計算・篩・区間判定を使う標準 Python の検証器で確認しました。
-詳細は [区間付値による新しい証明](interval_valuation_continuation.md) を参照してください。
+さらに解決作業を進め、**i=119ではn≤10^87の全範囲を排除**しました。
+資料で探索段階だったA=100の近接計算を、213万組の厳密な不等式と全指数の還元で証明し、
+その下も62区間と41組のKummer条件で閉じています。
+[i=119の続編](i119_a100_continuation.md)。n>10^87は残っています。
+
+二つの新資料を統合・検証し、成立範囲を **全ての i≥120、および i=96,97,100,101** へ広げました。
+追加の96・100・120は、Matveevの定理による指数上限、74,976組の近似不等式、
+最後の432組の有限排除を、独立した整数・有理数の検証器で確認した結果です。
+詳細は [新資料の統合と臨界添字の証明](critical_indices_and_handoff_integration.md) を参照してください。
+
+i=3 では、正確な付値 v₂(w−c₀)=4v₂(j)+2 を証明し、
+資料で未完了だった g=9 の四曲線も排除しました。偶数 j の必要条件は
+**u≥4v₂(j)+10**。全265ケースを再検証しています。
+[差 g の新しい証明](i3_exact_gap_and_g9_continuation.md)に、
+資料の二つの Pell 付値予想への反例と、訂正した研究方針も記録しました。
 
 前回までに、二つの追加資料を統合し、中心側の w と添字側の λ それぞれについて、
 T や指数を分岐せずに一つの楕円曲線へ還元しました。
@@ -15,23 +26,49 @@ T や指数を分岐せずに一つの楕円曲線へ還元しました。
 さらに5曲線の整数点計算により、主要分岐の必要条件は
 c=n/2−j>125^(1/4)Q^(3/4)、j>2^(3/2)Q^(3/4) に強まりました。
 i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
-残る添字は **3≤i≤120、ただし97,101を除く**。i=3 の一般の非平方の枝も残っています。
+残る添字は **3≤i≤119、ただし96,97,100,101を除く**。i=3 の一般の非平方の枝も残っています。
+既知の S-part 定理と判別式から、i≥5 の反例候補全体が有限個であることも確認しました。
+その有限性は上限の具体値や、候補が0個という結論を与えません。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
-[latest interval proof](interval_valuation_continuation.md) ·
+[latest i=119 proof](i119_a100_continuation.md) ·
+[latest critical-index proof](critical_indices_and_handoff_integration.md) ·
+[latest i=3 gap proof](i3_exact_gap_and_g9_continuation.md) ·
+[interval proof](interval_valuation_continuation.md) ·
 [direct-curve proof](i3_direct_center_and_endpoint_curves.md) ·
 [digit integration](i3_integrated_digits_and_center.md) ·
 [fixed-block proof](i3_boundary_and_fixed_blocks.md) ·
 [integrated nonsquare proof](i3_nonsquare_merged_continuation.md) ·
 [complete artifact ZIP](erdos699_continuation_2026-09-12.zip).
 
-Read **`interval_valuation_continuation.md` for the latest Japanese continuation**.
+Read **`critical_indices_and_handoff_integration.md` and
+`i3_exact_gap_and_g9_continuation.md` for the latest Japanese continuations**.
+The first certifies i=96,100,120 through a cofactor bound and a complete
+bounded-coefficient close-power calculation. Its initial exponent bound uses
+Matveev's theorem; 435 prime pairs and 74,976 inhomogeneous cases are replayed with
+independent 320-bit rational logarithm intervals. All 432 remaining finite pairs
+are excluded by Kummer congruences.
+
+The second proves v2(w-c0)=4*v2(j)+2 and u>=4*v2(j)+10 for even j.
+Layers g=4..8 use elementary congruences and factorizations. Four complete Magma
+integral-point calculations close the remaining g=9 cases. The two proposed Pell
+valuation identities in the attachment fail at indices 681 and 343 and are not used.
+
+```text
+python replay_near_collisions.py
+python replay_critical_indices.py
+python replay_i3_gap_layers.py
+python replay_near_collisions_a100.py
+python replay_i119_finite.py
+```
+
+**`interval_valuation_continuation.md` is the preceding index continuation**.
 The exact formula v_p(binom(n,i)) = sum_e [n mod p^e < i mod p^e] gives
 uniform upper bounds on integer intervals. Combined with the discriminant lower
 bound and a proved infinite tail, it certifies i=97,101 and every i from 121 to 204.
-Together with the previous theorem, all i>=121 are now covered.
-The new 86 indices use no Magma or external prime estimates; the inherited
+Together with the earlier theorem, it covered all i>=121.
+Those 86 indices use no Magma or external prime estimates; the inherited
 i>=205 theorem retains its two published prime-estimate dependencies.
 
 ```text
@@ -39,7 +76,7 @@ python replay_interval_indices.py
 python replay_large_indices.py
 ```
 
-The new certificate contains 11,521 intervals and 830 small-range pairs.
+That certificate contains 11,521 intervals and 830 small-range pairs.
 Its replay uses independent 144-bit outward-rounded logarithms and a complete
 standard-library sieve. The infinite tails are proved analytically, not sampled.
 
@@ -147,8 +184,8 @@ discriminant formula, two stated published prime estimates, and finite certifica
 checked with rational intervals and deterministic integer arithmetic.
 The previous provisional i >= 304 computations are not used.
 
-After the new interval certificate, the remaining smaller indices are
-3 <= i <= 120, excluding 97 and 101; the problem is not solved.
+After the new critical-index certificate, the remaining smaller indices are
+3 <= i <= 119, excluding 96,97,100,101; the problem is not solved.
 Further Lean verification is deferred at the user's request.
 
 The preceding i=3 continuation is **`i3_all_square_branches.md`**.

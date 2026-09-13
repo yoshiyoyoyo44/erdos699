@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<calculator><headers><max_time>60</max_time><max_input>50000</max_input><seed>1638757084</seed><version>2.29-10</version><time>0.380</time><memory>85.16MB</memory></headers><results><line>GAP_CURVE 799</line><line>PROOF_FLAGS true true</line><line>RANK 1</line><line>FREE_BASIS [ (17 : 136 : 1) ]</line><line>POINT_COUNT 3</line><line>POINT 0 0</line><line>POINT 17 136</line><line>POINT 47 -376</line><line>GAP_CURVE_COMPLETE 799</line><line></line></results></calculator>

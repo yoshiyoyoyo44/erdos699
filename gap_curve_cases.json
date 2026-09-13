@@ -1,0 +1,27 @@
+[
+  {
+    "a4": 99,
+    "input": "i3_gap_curve_a99.magma",
+    "response": "magma_gap_curve_a99.xml"
+  },
+  {
+    "a4": 399,
+    "input": "i3_gap_curve_a399.magma",
+    "response": "magma_gap_curve_a399.xml"
+  },
+  {
+    "a4": 943,
+    "input": "i3_gap_curve_a943.magma",
+    "response": "magma_gap_curve_a943.xml"
+  },
+  {
+    "a4": 1023,
+    "input": "i3_gap_curve_a1023.magma",
+    "response": "magma_gap_curve_a1023.xml"
+  },
+  {
+    "a4": 799,
+    "input": "i3_gap_curve_a799.magma",
+    "response": "magma_gap_curve_a799.xml"
+  }
+]
