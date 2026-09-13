@@ -37,6 +37,9 @@ FILES = [
     'i3_direct_center_and_endpoint_curves.md', 'make_center_curve_magma.py',
     'audit_i3_center_curve.py', 'center_curve_cases.json',
     'endpoint_curve_cases.json', 'verification_i3_center_curve.json',
+    'interval_valuation_continuation.md', 'certify_interval_indices.py',
+    'replay_interval_indices.py', 'interval_index_certificate.json',
+    'verification_interval_indices.json', 'explore_interval_valuations.py',
 ]
 
 for case_file in ('center_curve_cases.json', 'endpoint_curve_cases.json'):

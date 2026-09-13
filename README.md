@@ -4,23 +4,46 @@ This is a partial mathematical result, not a solution of Erdős Problem 699.
 
 **成果の全体像と今後の方向：[これまでの成果と、次に進む五つの方向](STATUS_AND_DIRECTIONS.md)**
 
-二つの追加資料の統合後、中心側の w と添字側の λ それぞれについて、
+最新の区間付値評価により、成立範囲を **全ての i≥121、および i=97,101** へ広げました。
+今回の86添字は n の上限なしの結果です。11,521区間と830組の残余ケースを、
+生成器とは異なる対数計算・篩・区間判定を使う標準 Python の検証器で確認しました。
+詳細は [区間付値による新しい証明](interval_valuation_continuation.md) を参照してください。
+
+前回までに、二つの追加資料を統合し、中心側の w と添字側の λ それぞれについて、
 T や指数を分岐せずに一つの楕円曲線へ還元しました。
 これにより、任意の固定 K>0 に対し min{j,n/2−j}≤K n^(3/4) の候補は有限個と証明しています。
 さらに5曲線の整数点計算により、主要分岐の必要条件は
 c=n/2−j>125^(1/4)Q^(3/4)、j>2^(3/2)Q^(3/4) に強まりました。
-全ての i≥205、i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
-三因子・w・λ が増える一般の場合、および4≤i≤204は残ります。
+i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
+残る添字は **3≤i≤120、ただし97,101を除く**。i=3 の一般の非平方の枝も残っています。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
-[latest direct-curve proof](i3_direct_center_and_endpoint_curves.md) ·
+[latest interval proof](interval_valuation_continuation.md) ·
+[direct-curve proof](i3_direct_center_and_endpoint_curves.md) ·
 [digit integration](i3_integrated_digits_and_center.md) ·
 [fixed-block proof](i3_boundary_and_fixed_blocks.md) ·
 [integrated nonsquare proof](i3_nonsquare_merged_continuation.md) ·
 [complete artifact ZIP](erdos699_continuation_2026-09-12.zip).
 
-Read **`i3_direct_center_and_endpoint_curves.md` for the latest Japanese continuation**.
+Read **`interval_valuation_continuation.md` for the latest Japanese continuation**.
+The exact formula v_p(binom(n,i)) = sum_e [n mod p^e < i mod p^e] gives
+uniform upper bounds on integer intervals. Combined with the discriminant lower
+bound and a proved infinite tail, it certifies i=97,101 and every i from 121 to 204.
+Together with the previous theorem, all i>=121 are now covered.
+The new 86 indices use no Magma or external prime estimates; the inherited
+i>=205 theorem retains its two published prime-estimate dependencies.
+
+```text
+python replay_interval_indices.py
+python replay_large_indices.py
+```
+
+The new certificate contains 11,521 intervals and 830 small-range pairs.
+Its replay uses independent 144-bit outward-rounded logarithms and a complete
+standard-library sieve. The infinite tails are proved analytically, not sampled.
+
+**`i3_direct_center_and_endpoint_curves.md` is the preceding continuation**.
 Eliminating n gives one nonsingular elliptic curve for each fixed center cofactor w,
 and one for each fixed endpoint cofactor lambda=rho*(rho-delta1)/Q. This proves
 finiteness in each bounded-cofactor range without splitting T or the exponent.
@@ -124,7 +147,8 @@ discriminant formula, two stated published prime estimates, and finite certifica
 checked with rational intervals and deterministic integer arithmetic.
 The previous provisional i >= 304 computations are not used.
 
-The remaining smaller indices are 3 <= i <= 204; the problem is not solved.
+After the new interval certificate, the remaining smaller indices are
+3 <= i <= 120, excluding 97 and 101; the problem is not solved.
 Further Lean verification is deferred at the user's request.
 
 The preceding i=3 continuation is **`i3_all_square_branches.md`**.
