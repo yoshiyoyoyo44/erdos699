@@ -2,6 +2,9 @@
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
+**2026-09-15 追加：** [新しい2つの添付ZIP](incoming_2026-09-15/README.md)を原本のまま公開しました。
+ユーザーの依頼により今回は検算していません。以下の証明済み結果とは区別しています。
+
 **成果の全体像と今後の方向：[これまでの成果と、次に進む五つの方向](STATUS_AND_DIRECTIONS.md)**
 
 **2026-09-14：追加の3種類の資料を検証・統合し、その先の一般的な制約を証明しました。**
