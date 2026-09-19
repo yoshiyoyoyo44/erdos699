@@ -1,6 +1,34 @@
-# Erdős 699 — 2026-09-12–14 continuation
+# Erdős 699 — 2026-09-12–19 continuation
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
+
+**2026-09-19 続編：全六ブロックを合わせた桁和の下界を証明しました。**
+4∣j のとき、j 側と n−j 側で桁和2を取る加数はそれぞれ高々一つです。
+これにより、T=1 を含めて総桁和≥8ω(T)+7ω(Q₁)+6ω(Q₂)−4 が必要になります。
+桁和を別の素数での繰り上がりに移す補題も証明し、6〜256の各偶数桁和について
+素数 p の一部の合同類を排除する8,127個の分割証明書を追加しました。
+γ=3、3∤j では、奇数 j の桁和6も排除し、偶数 j の一部では下界を16以上に強めました。
+[証明と残る障害](i3_global_digit_constraints_2026-09-19.md)・
+[検算器](audit_i3_global_digit_constraints.py)・
+[全証明書](verification_i3_global_digit_constraints.json)。完全解決には至っていません。
+
+```text
+python -X utf8 audit_i3_global_digit_constraints.py
+```
+
+**2026-09-19：桁和6の排除と、条件付きの桁和12の下界を証明しました。**
+v₂(j)≥3 なら T のどの素因数でも対応する商の桁和6は不可能です。
+さらに γ=3、3∤j なら、5以外の各素因数で桁和≥12、5では桁和≥8となります。
+桁和8の中心への整除性には添付メモで抜けていた p=5,γ=3 の例外を明記し、
+通常の整除性を p≡3 (mod 8) にも拡張しました。
+素数冪 T=5^e の偶数 j・桁和4では、u の奇数部分が7以下の場合を全て排除しています。
+[新しい証明と修正](i3_low_digit_continuation_2026-09-19.md)と
+[再現用検算](audit_i3_low_digit_continuation.py)を追加しました。
+i=3 全体、T=1、一般の非平方の分岐は未解決です。
+
+```text
+python -X utf8 audit_i3_low_digit_continuation.py
+```
 
 **2026-09-15 追加：** [新しい2つの添付ZIP](incoming_2026-09-15/README.md)を原本のまま公開しました。
 ユーザーの依頼により今回は検算していません。以下の証明済み結果とは区別しています。
@@ -49,7 +77,9 @@ i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
-[new digit/reciprocity proof](i3_digit_reciprocity_and_W_continuation.md) ·
+[global digit bounds and transfer certificates](i3_global_digit_constraints_2026-09-19.md) ·
+[latest low-digit proofs and correction](i3_low_digit_continuation_2026-09-19.md) ·
+[preceding digit/reciprocity proof](i3_digit_reciprocity_and_W_continuation.md) ·
 [new Hankel/content proof](i119_hankel_content_continuation.md) ·
 [latest i=119 proof](i119_a100_continuation.md) ·
 [latest critical-index proof](critical_indices_and_handoff_integration.md) ·

@@ -1,0 +1,125 @@
+{
+  "scope": "Finite audits supporting the unbounded proofs in the note; no global finite exclusion or full solution is asserted.",
+  "single_numbers": {
+    "numbers": 800000,
+    "two_adic_bound": 800000,
+    "alternating_bound": 800000,
+    "weight_two": 19,
+    "weight_four": 311
+  },
+  "reciprocity": {
+    "prime_pairs": 3984,
+    "odd_negative_power_pairs": 1335,
+    "delta_residues": 47
+  },
+  "stronger_order_obstruction": {
+    "cases": 192,
+    "p5_odd_part_7": {
+      "prime": 71,
+      "odd_order": 5,
+      "base": 640
+    }
+  },
+  "carry_free_splits": {
+    "counts": {
+      "totals": 108808,
+      "low_weight_totals": 2497,
+      "partitions": 206001,
+      "equal_valuations": 48110,
+      "normalized_splits": 1927,
+      "balanced_eight": 131,
+      "center_congruences": 94,
+      "center_exceptions": 37,
+      "gamma3_coprime3": 436,
+      "nontrivial_U": 978
+    },
+    "exceptional_local_examples": [
+      {
+        "p": 5,
+        "gamma": 3,
+        "U": 1,
+        "u": 4,
+        "v": 3,
+        "X": 8,
+        "Y": 40
+      },
+      {
+        "p": 5,
+        "gamma": 3,
+        "U": 1,
+        "u": 5,
+        "v": 3,
+        "X": 40,
+        "Y": 56
+      },
+      {
+        "p": 5,
+        "gamma": 3,
+        "U": 1,
+        "u": 5,
+        "v": 4,
+        "X": 16,
+        "Y": 80
+      },
+      {
+        "p": 5,
+        "gamma": 3,
+        "U": 1,
+        "u": 6,
+        "v": 3,
+        "X": 40,
+        "Y": 152
+      },
+      {
+        "p": 5,
+        "gamma": 3,
+        "U": 1,
+        "u": 6,
+        "v": 3,
+        "X": 56,
+        "Y": 136
+      },
+      {
+        "p": 5,
+        "gamma": 3,
+        "U": 1,
+        "u": 6,
+        "v": 4,
+        "X": 16,
+        "Y": 176
+      },
+      {
+        "p": 5,
+        "gamma": 3,
+        "U": 1,
+        "u": 6,
+        "v": 5,
+        "X": 32,
+        "Y": 160
+      },
+      {
+        "p": 5,
+        "gamma": 3,
+        "U": 1,
+        "u": 7,
+        "v": 3,
+        "X": 8,
+        "Y": 376
+      }
+    ],
+    "normalized_record_sha256": "73852d5dd2d8c3146dcae6240af5b09f60c4f1a2ae7ac3cd9076f47bb6675d01"
+  },
+  "handoff_inference_gap": {
+    "p": 5,
+    "gamma": 3,
+    "U": 1,
+    "u": 9,
+    "X": 760,
+    "Y": 776,
+    "n": 7680,
+    "j": 3800,
+    "c": 40,
+    "c_over_p": 8,
+    "scope": "Local inference only; not an Erdos 699 counterexample"
+  }
+}
