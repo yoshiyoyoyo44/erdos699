@@ -1,0 +1,74 @@
+{
+  "scope": "Local finite audits; no complete counterexample search.",
+  "complement_congruence": {
+    "counts": {
+      "numbers": 6144,
+      "low_digit_cases": 493
+    },
+    "record_sha256": "cd6c0a456dcd6b1f3caac0e524593af3e1a9752cacbf4eab3ab8bb8d4c171453"
+  },
+  "low_digit_additions": {
+    "counts": {
+      "Q1_weight_five_additions": 12096,
+      "Q2_weight_four_additions": 2592,
+      "Q1_equal_valuation_boundary": 3888,
+      "Q2_equal_valuation_boundary": 1296
+    },
+    "local_boundary_examples": {
+      "Q1": {
+        "p": 7,
+        "e": 1,
+        "X": 8,
+        "Y": 9,
+        "n": 120,
+        "u": 3,
+        "v": 3
+      },
+      "Q2": {
+        "p": 7,
+        "e": 1,
+        "X": 8,
+        "Y": 2,
+        "n": 72,
+        "u": 3,
+        "v": 3
+      }
+    }
+  },
+  "necessary_hypotheses": {
+    "valuation_two_local_models": {
+      "Q1": {
+        "p": 11,
+        "e": 1,
+        "X": 12,
+        "Y": 33,
+        "n": 496,
+        "u": 4,
+        "v": 2
+      },
+      "Q2": {
+        "p": 11,
+        "e": 1,
+        "X": 12,
+        "Y": 22,
+        "n": 376,
+        "u": 3,
+        "v": 2
+      }
+    },
+    "beyond_digit_threshold_examples": [
+      {
+        "p": 7,
+        "n": 112,
+        "c": 1,
+        "D": 9
+      },
+      {
+        "p": 7,
+        "n": 64,
+        "c": 2,
+        "D": 8
+      }
+    ]
+  }
+}

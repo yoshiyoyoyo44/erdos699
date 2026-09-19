@@ -1,6 +1,17 @@
-# Erdős 699 — 2026-09-12–19 continuation
+# Erdős 699 — 2026-09-12–20 continuation
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
+
+**2026-09-20：8∣j で、Q₁ 側の桁和5と Q₂ 側の桁和4を排除しました。**
+各完全素数冪に対応する商の桁和は、それぞれ7以上、6以上です。
+T=1 または δ₁=1 では、下記の全ブロックの下界から「−4」を取り除けます。
+[補数の桁和による証明](i3_complement_digit_bounds_2026-09-20.md)と
+[検算器](audit_i3_complement_digit_bounds.py)を追加しました。
+一般の大きい桁和を排除する議論は残っており、i=3 全体は未解決です。
+
+```text
+python -X utf8 audit_i3_complement_digit_bounds.py
+```
 
 **2026-09-19 続編：全六ブロックを合わせた桁和の下界を証明しました。**
 4∣j のとき、j 側と n−j 側で桁和2を取る加数はそれぞれ高々一つです。
@@ -77,6 +88,7 @@ i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
+[Q1/Q2 digit bounds for multiples of eight](i3_complement_digit_bounds_2026-09-20.md) ·
 [global digit bounds and transfer certificates](i3_global_digit_constraints_2026-09-19.md) ·
 [latest low-digit proofs and correction](i3_low_digit_continuation_2026-09-19.md) ·
 [preceding digit/reciprocity proof](i3_digit_reciprocity_and_W_continuation.md) ·
