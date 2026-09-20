@@ -25,6 +25,7 @@
 | 方向 | 中心となるノート | 続き・関連 |
 |---|---|---|
 | 混合した差 $D$ | [明示的な上限と固定 $D$ の有限化](../research/i3/i3_mixed_parameter_bound_2026-09-20.md) | [回答の統合と因子構造](../research/i3/i3_chatgpt_uniform_integration_2026-09-20.md) |
+| 三次整環と末尾 | [判別式と連分数末尾の統合](../research/i3/i3_cubic_discriminant_and_cf_tail_2026-09-21.md) | 最新の追加資料。判別式49、分母条件のない下界、最大公約数の訂正 |
 | 三次式と近似 | [既約性と有理近似](../research/i3/i3_irreducible_cubic_and_rational_gaps_2026-09-20.md) | [分母の2進付値と連分数](../research/i3/i3_dyadic_denominators_and_continued_fractions_2026-09-21.md) |
 | 全桁Kummer条件 | [六ブロックの桁和](../research/i3/i3_global_digit_constraints_2026-09-19.md) | [補数側の桁和の改善](../research/i3/i3_complement_digit_bounds_2026-09-20.md) |
 | 桁多項式 | [二つの法と桁の高さ](../research/i3/i3_cross_modulus_and_digit_height_2026-09-20.md) | [三次までの分類](../research/i3/i3_cubic_digit_classification_2026-09-20.md) |

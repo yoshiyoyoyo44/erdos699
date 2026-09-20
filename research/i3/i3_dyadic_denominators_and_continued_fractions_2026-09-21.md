@@ -3,6 +3,7 @@
 [入口](../../README.md) · [現在地](../../docs/STATUS.md) · [読む順序](../../docs/READING_GUIDE.md) · [検算](../../docs/VERIFICATION.md)
 
 2026-09-21。[既約三次式の稿](i3_irreducible_cubic_and_rational_gaps_2026-09-20.md)の続き。
+続報：[三次整環の判別式と連分数末尾](i3_cubic_discriminant_and_cf_tail_2026-09-21.md)。分母条件のない下界と末尾の制約を追加。
 **i=3全体も問題699全体も未解決。** 本稿では同稿の全反例に適用できる下界を強める。
 完全解決や文献上の新規性は主張しない。
 

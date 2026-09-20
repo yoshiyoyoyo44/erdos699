@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "symbolic_discriminant_identity": true,
+  "order_multiplication_identities": 3,
+  "exact_constant_checks": true,
+  "rational_cf_tails": 15625,
+  "noncoprime_tails": 6199,
+  "even_final_denominators_with_odd_predecessor": 5271,
+  "normalized_coefficient_parity_cases": 775,
+  "source_sha256": "54c1990e1f0a13c8d54fcb7920c19b8f9e1cb2b8ae05418daee564d006cd9cbe",
+  "external_input": {
+    "minimal_totally_real_cubic_field_discriminant": 49,
+    "reference": "https://www.lmfdb.org/NumberField/3.3.49.1",
+    "independently_reproved_here": false
+  },
+  "unadopted_classification_constants": [
+    37,
+    71,
+    229
+  ],
+  "scope": "Symbolic identities and diagnostic checks, not a solution of problem 699."
+}

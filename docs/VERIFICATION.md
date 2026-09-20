@@ -17,6 +17,7 @@
 ## 最新の結果を短く検算する
 
 ```text
+python -X utf8 scripts/audit_i3_cubic_discriminant_and_cf_tail.py
 python -X utf8 scripts/audit_i3_irreducible_cubic_and_rational_gaps.py
 python -X utf8 scripts/audit_i3_dyadic_denominators_and_continued_fractions.py
 python -X utf8 scripts/audit_i3_mixed_parameter_bound.py
