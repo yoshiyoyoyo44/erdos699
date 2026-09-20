@@ -1,0 +1,39 @@
+{
+  "scope": "Finite audits of universal paper proofs. Not a complete exclusion of i=3.",
+  "dependency": "Only elementary Kummer/divisibility lemmas; no u>=49 or Magma dependency.",
+  "transfer_identities": {
+    "Q1_parameter_cases": 67200,
+    "Q2_parameter_cases": 99180
+  },
+  "polynomial_rigidity": {
+    "polynomial_pairs": 4020,
+    "zero_remainders": 528,
+    "nonmonic_pairs": 2412,
+    "mixed_support_counterexample_checked": true
+  },
+  "quadratic_classification": {
+    "polynomial_pairs": 148200,
+    "simultaneous_zero_remainders": 1602,
+    "nontrivial_exceptions": 2,
+    "exception_family_identity_audits": 200
+  },
+  "cubic_obstruction": {
+    "polynomial_identities": 2,
+    "integer_specializations": 200,
+    "common_prime": 3,
+    "is_counterexample": false
+  },
+  "relaxed_candidates": {
+    "n_values": 1250,
+    "CRT_candidates": 1914,
+    "relaxed_pairs": 1,
+    "block_checks": 5,
+    "prime_power_checks": 7,
+    "examples": [
+      {
+        "n": 76672,
+        "j": 26775
+      }
+    ]
+  }
+}

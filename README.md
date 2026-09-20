@@ -2,6 +2,20 @@
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
+**2026-09-20 再続編：一般のnで使える因子の上限と、二次の桁多項式の分類を証明しました。**
+i=3の反例では、Q₂の全ての完全素数冪qにq<√(6n)、Q₁側にはO(n^(2/3))の明示的上限が必要です。
+n=3·2^uでは前者がq<√(2n)となり、前回のMersenne素数の仮定を使わずに適用できます。
+全桁条件の多項式への変換も一般化し、次数2以下では末尾0・1・2を全て扱う桁和の必要条件を得ました。
+二次の非自明な例外は全てn≡2 (mod 4)となり排除されます。
+三次の非自明な族には、多項式の商の分母27を追跡して共通素数3を示しました。
+[証明・例外・残る障害](i3_cross_modulus_and_digit_height_2026-09-20.md)・
+[検証結果](verification_i3_cross_modulus_and_digit_height.json)。
+これらは全指数の必要条件であり、一般の反例候補の有限化や問題全体の解決にはまだ至っていません。
+
+```text
+python -X utf8 audit_i3_cross_modulus_and_digit_height.py
+```
+
 **2026-09-20 続編：全桁条件から素数の上限を証明し、三つの族を最後まで排除しました。**
 i=3 では全ての素数 p に対して n=(p+1)^m、1≤m≤4 を処理しました。
 また、2^k−1 が素数、1≤m≤8 なら n=2^(mk) を、k の上限を仮定せずに処理しました。
@@ -103,6 +117,7 @@ i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
+[universal factor bounds and digit-polynomial classification](i3_cross_modulus_and_digit_height_2026-09-20.md) ·
 [effective power bounds and closed i=3 families](i3_prime_neighbor_powers_2026-09-20.md) ·
 [closed i=4 prime-neighbor squares](i4_prime_neighbor_squares_2026-09-20.md) ·
 [Q1/Q2 digit bounds for multiples of eight](i3_complement_digit_bounds_2026-09-20.md) ·
