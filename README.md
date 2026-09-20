@@ -2,6 +2,21 @@
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
+**2026-09-20 続編：全桁条件から素数の上限を証明し、三つの族を最後まで排除しました。**
+i=3 では全ての素数 p に対して n=(p+1)^m、1≤m≤4 を処理しました。
+また、2^k−1 が素数、1≤m≤8 なら n=2^(mk) を、k の上限を仮定せずに処理しました。
+一般の固定した a,m に対しても、n=(ap+1)^m の反例に現れる p に明示的な上限を与えます。
+i=4 では n=(p+1)² の全ての素数 p を処理しました。
+[i=3 の証明と有限還元](i3_prime_neighbor_powers_2026-09-20.md)・
+[i=4 の証明](i4_prime_neighbor_squares_2026-09-20.md)。
+今回の有限排除は既存の u≥49 や Magma の計算に依存せず、標準 Python で再生できます。
+任意の 2^u、3·2^u、および問題699全体の排除は残っています。
+
+```text
+python -X utf8 replay_i3_prime_neighbor_powers.py
+python -X utf8 audit_i4_prime_neighbor_squares.py
+```
+
 **2026-09-20：8∣j で、Q₁ 側の桁和5と Q₂ 側の桁和4を排除しました。**
 各完全素数冪に対応する商の桁和は、それぞれ7以上、6以上です。
 T=1 または δ₁=1 では、下記の全ブロックの下界から「−4」を取り除けます。
@@ -88,6 +103,8 @@ i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
+[effective power bounds and closed i=3 families](i3_prime_neighbor_powers_2026-09-20.md) ·
+[closed i=4 prime-neighbor squares](i4_prime_neighbor_squares_2026-09-20.md) ·
 [Q1/Q2 digit bounds for multiples of eight](i3_complement_digit_bounds_2026-09-20.md) ·
 [global digit bounds and transfer certificates](i3_global_digit_constraints_2026-09-19.md) ·
 [latest low-digit proofs and correction](i3_low_digit_continuation_2026-09-19.md) ·

@@ -1,0 +1,215 @@
+{
+  "scope": "Unbounded families use the paper proof plus this finite remainder. This is not a complete solution of i=3.",
+  "dependency": "Only the elementary Kummer and divisibility lemmas in the note.",
+  "bounded_cases": 40,
+  "remainder_rows": 33,
+  "CRT_candidates": 4430,
+  "primes_recursively_verified": 125,
+  "CRT_record_sha256": "f814d19838404cc277106cc5fd874d1232778f45adc60ecfae9b1d1854e96fea",
+  "general_four_power_remainder": {
+    "small_prime_direct_pairs": 207,
+    "total_digit_candidates": 537818,
+    "per_m": [
+      {
+        "m": 1,
+        "primes": 1,
+        "digit_candidates": 0,
+        "survivors": 0
+      },
+      {
+        "m": 2,
+        "primes": 22,
+        "digit_candidates": 88,
+        "survivors": 0
+      },
+      {
+        "m": 3,
+        "primes": 187,
+        "digit_candidates": 5610,
+        "survivors": 0
+      },
+      {
+        "m": 4,
+        "primes": 1530,
+        "digit_candidates": 532120,
+        "survivors": 0
+      }
+    ]
+  },
+  "polynomial_audits": {
+    "digit_polynomials": 9102,
+    "zero_remainders": 10,
+    "signed_coefficient_polynomials": 19530
+  },
+  "fixed_cofactor_polynomial_audits": {
+    "polynomials": 17602,
+    "simultaneous_zero_remainders": 36
+  },
+  "per_u": [
+    {
+      "u": 4,
+      "CRT_candidates": 2,
+      "survivors": 0
+    },
+    {
+      "u": 6,
+      "CRT_candidates": 1,
+      "survivors": 0
+    },
+    {
+      "u": 8,
+      "CRT_candidates": 5,
+      "survivors": 0
+    },
+    {
+      "u": 9,
+      "CRT_candidates": 1,
+      "survivors": 0
+    },
+    {
+      "u": 10,
+      "CRT_candidates": 5,
+      "survivors": 0
+    },
+    {
+      "u": 12,
+      "CRT_candidates": 7,
+      "survivors": 0
+    },
+    {
+      "u": 14,
+      "CRT_candidates": 5,
+      "survivors": 0
+    },
+    {
+      "u": 15,
+      "CRT_candidates": 3,
+      "survivors": 0
+    },
+    {
+      "u": 16,
+      "CRT_candidates": 11,
+      "survivors": 0
+    },
+    {
+      "u": 18,
+      "CRT_candidates": 7,
+      "survivors": 0
+    },
+    {
+      "u": 20,
+      "CRT_candidates": 23,
+      "survivors": 0
+    },
+    {
+      "u": 21,
+      "CRT_candidates": 3,
+      "survivors": 0
+    },
+    {
+      "u": 24,
+      "CRT_candidates": 31,
+      "survivors": 0
+    },
+    {
+      "u": 25,
+      "CRT_candidates": 3,
+      "survivors": 0
+    },
+    {
+      "u": 28,
+      "CRT_candidates": 47,
+      "survivors": 0
+    },
+    {
+      "u": 30,
+      "CRT_candidates": 31,
+      "survivors": 0
+    },
+    {
+      "u": 35,
+      "CRT_candidates": 7,
+      "survivors": 0
+    },
+    {
+      "u": 40,
+      "CRT_candidates": 95,
+      "survivors": 0
+    },
+    {
+      "u": 42,
+      "CRT_candidates": 31,
+      "survivors": 0
+    },
+    {
+      "u": 49,
+      "CRT_candidates": 1,
+      "survivors": 0
+    },
+    {
+      "u": 52,
+      "CRT_candidates": 95,
+      "survivors": 0
+    },
+    {
+      "u": 56,
+      "CRT_candidates": 191,
+      "survivors": 0
+    },
+    {
+      "u": 65,
+      "CRT_candidates": 3,
+      "survivors": 0
+    },
+    {
+      "u": 78,
+      "CRT_candidates": 63,
+      "survivors": 0
+    },
+    {
+      "u": 85,
+      "CRT_candidates": 3,
+      "survivors": 0
+    },
+    {
+      "u": 91,
+      "CRT_candidates": 15,
+      "survivors": 0
+    },
+    {
+      "u": 102,
+      "CRT_candidates": 511,
+      "survivors": 0
+    },
+    {
+      "u": 104,
+      "CRT_candidates": 767,
+      "survivors": 0
+    },
+    {
+      "u": 114,
+      "CRT_candidates": 127,
+      "survivors": 0
+    },
+    {
+      "u": 119,
+      "CRT_candidates": 31,
+      "survivors": 0
+    },
+    {
+      "u": 133,
+      "CRT_candidates": 3,
+      "survivors": 0
+    },
+    {
+      "u": 136,
+      "CRT_candidates": 767,
+      "survivors": 0
+    },
+    {
+      "u": 152,
+      "CRT_candidates": 1535,
+      "survivors": 0
+    }
+  ]
+}

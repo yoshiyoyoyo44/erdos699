@@ -1,0 +1,699 @@
+{
+  "scope": "Finite remainder for the unrestricted prime-neighbor square theorem at i=4; not a solution of general i=4.",
+  "independent_of_i3": true,
+  "analytic_tail": "All primes p>=134 are excluded in the note.",
+  "finite_primes": 32,
+  "max_n": 17424,
+  "covered_pairs": 79736,
+  "explicit_witnesses": 124,
+  "remainder_identity_audits": 1992,
+  "records": [
+    {
+      "p": 2,
+      "n": 9,
+      "witnesses": []
+    },
+    {
+      "p": 3,
+      "n": 16,
+      "witnesses": [
+        {
+          "j": 5,
+          "common_prime": 7
+        },
+        {
+          "j": 6,
+          "common_prime": 7
+        },
+        {
+          "j": 7,
+          "common_prime": 5
+        },
+        {
+          "j": 8,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 5,
+      "n": 36,
+      "witnesses": [
+        {
+          "j": 5,
+          "common_prime": 7
+        },
+        {
+          "j": 6,
+          "common_prime": 7
+        },
+        {
+          "j": 10,
+          "common_prime": 7
+        },
+        {
+          "j": 11,
+          "common_prime": 7
+        }
+      ]
+    },
+    {
+      "p": 7,
+      "n": 64,
+      "witnesses": [
+        {
+          "j": 7,
+          "common_prime": 31
+        },
+        {
+          "j": 8,
+          "common_prime": 31
+        },
+        {
+          "j": 14,
+          "common_prime": 31
+        },
+        {
+          "j": 15,
+          "common_prime": 31
+        }
+      ]
+    },
+    {
+      "p": 11,
+      "n": 144,
+      "witnesses": [
+        {
+          "j": 11,
+          "common_prime": 13
+        },
+        {
+          "j": 12,
+          "common_prime": 13
+        },
+        {
+          "j": 22,
+          "common_prime": 13
+        },
+        {
+          "j": 23,
+          "common_prime": 13
+        }
+      ]
+    },
+    {
+      "p": 13,
+      "n": 196,
+      "witnesses": [
+        {
+          "j": 13,
+          "common_prime": 5
+        },
+        {
+          "j": 14,
+          "common_prime": 5
+        },
+        {
+          "j": 26,
+          "common_prime": 7
+        },
+        {
+          "j": 27,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 17,
+      "n": 324,
+      "witnesses": [
+        {
+          "j": 17,
+          "common_prime": 7
+        },
+        {
+          "j": 18,
+          "common_prime": 7
+        },
+        {
+          "j": 34,
+          "common_prime": 7
+        },
+        {
+          "j": 35,
+          "common_prime": 7
+        }
+      ]
+    },
+    {
+      "p": 19,
+      "n": 400,
+      "witnesses": [
+        {
+          "j": 19,
+          "common_prime": 5
+        },
+        {
+          "j": 20,
+          "common_prime": 5
+        },
+        {
+          "j": 38,
+          "common_prime": 5
+        },
+        {
+          "j": 39,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 23,
+      "n": 576,
+      "witnesses": [
+        {
+          "j": 23,
+          "common_prime": 5
+        },
+        {
+          "j": 24,
+          "common_prime": 5
+        },
+        {
+          "j": 46,
+          "common_prime": 5
+        },
+        {
+          "j": 47,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 29,
+      "n": 900,
+      "witnesses": [
+        {
+          "j": 29,
+          "common_prime": 5
+        },
+        {
+          "j": 30,
+          "common_prime": 5
+        },
+        {
+          "j": 58,
+          "common_prime": 5
+        },
+        {
+          "j": 59,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 31,
+      "n": 1024,
+      "witnesses": [
+        {
+          "j": 31,
+          "common_prime": 7
+        },
+        {
+          "j": 32,
+          "common_prime": 7
+        },
+        {
+          "j": 62,
+          "common_prime": 7
+        },
+        {
+          "j": 63,
+          "common_prime": 11
+        }
+      ]
+    },
+    {
+      "p": 37,
+      "n": 1444,
+      "witnesses": [
+        {
+          "j": 37,
+          "common_prime": 7
+        },
+        {
+          "j": 38,
+          "common_prime": 7
+        },
+        {
+          "j": 74,
+          "common_prime": 7
+        },
+        {
+          "j": 75,
+          "common_prime": 7
+        }
+      ]
+    },
+    {
+      "p": 41,
+      "n": 1764,
+      "witnesses": [
+        {
+          "j": 41,
+          "common_prime": 7
+        },
+        {
+          "j": 42,
+          "common_prime": 7
+        },
+        {
+          "j": 82,
+          "common_prime": 7
+        },
+        {
+          "j": 83,
+          "common_prime": 7
+        }
+      ]
+    },
+    {
+      "p": 43,
+      "n": 1936,
+      "witnesses": [
+        {
+          "j": 43,
+          "common_prime": 5
+        },
+        {
+          "j": 44,
+          "common_prime": 5
+        },
+        {
+          "j": 86,
+          "common_prime": 5
+        },
+        {
+          "j": 87,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 47,
+      "n": 2304,
+      "witnesses": [
+        {
+          "j": 47,
+          "common_prime": 7
+        },
+        {
+          "j": 48,
+          "common_prime": 7
+        },
+        {
+          "j": 94,
+          "common_prime": 7
+        },
+        {
+          "j": 95,
+          "common_prime": 7
+        }
+      ]
+    },
+    {
+      "p": 53,
+      "n": 2916,
+      "witnesses": [
+        {
+          "j": 53,
+          "common_prime": 5
+        },
+        {
+          "j": 54,
+          "common_prime": 5
+        },
+        {
+          "j": 106,
+          "common_prime": 5
+        },
+        {
+          "j": 107,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 59,
+      "n": 3600,
+      "witnesses": [
+        {
+          "j": 59,
+          "common_prime": 5
+        },
+        {
+          "j": 60,
+          "common_prime": 5
+        },
+        {
+          "j": 118,
+          "common_prime": 5
+        },
+        {
+          "j": 119,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 61,
+      "n": 3844,
+      "witnesses": [
+        {
+          "j": 61,
+          "common_prime": 7
+        },
+        {
+          "j": 62,
+          "common_prime": 7
+        },
+        {
+          "j": 122,
+          "common_prime": 7
+        },
+        {
+          "j": 123,
+          "common_prime": 7
+        }
+      ]
+    },
+    {
+      "p": 67,
+      "n": 4624,
+      "witnesses": [
+        {
+          "j": 67,
+          "common_prime": 17
+        },
+        {
+          "j": 68,
+          "common_prime": 17
+        },
+        {
+          "j": 134,
+          "common_prime": 17
+        },
+        {
+          "j": 135,
+          "common_prime": 17
+        }
+      ]
+    },
+    {
+      "p": 71,
+      "n": 5184,
+      "witnesses": [
+        {
+          "j": 71,
+          "common_prime": 11
+        },
+        {
+          "j": 72,
+          "common_prime": 11
+        },
+        {
+          "j": 142,
+          "common_prime": 11
+        },
+        {
+          "j": 143,
+          "common_prime": 73
+        }
+      ]
+    },
+    {
+      "p": 73,
+      "n": 5476,
+      "witnesses": [
+        {
+          "j": 73,
+          "common_prime": 5
+        },
+        {
+          "j": 74,
+          "common_prime": 5
+        },
+        {
+          "j": 146,
+          "common_prime": 5
+        },
+        {
+          "j": 147,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 79,
+      "n": 6400,
+      "witnesses": [
+        {
+          "j": 79,
+          "common_prime": 5
+        },
+        {
+          "j": 80,
+          "common_prime": 5
+        },
+        {
+          "j": 158,
+          "common_prime": 5
+        },
+        {
+          "j": 159,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 83,
+      "n": 7056,
+      "witnesses": [
+        {
+          "j": 83,
+          "common_prime": 5
+        },
+        {
+          "j": 84,
+          "common_prime": 5
+        },
+        {
+          "j": 166,
+          "common_prime": 5
+        },
+        {
+          "j": 167,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 89,
+      "n": 8100,
+      "witnesses": [
+        {
+          "j": 89,
+          "common_prime": 5
+        },
+        {
+          "j": 90,
+          "common_prime": 5
+        },
+        {
+          "j": 178,
+          "common_prime": 5
+        },
+        {
+          "j": 179,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 97,
+      "n": 9604,
+      "witnesses": [
+        {
+          "j": 97,
+          "common_prime": 7
+        },
+        {
+          "j": 98,
+          "common_prime": 7
+        },
+        {
+          "j": 194,
+          "common_prime": 7
+        },
+        {
+          "j": 195,
+          "common_prime": 7
+        }
+      ]
+    },
+    {
+      "p": 101,
+      "n": 10404,
+      "witnesses": [
+        {
+          "j": 101,
+          "common_prime": 7
+        },
+        {
+          "j": 102,
+          "common_prime": 7
+        },
+        {
+          "j": 202,
+          "common_prime": 7
+        },
+        {
+          "j": 203,
+          "common_prime": 7
+        }
+      ]
+    },
+    {
+      "p": 103,
+      "n": 10816,
+      "witnesses": [
+        {
+          "j": 103,
+          "common_prime": 5
+        },
+        {
+          "j": 104,
+          "common_prime": 5
+        },
+        {
+          "j": 206,
+          "common_prime": 5
+        },
+        {
+          "j": 207,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 107,
+      "n": 11664,
+      "witnesses": [
+        {
+          "j": 107,
+          "common_prime": 7
+        },
+        {
+          "j": 108,
+          "common_prime": 7
+        },
+        {
+          "j": 214,
+          "common_prime": 7
+        },
+        {
+          "j": 215,
+          "common_prime": 7
+        }
+      ]
+    },
+    {
+      "p": 109,
+      "n": 12100,
+      "witnesses": [
+        {
+          "j": 109,
+          "common_prime": 5
+        },
+        {
+          "j": 110,
+          "common_prime": 5
+        },
+        {
+          "j": 218,
+          "common_prime": 5
+        },
+        {
+          "j": 219,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 113,
+      "n": 12996,
+      "witnesses": [
+        {
+          "j": 113,
+          "common_prime": 5
+        },
+        {
+          "j": 114,
+          "common_prime": 5
+        },
+        {
+          "j": 226,
+          "common_prime": 19
+        },
+        {
+          "j": 227,
+          "common_prime": 5
+        }
+      ]
+    },
+    {
+      "p": 127,
+      "n": 16384,
+      "witnesses": [
+        {
+          "j": 127,
+          "common_prime": 43
+        },
+        {
+          "j": 128,
+          "common_prime": 43
+        },
+        {
+          "j": 254,
+          "common_prime": 43
+        },
+        {
+          "j": 255,
+          "common_prime": 43
+        }
+      ]
+    },
+    {
+      "p": 131,
+      "n": 17424,
+      "witnesses": [
+        {
+          "j": 131,
+          "common_prime": 7
+        },
+        {
+          "j": 132,
+          "common_prime": 7
+        },
+        {
+          "j": 262,
+          "common_prime": 7
+        },
+        {
+          "j": 263,
+          "common_prime": 7
+        }
+      ]
+    }
+  ]
+}
