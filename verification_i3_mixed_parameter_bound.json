@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "symbolic_identities": 9,
+  "valuation_checks": {
+    "numerators_checked": 552,
+    "branches": [
+      "odd",
+      "v=1",
+      "v>=2"
+    ]
+  },
+  "relaxed_models_checked": 13,
+  "diagnostic_models": [
+    {
+      "n": 76672,
+      "j": 26775,
+      "D": -1963,
+      "d": -5863,
+      "v": 0,
+      "L_B": 5
+    },
+    {
+      "n": 175492,
+      "j": 60606,
+      "D": -4189,
+      "d": -12535,
+      "v": 1,
+      "L_B": 1664
+    }
+  ],
+  "fixed_parameter_fibers": [
+    {
+      "D": -1963,
+      "quadratics_checked": 6544,
+      "relaxed_candidates": [
+        {
+          "n": 76672,
+          "j": 26775,
+          "delta1": 1,
+          "delta2": 1,
+          "d": -5863
+        }
+      ],
+      "interpretation": "Necessary relaxed conditions only; not counterexamples."
+    },
+    {
+      "D": -4189,
+      "quadratics_checked": 13964,
+      "relaxed_candidates": [
+        {
+          "n": 175492,
+          "j": 60606,
+          "delta1": 1,
+          "delta2": 1,
+          "d": -12535
+        }
+      ],
+      "interpretation": "Necessary relaxed conditions only; not counterexamples."
+    }
+  ],
+  "normalized_fixed_parameter_fibers": [
+    {
+      "D": 67108865,
+      "odd_divisors_checked": 14,
+      "n_values_checked": 13,
+      "normalized_necessary_candidates": [],
+      "interpretation": "Full Kummer conditions still required if any candidate survives."
+    },
+    {
+      "D": -67108865,
+      "odd_divisors_checked": 40,
+      "n_values_checked": 13,
+      "normalized_necessary_candidates": [],
+      "interpretation": "Full Kummer conditions still required if any candidate survives."
+    }
+  ],
+  "scope": "Exact algebra and finite-fiber checks, not a complete solution of i=3."
+}
