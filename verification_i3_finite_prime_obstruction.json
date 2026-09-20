@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "absent_prime_construction": {
+    "primes": [
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31
+    ],
+    "period": 55440,
+    "modular_checks": 80,
+    "families": [
+      "n=2^(2+55440*k)",
+      "n=3*2^(55440*k)"
+    ],
+    "claim": "None of the listed odd primes divides C(n,3), for all k>=1."
+  },
+  "full_digit_construction": {
+    "primes": [
+      3,
+      5,
+      7
+    ],
+    "v": 420,
+    "j_bit_length": 421,
+    "prime_power_precisions": [
+      {
+        "p": 3,
+        "K": 265
+      },
+      {
+        "p": 5,
+        "K": 181
+      },
+      {
+        "p": 7,
+        "K": 150
+      }
+    ],
+    "period_bit_length": 1257,
+    "modular_checks": 9,
+    "claim": "Every listed p divides C(n,3), while Lucas gives C(n,j)=1 mod p.",
+    "limitation": "j is fixed; these are not counterexamples and fail the eventual endpoint bound."
+  },
+  "endpoint_identities": 2,
+  "scope": "Method limitations only; no new counterexample or full exclusion."
+}
