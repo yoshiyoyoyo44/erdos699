@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "symbolic_identities": 5,
+  "valuation_argument": {
+    "pairs": 2394,
+    "denominator_checks": 20844,
+    "branches": [
+      "odd",
+      "v=1",
+      "v>=2"
+    ]
+  },
+  "rational_factor_diagnostics": {
+    "cubics_checked": 704,
+    "reducible_cubics": 32,
+    "noncentral_examples": [
+      {
+        "n": 232,
+        "j": 70,
+        "common_odd": 1595,
+        "linear_factors": [
+          "3*z + 1"
+        ]
+      },
+      {
+        "n": 800,
+        "j": 324,
+        "common_odd": 156275,
+        "linear_factors": [
+          "5*z + 3"
+        ]
+      },
+      {
+        "n": 2756,
+        "j": 494,
+        "common_odd": 45856395,
+        "linear_factors": [
+          "5*z + 1"
+        ]
+      }
+    ],
+    "scope": "These are examples violating the counterexample hypotheses."
+  },
+  "bounds": {
+    "majorant_checks": 707,
+    "nonzero_content_checks": 706,
+    "threshold_checks": 326,
+    "bound_for_abs_3j_minus_n_le_sqrt_n": 1882384
+  },
+  "scope": "Exact checks of the new proof components; not a solution of i=3."
+}

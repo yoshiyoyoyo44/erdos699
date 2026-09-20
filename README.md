@@ -2,6 +2,21 @@
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
+**2026-09-20 三次式の既約性と、有理比率へ近づく領域の有効な排除を証明しました。**
+反例なら、軌道係数の三次式はQ上で既約です。係数を整数に正規化すると、
+その1での値は2^(u−v)。有理一次因子があれば2進付値からその値を使い切り、
+残る正係数の二次式の値が1となって矛盾します。
+さらにK=2^v M、4K²n≥27b⁶なら、任意の既約分数0<a/b<1について
+**(|bj−an|+2b)³>Kn²/4** が必要です。
+固定したa,b,Cと0≤α<2/3で、|bj−an|≤Cn^αとなる領域を明示的に有限化しました。
+[証明と残る範囲](i3_irreducible_cubic_and_rational_gaps_2026-09-20.md)・
+[検算結果](verification_i3_irreducible_cubic_and_rational_gaps.json)。
+分母bが増える場合も含めた全域の排除、および問題全体の解決は残っています。
+
+```text
+python -X utf8 audit_i3_irreducible_cubic_and_rational_gaps.py
+```
+
 **2026-09-20 降下候補の続編：新しい整除条件と上位桁の障害を明示しました。**
 T=δ₁=1・奇数jでは、Z′=(w−δ₂)/2とw′,λ′の正確な更新式を得ました。
 新しい第二の整除条件はw′,λ′の両方の整数性と同値です。
