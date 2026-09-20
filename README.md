@@ -2,6 +2,19 @@
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
+**2026-09-20 続報：末尾2の三次の桁多項式を完全に分類し、例外を全て排除しました。**
+二つの多項式整除条件を満たす非自明な形は、正整数hで拡大した一族とその補数に限られます。
+その全整数値には共通素数3があります。n=3·2^uの枝とはn≡2 (mod 3)が矛盾するため、この枝も扱えます。
+これにより、桁和からの素数の上限を次数3以下・末尾0,1,2の全てへ拡張しました。
+[全分類の証明](i3_cubic_digit_classification_2026-09-20.md)・
+[検証結果](verification_i3_cubic_digit_classification.json)。
+係数の上限を仮定しない紙上の分類を、9通りの有理数計算と670,761組の補助検算で確認しています。
+次数や桁和が増える場合は残り、i=3全体の有限還元は未完成です。
+
+```text
+python -X utf8 audit_i3_cubic_digit_classification.py
+```
+
 **2026-09-20 再続編：一般のnで使える因子の上限と、二次の桁多項式の分類を証明しました。**
 i=3の反例では、Q₂の全ての完全素数冪qにq<√(6n)、Q₁側にはO(n^(2/3))の明示的上限が必要です。
 n=3·2^uでは前者がq<√(2n)となり、前回のMersenne素数の仮定を使わずに適用できます。
@@ -117,6 +130,7 @@ i=3 の u≥49、A,B,C≥11 などの既存成果も引き継いでいます。
 詳細な優先順位・障害・検証の保証区分は上の文書を参照してください。
 
 Quick links: [overall status and directions](STATUS_AND_DIRECTIONS.md) ·
+[complete cubic digit classification](i3_cubic_digit_classification_2026-09-20.md) ·
 [universal factor bounds and digit-polynomial classification](i3_cross_modulus_and_digit_height_2026-09-20.md) ·
 [effective power bounds and closed i=3 families](i3_prime_neighbor_powers_2026-09-20.md) ·
 [closed i=4 prime-neighbor squares](i4_prime_neighbor_squares_2026-09-20.md) ·
