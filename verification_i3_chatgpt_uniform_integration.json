@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "symbolic": {
+    "identities": 8,
+    "first_order_expansions": 3
+  },
+  "modular_parameter_cases": 240,
+  "relaxed_examples": 13,
+  "small_prime_residues": 75,
+  "scope": "Short exact checks only; neither a Kummer-preserving descent nor a full solution."
+}

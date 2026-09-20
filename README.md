@@ -2,6 +2,19 @@
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
+**2026-09-20 ChatGPT回答を統合しました。**
+変換後のJが奇数で121≤J<N/2となること、gcd(T,(D−c₀)/T)=gcd(T,4k−H)、
+D=ℓmの共通因子GにG/gcd(G,δ₁)∣(n−6)²−20という制約が付くことを接続しました。
+個々のℓ,mの平方剰余条件は、素数冪を含む法全体へ拡張しました。
+[統合稿・補足・未証明の点](i3_chatgpt_uniform_integration_2026-09-20.md)・
+[回答本文](source_chatgpt_uniform_response_2026-09-20.md)・
+[短い検算結果](verification_i3_chatgpt_uniform_integration.json)。
+指数は減りますが、N=3n/2となる枝があり、Kummer条件の保存も一般には未証明です。
+
+```text
+python -X utf8 audit_i3_chatgpt_uniform_integration.py
+```
+
 **2026-09-20 新しい一様評価：中心と添字の差から n の明示的な上限を証明しました。**
 D=w−4λ と置くと、全ての反例候補に n<18D²/(δ₁χᵥT)+21≤18D²+21 が必要です。
 χᵥは奇数jで1、v₂(j)=1で8、v₂(j)≥2で2^(v₂(j)+1)。
