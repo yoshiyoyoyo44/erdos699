@@ -1,6 +1,18 @@
-# Erdős 699 — 2026-09-12–20 continuation
+# Erdős 699 — 2026-09-12–21 continuation
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
+
+**2026-09-21 近似分数の分母を使って下界を強め、連分数へ接続しました。**
+分母bの2進付値sが0<s<u−vなら、前稿の三次式の整数下界を2^s倍に強められます。
+明示した適用条件のもとで、連分数の次の分母b₊に **b₊³<2^(u−v−s+5)** が必要です。
+三次式の既約性にはP(1)とP′(1)を使う短い別証明を追加しました。
+[証明・診断例・限界](i3_dyadic_denominators_and_continued_fractions_2026-09-21.md)・
+[検算結果](verification_i3_dyadic_denominators_and_continued_fractions.json)。
+分母の跳躍を制限する結果であり、残る全域の排除は未完成です。
+
+```text
+python -X utf8 audit_i3_dyadic_denominators_and_continued_fractions.py
+```
 
 **2026-09-20 三次式の既約性と、有理比率へ近づく領域の有効な排除を証明しました。**
 反例なら、軌道係数の三次式はQ上で既約です。係数を整数に正規化すると、

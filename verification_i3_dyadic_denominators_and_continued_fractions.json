@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "valuations": {
+    "derivatives": 1585,
+    "weighted_values": 102170,
+    "equal_minimum_cases": 10992
+  },
+  "continued_fractions": {
+    "fractions": 5538,
+    "transitions": 18457,
+    "penultimate_equalities": 5538
+  },
+  "diagnostic_family": {
+    "exponents_checked": [
+      17,
+      20,
+      40,
+      100
+    ],
+    "examples": [
+      {
+        "m": 17,
+        "n": 2251799813685248,
+        "j": 140739098968065,
+        "convergent": [
+          1,
+          16
+        ],
+        "weight": 16,
+        "next_convergent": [
+          5461,
+          87375
+        ],
+        "old_same_fraction_majorant_passes": true,
+        "new_exact_bound_rejects": true
+      },
+      {
+        "m": 20,
+        "n": 1152921504606846976,
+        "j": 72057697117143041,
+        "convergent": [
+          1,
+          16
+        ],
+        "weight": 16,
+        "next_convergent": [
+          43690,
+          699039
+        ],
+        "old_same_fraction_majorant_passes": true,
+        "new_exact_bound_rejects": true
+      }
+    ],
+    "scope": "Normalized diagnostic family, not putative counterexamples passing all conditions."
+  },
+  "constant_checks": 452,
+  "scope": "Checks of proof components and diagnostic cases, not a solution of i=3."
+}
