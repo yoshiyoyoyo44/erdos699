@@ -2,6 +2,19 @@
 
 This is a partial mathematical result, not a solution of Erdős Problem 699.
 
+**2026-09-20 降下候補の続編：新しい整除条件と上位桁の障害を明示しました。**
+T=δ₁=1・奇数jでは、Z′=(w−δ₂)/2とw′,λ′の正確な更新式を得ました。
+新しい第二の整除条件はw′,λ′の両方の整数性と同値です。
+引き継がれる素数でも上位桁が破れる具体例と、v₂(n)を任意に高くできる無限族も構成しました。
+[証明と適用範囲](i3_descent_kummer_obstruction_2026-09-20.md)・
+[検算結果](verification_i3_descent_kummer_obstruction.json)。
+例は元の反例の全条件を満たさず、反例から反例への降下そのものを否定したわけではありません。
+Dの増大領域の排除は未解決です。
+
+```text
+python -X utf8 audit_i3_descent_kummer_obstruction.py
+```
+
 **2026-09-20 ChatGPT回答を統合しました。**
 変換後のJが奇数で121≤J<N/2となること、gcd(T,(D−c₀)/T)=gcd(T,4k−H)、
 D=ℓmの共通因子GにG/gcd(G,δ₁)∣(n−6)²−20という制約が付くことを接続しました。
