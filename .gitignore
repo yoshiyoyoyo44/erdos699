@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 i3_u36.json
 
+dist/

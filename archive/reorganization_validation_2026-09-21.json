@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "date": "2026-09-21",
+  "layout": {
+    "legacy_paths": 279,
+    "byte_preserved_files": 187,
+    "python_files_parsed": 63,
+    "documents_checked": 43,
+    "local_links_checked": 704,
+    "script_commands_checked": 71
+  },
+  "proof_notes_unchanged_except_navigation_links_math_delimiters_commands": 30,
+  "mathematical_code_ast_unchanged_except_io_routing": 59,
+  "other_script_changes": [
+    "run_magma_batches.py: subprocess and portable provenance paths",
+    "package_results.py: package current directory structure"
+  ],
+  "isolated_smoke_runs": [
+    "audit_i3_irreducible_cubic_and_rational_gaps.py",
+    "audit_i3_dyadic_denominators_and_continued_fractions.py",
+    "audit_i3_2adic_square.py",
+    "replay_critical_indices.py",
+    "audit_i3_center_curve.py",
+    "audit_i3_fixed_blocks.py",
+    "replay_i3_gap13.py",
+    "replay_certificate.py"
+  ],
+  "package_test": "Current tracked tree packaged; all ZIP members checked against SHA256.",
+  "scope": "Repository reorganization checks. No new mathematical result or full re-audit."
+}

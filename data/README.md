@@ -1,0 +1,13 @@
+# 証明書と検算結果
+
+[入口](../README.md) · [検算の案内](../docs/VERIFICATION.md)
+
+| フォルダ | 内容 |
+|---|---|
+| [certificates](certificates/) | CRT、素数証明書、区間・指数などの有限証明書 |
+| [cases](cases/) | 楕円曲線や小さい因子ごとのケース一覧 |
+| [results](results/) | `verification_*.json`など、検算器の出力 |
+
+今回の整理では元のファイル名・バイト列を保って移動しました。
+JSON内の旧ファイル名は[参照先の解決](../scripts/repo_paths.py)で新しい保存先へ対応します。
+保存済みの成功表示を読むことと、証明書を再生することは区別してください。
