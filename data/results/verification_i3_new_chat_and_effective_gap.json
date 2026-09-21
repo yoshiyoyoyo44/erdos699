@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "source_file": "sources\\source_i3_new_chat_results_2026-09-21.md",
+  "source_sha256": "60794e74c5ac338ae3bfba261160f2ae4c371f08368aaeafa1137e03da993e5d",
+  "symbolic_identities": [
+    "center_identity_mod_determinant",
+    "q_exact_identification",
+    "mersenne_sum",
+    "prime_power_norm_certificate",
+    "rho_block_identity",
+    "rho_y_block_identity",
+    "lambda_quotient",
+    "lambda_y_quotient",
+    "P_bound_reexpression",
+    "W_bound_reexpression",
+    "W_to_P_bound_ratio",
+    "abP_squared_bound",
+    "refined_abP_bound",
+    "even_discriminant"
+  ],
+  "diagnostics": {
+    "local_congruence_cases": 1440,
+    "scope": "Artificial local data satisfying the two input congruences; not solutions of the full counterexample system."
+  },
+  "bounds": {
+    "branches": [
+      {
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "C": "1/16",
+        "u_bound_coefficient": "243/4"
+      },
+      {
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "C": "9/16",
+        "u_bound_coefficient": "2187/4"
+      },
+      {
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "C": "27/16",
+        "u_bound_coefficient": "6561/4"
+      },
+      {
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "C": "3/16",
+        "u_bound_coefficient": "729/4"
+      }
+    ],
+    "threshold_ratio": "826424819743/1099511627776",
+    "explicit_bound": "u < (6561/4)*2^G*(G+10)^2 + 124",
+    "slow_gap_exclusion": "u>=2^42 implies G>(log_2 u)/2",
+    "asymptotic": "G >= log_2(u)-2*log_2(log_2(u))-O(1)",
+    "external_input": "von Kaenel, arXiv:1310.7263v2 Corollary 6.2, through the previous note"
+  },
+  "scope": "Even j only. General proofs are in the note; finite diagnostics do not prove infinite statements.",
+  "complete_solution": false,
+  "remaining": "G satisfying the logarithmic lower bound can still grow; odd j is not treated in this note."
+}

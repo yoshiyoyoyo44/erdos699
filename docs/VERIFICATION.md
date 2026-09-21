@@ -17,6 +17,7 @@
 ## 最新の結果を短く検算する
 
 ```text
+python -X utf8 scripts/audit_i3_new_chat_and_effective_gap.py
 python -X utf8 scripts/audit_i3_twist_and_kummer_support.py
 python -X utf8 scripts/audit_i3_discriminant_support.py
 python -X utf8 scripts/audit_i3_chat_integration.py
@@ -29,6 +30,10 @@ python -X utf8 scripts/audit_i3_mixed_parameter_bound.py
 ```
 
 出力は[検算結果](../data/results/)へ保存されます。標準出力にも確認項目を表示します。
+
+新チャットの統合と指数差の検算は、14恒等式、1,440件の局所合同式診断、四分岐の係数と $u=2^{42}$ の閾値を確認します。
+診断例は二つの入力合同式を満たす人工的な局所データであり、元の反例候補ではありません。
+固定した指数差 $G$ からの明示的上限の一般証明は[統合稿](../research/i3/i3_new_chat_integration_and_effective_gap_2026-09-21.md)にあります。
 
 二次捻りとKummer補助因子の検算は、8恒等式と6剰余類の最小化・最適性を記号計算し、
 9,000組の局所付値と256通りの符号を補助診断します。

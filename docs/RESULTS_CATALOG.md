@@ -6,6 +6,9 @@
 
 | 範囲・対象 | 得られた結果 | 根拠・依存先 |
 |---|---|---|
+| i=3、偶数jの指数差の商 | $q=Tg_0h_0W_*$、$m+T^2g_0h_0W_*=\gamma c_0 2^{G-3}$。$T^2\mid B_G-m$ | [新成果の統合・第2節](../research/i3/i3_new_chat_integration_and_effective_gap_2026-09-21.md)。添付の主張を中心の恒等式で監査 |
+| i=3、全素数冪の平方合同式 | $-\delta Ag_0h_0$ は $2^{v+1}W_*$ を法として平方。明示的な根 $Aa g_0/C$ を持つ | 同稿・第4節。$C$ は法と互いに素。素数だけの条件から全素数冪へ強化 |
+| i=3、固定指数差の有効有限化 | $G=u-4v_2(j)$ で $u<(6561/4)2^G(G+10)^2+124$。$u\ge2^{42}$ なら $G>\tfrac12\log_2u$ | 同稿・第6–7節。$ab(g_0h_0)^2<\gamma\delta_1^3\delta_2^2 2^G/(16T^3)$ と導手評価を結ぶ。奇数jは対象外 |
 | i=3、最適な二次捻り | $p\ge5$, $p\mid s$ で $v_p(\Delta_{\min})=2(v_p(s)\bmod3)$。3乗因子は素因数ごと除去できる。2進条件は不変 | [二次捻りとKummer・第2–4節](../research/i3/i3_quadratic_twist_and_kummer_support_2026-09-21.md)。任意の二次捻りとの法12の比較により、5以上での最適性も証明 |
 | i=3、Kummer補助因子と導手 | $v_p(W)=v_p(ab)$, $v_p(s)=v_p(G_0H_0)$（$p\ge5$）。$\mathcal Q=\operatorname{rad}_{\ge5}(ab)\operatorname{rad}_{\ge5}(\operatorname{cf}_3(G_0H_0))^2$ | 同稿・第5–6節。例外因子を残した恒等式と素因数の分類。全桁からの一様上界は未取得 |
 | i=3、3乗除去後の増大領域 | $\mathcal R>166$、13以上の素因数が必要。$u\le972\mathcal Q\lceil\log_2(486\mathcal Q)\rceil^2+124$ | 同稿・第4節。以下の6乗除去時の排除を、より小さい素数集合に適用 |

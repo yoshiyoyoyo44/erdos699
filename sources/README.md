@@ -8,6 +8,7 @@
 
 | 原文 | 対応する統合・検討 |
 |---|---|
+| [9月21日・新規チャット成果](source_i3_new_chat_results_2026-09-21.md) | [商の同定の監査と指数差の有効有限化](../research/i3/i3_new_chat_integration_and_effective_gap_2026-09-21.md)。基準71df9d5、添付をバイト保存 |
 | [楕円曲線・悪い還元が2,3,5,7,11だけ](curves__S_2_3_5_7_11.txt.gz) | [判別式の素因数と曲線の稿](../research/i3/i3_discriminant_support_and_elliptic_curve_2026-09-21.md)。著者原本を可逆圧縮、CC BY-NC 3.0 |
 | [楕円曲線・素数集合の積1000以下](curves_maxNS_1000.txt.gz) | 同稿。909,080個の異なる不変量ペア、集合間の重複を含め1,221,342行 |
 | [チャット・整数方程式系導出](source_chat_coefficients_2026-09-21.md) | [4チャットの統合・整数性の訂正](../research/i3/i3_four_chat_integration_2026-09-21.md) |

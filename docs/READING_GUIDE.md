@@ -24,7 +24,8 @@
 
 | 方向 | 中心となるノート | 続き・関連 |
 |---|---|---|
-| 二次捻りとKummerの橋 | [3乗因子の除去、捻りの最適性、四つの補助因子](../research/i3/i3_quadratic_twist_and_kummer_support_2026-09-21.md) | 最新。導手の量を $\operatorname{rad}_{\ge5}(ab)\operatorname{rad}_{\ge5}(\operatorname{cf}_3(G_0H_0))^2$ に還元。全領域の排除は未達 |
+| 新成果と指数差の有効上限 | [商の同定、素数冪の合同式、固定Gの明示的有限化](../research/i3/i3_new_chat_integration_and_effective_gap_2026-09-21.md) | 最新。偶数jで $u<(6561/4)2^G(G+10)^2+124$。指数差の増大が十分遅い枝も制限 |
+| 二次捻りとKummerの橋 | [3乗因子の除去、捻りの最適性、四つの補助因子](../research/i3/i3_quadratic_twist_and_kummer_support_2026-09-21.md) | 導手の量を $\operatorname{rad}_{\ge5}(ab)\operatorname{rad}_{\ge5}(\operatorname{cf}_3(G_0H_0))^2$ に還元。全領域の排除は未達 |
 | 判別式の素因数と楕円曲線 | [2で最小のモデル、素数集合の有限化、6乗因子の除去](../research/i3/i3_discriminant_support_and_elliptic_curve_2026-09-21.md) | 上の続稿の基盤。最大素因数11以下と奇素因数の積500以下を指数無制限で排除。全曲線リストに依存 |
 | 4チャットの統合・原始点の降下 | [整数系の訂正と判別式の上界改善](../research/i3/i3_four_chat_integration_2026-09-21.md) | [Thue–Mahler全解表で終端判別式3000以下を排除](../research/i3/i3_terminal_thue_mahler_2026-09-21.md)。全指数を対象とし、外部の完全性定理に依存 |
 | 小判別式と2進条件 | [独立な有限証明と定数79・71・229・961](../research/i3/i3_cubic_discriminant_minima_2026-09-21.md) | 上記の基盤。一様な284と、有限排除による $u\ge51$。こちらは数体の外部表に依存しない |
