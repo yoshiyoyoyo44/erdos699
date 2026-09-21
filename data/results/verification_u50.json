@@ -1,0 +1,22 @@
+[
+  {
+    "file": "i3_u49_to_u50.json",
+    "max_u": 50,
+    "rows": 14194,
+    "CRT_candidates": 164,
+    "survivors": 0,
+    "primes_recursively_verified": 43353,
+    "per_u": [
+      {
+        "u": 49,
+        "rows": 6281,
+        "CRT_candidates": 33
+      },
+      {
+        "u": 50,
+        "rows": 7913,
+        "CRT_candidates": 131
+      }
+    ]
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "symbolic_identities": [
+    "twist_c4",
+    "twist_c6",
+    "twist_discriminant",
+    "twist_j_invariant",
+    "s_kummer_bridge",
+    "W_kummer_bridge",
+    "discriminant_direct_blocks",
+    "discriminant_s_W_blocks"
+  ],
+  "symbolic_residue_certificates": [
+    {
+      "m_mod_6": 0,
+      "twist_order": 0,
+      "scale_order": "a",
+      "minimal_c4_order": "2*a + z",
+      "minimal_c6_order": 0,
+      "minimal_delta_order": 0,
+      "alternative_residues_mod_12": [
+        0,
+        6
+      ]
+    },
+    {
+      "m_mod_6": 1,
+      "twist_order": 0,
+      "scale_order": "a",
+      "minimal_c4_order": "2*a + z + 1",
+      "minimal_c6_order": 1,
+      "minimal_delta_order": 2,
+      "alternative_residues_mod_12": [
+        2,
+        8
+      ]
+    },
+    {
+      "m_mod_6": 2,
+      "twist_order": 0,
+      "scale_order": "a",
+      "minimal_c4_order": "2*a + z + 2",
+      "minimal_c6_order": 2,
+      "minimal_delta_order": 4,
+      "alternative_residues_mod_12": [
+        4,
+        10
+      ]
+    },
+    {
+      "m_mod_6": 3,
+      "twist_order": 1,
+      "scale_order": "a + 1",
+      "minimal_c4_order": "2*a + z + 1",
+      "minimal_c6_order": 0,
+      "minimal_delta_order": 0,
+      "alternative_residues_mod_12": [
+        6,
+        0
+      ]
+    },
+    {
+      "m_mod_6": 4,
+      "twist_order": 1,
+      "scale_order": "a + 1",
+      "minimal_c4_order": "2*a + z + 2",
+      "minimal_c6_order": 1,
+      "minimal_delta_order": 2,
+      "alternative_residues_mod_12": [
+        8,
+        2
+      ]
+    },
+    {
+      "m_mod_6": 5,
+      "twist_order": 1,
+      "scale_order": "a + 1",
+      "minimal_c4_order": "2*a + z + 3",
+      "minimal_c6_order": 2,
+      "minimal_delta_order": 4,
+      "alternative_residues_mod_12": [
+        10,
+        4
+      ]
+    }
+  ],
+  "diagnostics": {
+    "local_valuation_pairs": 9000,
+    "odd_sign_cases": 256,
+    "growth_threshold_ratio": "229323571231/274877906944"
+  },
+  "conclusions": [
+    "An explicit odd quadratic twist preserves the minimal discriminant valuation at 2.",
+    "For p>=5 dividing s, the optimal minimal discriminant valuation among quadratic twists is 2*(v_p(s) mod 3).",
+    "For p>=5 dividing W, no quadratic twist has good reduction.",
+    "The conductor is 2*3^f3*Q with Q=rad_ge5(ab)*rad_ge5(cubefree(G0*H0))^2 and 0<=f3<=5.",
+    "All previous support-table and growth exclusions apply to this smaller support."
+  ],
+  "external_dependencies": [
+    "Concrete small-support exclusions reuse vKM full curve lists audited in verification_i3_discriminant_support.json.",
+    "The growth bound reuses von Kaenel arXiv:1310.7263v2, Corollary 6.2."
+  ],
+  "remaining": "No uniform upper bound on Q from all-digit Kummer conditions; i=3 remains unresolved."
+}

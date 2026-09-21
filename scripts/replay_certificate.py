@@ -6,6 +6,7 @@ proves all primes by an elementary Lucas order criterion.
 """
 from repo_paths import artifact_path
 import argparse
+import hashlib
 import json
 from itertools import product
 from math import gcd, prod
@@ -60,8 +61,13 @@ def replay(filename, primes_filename):
     records = {(r['u'], r['M']): r for r in data['certificates']}
     assert len(records) == len(data['certificates'])
     assert data['method'] in ('original M<2^u', 'new M^3<2^(u+1)',
-                              'discriminant M^3<2^(u-2)')
-    min_u = 43 if data['method'].startswith('discriminant') else 4
+                              'discriminant M^3<2^(u-2)', 'cubic minima 284*M^3<2^u')
+    cubic_minima = data['method'] == 'cubic minima 284*M^3<2^u'
+    min_u = 49 if cubic_minima else (43 if data['method'].startswith('discriminant') else 4)
+    if cubic_minima:
+        assert data['analytic_certificate'] == 'i3_cubic_discriminant_minima_certificate.json'
+        analytic_path = artifact_path(data['analytic_certificate'])
+        assert hashlib.sha256(analytic_path.read_bytes()).hexdigest() == data['analytic_certificate_sha256']
     assert data.get('min_u', min_u) == min_u
     assert data['max_u'] >= min_u
     expected, total_candidates = set(), 0
@@ -70,6 +76,8 @@ def replay(filename, primes_filename):
         a = 2**u
         if data['method'].startswith('original'):
             bound = a-1
+        elif cubic_minima:
+            bound = cube_root((a-1)//284)
         elif data['method'].startswith('discriminant'):
             bound = cube_root(a//4-1)
         else:

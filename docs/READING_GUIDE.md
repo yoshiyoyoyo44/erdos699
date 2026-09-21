@@ -24,8 +24,12 @@
 
 | 方向 | 中心となるノート | 続き・関連 |
 |---|---|---|
+| 二次捻りとKummerの橋 | [3乗因子の除去、捻りの最適性、四つの補助因子](../research/i3/i3_quadratic_twist_and_kummer_support_2026-09-21.md) | 最新。導手の量を $\operatorname{rad}_{\ge5}(ab)\operatorname{rad}_{\ge5}(\operatorname{cf}_3(G_0H_0))^2$ に還元。全領域の排除は未達 |
+| 判別式の素因数と楕円曲線 | [2で最小のモデル、素数集合の有限化、6乗因子の除去](../research/i3/i3_discriminant_support_and_elliptic_curve_2026-09-21.md) | 上の続稿の基盤。最大素因数11以下と奇素因数の積500以下を指数無制限で排除。全曲線リストに依存 |
+| 4チャットの統合・原始点の降下 | [整数系の訂正と判別式の上界改善](../research/i3/i3_four_chat_integration_2026-09-21.md) | [Thue–Mahler全解表で終端判別式3000以下を排除](../research/i3/i3_terminal_thue_mahler_2026-09-21.md)。全指数を対象とし、外部の完全性定理に依存 |
+| 小判別式と2進条件 | [独立な有限証明と定数79・71・229・961](../research/i3/i3_cubic_discriminant_minima_2026-09-21.md) | 上記の基盤。一様な284と、有限排除による $u\ge51$。こちらは数体の外部表に依存しない |
 | 混合した差 $D$ | [明示的な上限と固定 $D$ の有限化](../research/i3/i3_mixed_parameter_bound_2026-09-20.md) | [回答の統合と因子構造](../research/i3/i3_chatgpt_uniform_integration_2026-09-20.md) |
-| 三次整環と末尾 | [判別式と連分数末尾の統合](../research/i3/i3_cubic_discriminant_and_cf_tail_2026-09-21.md) | 最新の追加資料。判別式49、分母条件のない下界、最大公約数の訂正 |
+| 三次整環と末尾 | [判別式と連分数末尾の統合](../research/i3/i3_cubic_discriminant_and_cf_tail_2026-09-21.md) | 判別式49、分母条件のない下界、最大公約数の訂正。判別式の定数は上の続稿で強化 |
 | 三次式と近似 | [既約性と有理近似](../research/i3/i3_irreducible_cubic_and_rational_gaps_2026-09-20.md) | [分母の2進付値と連分数](../research/i3/i3_dyadic_denominators_and_continued_fractions_2026-09-21.md) |
 | 全桁Kummer条件 | [六ブロックの桁和](../research/i3/i3_global_digit_constraints_2026-09-19.md) | [補数側の桁和の改善](../research/i3/i3_complement_digit_bounds_2026-09-20.md) |
 | 桁多項式 | [二つの法と桁の高さ](../research/i3/i3_cross_modulus_and_digit_height_2026-09-20.md) | [三次までの分類](../research/i3/i3_cubic_digit_classification_2026-09-20.md) |

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "symbolic_identities": [
+    "value_at_one",
+    "derivative_at_one",
+    "middle_sum",
+    "central_gap",
+    "discriminant",
+    "integer_middle_bound",
+    "strict_upper_gap",
+    "corrected_c1",
+    "corrected_c2",
+    "endpoint_difference",
+    "integer_system_first",
+    "integer_system_discriminant",
+    "neighbor_rational_gap",
+    "kummer_R_quotient",
+    "kummer_S_quotient"
+  ],
+  "marked_point_diagnostics": 2000,
+  "coordinate_transports": 6,
+  "interval_polynomial_maximum": "3/8 + 7*sqrt(21)/72",
+  "scope": "Algebra and diagnostics; see note for all-range proofs."
+}
