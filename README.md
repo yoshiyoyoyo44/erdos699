@@ -30,6 +30,12 @@
 
 ## 最新の研究 — 2026年9月21日
 
+[増大するGに対する平方枝の一様排除](research/i3/i3_gap_square_obstructions_2026-09-21.md)を追加しました。
+**$\delta_2TPW_*$ は全ての $G$ で非平方**と証明しました。
+中心方程式の先頭係数 $\delta_2\gamma m2^{G-1}$ が平方なら、$\gamma T\equiv7\pmod8$、$G\ge(u+7)/2$ が必要です。
+$T=1$ を含む平方の $T$ では先頭係数の平方も不可能。新たな外部表を使わず、因数分解と合同式で示しています。
+両係数が非平方となる領域は残っています。
+
 [増大する指数差と第二のFrey曲線](research/i3/i3_growing_gap_and_auxiliary_frey_2026-09-21.md)を追加しました。
 偶数 $j$ の和の式から、最小判別式の2進指数が $2G-14$ の半安定曲線を構成しました。
 $R_F=\operatorname{rad}_{\ge5}(mTPW_*)$ として **$G<(9/2)R_F\lceil\log_2(6R_F)\rceil^2+52$**。

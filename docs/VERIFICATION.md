@@ -17,6 +17,7 @@
 ## 最新の結果を短く検算する
 
 ```text
+python -X utf8 scripts/audit_i3_gap_square_obstructions.py
 python -X utf8 scripts/audit_i3_growing_gap_frey.py
 python -X utf8 scripts/audit_i3_new_chat_and_effective_gap.py
 python -X utf8 scripts/audit_i3_twist_and_kummer_support.py
@@ -31,6 +32,10 @@ python -X utf8 scripts/audit_i3_mixed_parameter_bound.py
 ```
 
 出力は[検算結果](../data/results/)へ保存されます。標準出力にも確認項目を表示します。
+
+指数差の平方枝の検算は、5恒等式、四分岐の定数証明書、256件の法16の条件、317件の平方差の人工的な診断を確認します。
+全ての $G$ に対する排除は[続稿の一般証明](../research/i3/i3_gap_square_obstructions_2026-09-21.md)によります。
+新たな外部表や高さ定理は不要ですが、既存の正規化の証明依存は引き継ぎます。
 
 増大する指数差の検算は、14恒等式、2,471個の人工的な曲線診断、保存済みの全曲線表1,813,534行を確認します。
 106個の根がない証明書と92個の根の分解を保存し、残る三つの和も全分岐で排除します。
