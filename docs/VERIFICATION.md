@@ -17,6 +17,7 @@
 ## 最新の結果を短く検算する
 
 ```text
+python -X utf8 scripts/audit_i3_growing_gap_frey.py
 python -X utf8 scripts/audit_i3_new_chat_and_effective_gap.py
 python -X utf8 scripts/audit_i3_twist_and_kummer_support.py
 python -X utf8 scripts/audit_i3_discriminant_support.py
@@ -30,6 +31,11 @@ python -X utf8 scripts/audit_i3_mixed_parameter_bound.py
 ```
 
 出力は[検算結果](../data/results/)へ保存されます。標準出力にも確認項目を表示します。
+
+増大する指数差の検算は、14恒等式、2,471個の人工的な曲線診断、保存済みの全曲線表1,813,534行を確認します。
+106個の根がない証明書と92個の根の分解を保存し、残る三つの和も全分岐で排除します。
+素数の積に対する増大評価と閾値は[第二のFrey曲線の稿](../research/i3/i3_growing_gap_and_auxiliary_frey_2026-09-21.md)に証明しています。
+表の完全性は外部計算、増大評価はvon Känelの一般定理に依存し、人工的な曲線は元の反例候補ではありません。
 
 新チャットの統合と指数差の検算は、14恒等式、1,440件の局所合同式診断、四分岐の係数と $u=2^{42}$ の閾値を確認します。
 診断例は二つの入力合同式を満たす人工的な局所データであり、元の反例候補ではありません。

@@ -1,0 +1,4717 @@
+{
+  "status": "passed",
+  "symbolic_identities": [
+    "positive_product_bound",
+    "c4_1",
+    "c6_1",
+    "discriminant_1",
+    "two_torsion_roots_1",
+    "integral_model_1",
+    "c4_-1",
+    "c6_-1",
+    "discriminant_-1",
+    "two_torsion_roots_-1",
+    "integral_model_-1",
+    "c4_mod_a",
+    "c4_mod_b",
+    "c4_mod_c"
+  ],
+  "diagnostics": {
+    "synthetic_coprime_sum_curves": 2471,
+    "scope": "Diagnostics of Frey models, not examples of problem-699 counterexamples."
+  },
+  "tables": [
+    {
+      "file": "curves__S_2_3_5_7_11.txt.gz",
+      "source": "https://www.math.u-bordeaux.fr/~bmatschke/data/curves__S_2_3_5_7_11.txt",
+      "raw_sha256": "ca59125f39550b71d0a633cd6cd4414df1beef4d7522b3236cdb5176cdabecd9",
+      "rows_checked": 592192,
+      "sets_checked": 1,
+      "odd_c4_positive_square_delta_rows": 1232,
+      "distinct_high_valuation_candidates": 64,
+      "modular_nonsplitting_certificates": 0,
+      "normalized_split_triples": [
+        [
+          14,
+          625,
+          2048,
+          2673
+        ],
+        [
+          14,
+          2048,
+          2187,
+          4235
+        ],
+        [
+          18,
+          1125,
+          8192,
+          9317
+        ],
+        [
+          20,
+          49,
+          16335,
+          16384
+        ]
+      ],
+      "gap_sum_candidates": [
+        {
+          "G": 17,
+          "a": 49,
+          "b": 16335,
+          "c": 16384,
+          "c4": 267635041,
+          "c6": -4378257615761
+        }
+      ],
+      "certificates": [
+        {
+          "c4": 5864929,
+          "c6": 11077953967,
+          "delta": 45727545600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -3298,
+            -1423,
+            4721
+          ],
+          "root_gap_gcd": 3,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "the largest root gap is odd"
+        },
+        {
+          "c4": 13456249,
+          "c6": 2804285107,
+          "delta": 1405478914998681600,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -6283,
+            -139,
+            6422
+          ],
+          "root_gap_gcd": 3,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "the largest root gap is odd"
+        },
+        {
+          "c4": 52784361,
+          "c6": -299104757109,
+          "delta": 33335380742400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -14163,
+            4269,
+            9894
+          ],
+          "root_gap_gcd": 9,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 77590489,
+          "c6": 646026193763,
+          "delta": 28800309694464000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -10442,
+            -7067,
+            17509
+          ],
+          "root_gap_gcd": 3,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "the largest root gap is odd"
+        },
+        {
+          "c4": 121106241,
+          "c6": -75715697889,
+          "delta": 1024594129034038886400,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -19266,
+            417,
+            18849
+          ],
+          "root_gap_gcd": 9,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 146623225,
+          "c6": 1384744245875,
+          "delta": 714492900000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -16490,
+            -7115,
+            23605
+          ],
+          "root_gap_gcd": 15,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 267635041,
+          "c6": -4378257615761,
+          "delta": 671785075055001600,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -32719,
+            16286,
+            16433
+          ],
+          "root_gap_gcd": 3,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "gap-sum candidate",
+          "G": 17
+        },
+        {
+          "c4": 287381521,
+          "c6": -3799738210681,
+          "delta": 5379800012294400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -33047,
+            9961,
+            23086
+          ],
+          "root_gap_gcd": 21,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 336406225,
+          "c6": 350535638375,
+          "delta": 21960608046854400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -31415,
+            -695,
+            32110
+          ],
+          "root_gap_gcd": 15,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 659356201,
+          "c6": -961869791701,
+          "delta": 165353188870679891558400,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -44954,
+            973,
+            43981
+          ],
+          "root_gap_gcd": 21,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 698314401,
+          "c6": -17442707231601,
+          "delta": 20995425767264256000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -52527,
+            21201,
+            31326
+          ],
+          "root_gap_gcd": 9,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 709656409,
+          "c6": -14744756730077,
+          "delta": 81009136410681600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -51931,
+            15653,
+            36278
+          ],
+          "root_gap_gcd": 33,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 1319609025,
+          "c6": -37388094638625,
+          "delta": 520865324100000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -70815,
+            21345,
+            49470
+          ],
+          "root_gap_gcd": 45,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 1628206129,
+          "c6": -3732503477417,
+          "delta": 2489891632133979373977600,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -70642,
+            1529,
+            69113
+          ],
+          "root_gap_gcd": 33,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 1939762225,
+          "c6": 80753274220375,
+          "delta": 450004838976000000000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -52210,
+            -35335,
+            87545
+          ],
+          "root_gap_gcd": 15,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 2408715369,
+          "c6": 118212955625547,
+          "delta": 489731319715096166400,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -49299,
+            -48858,
+            98157
+          ],
+          "root_gap_gcd": 9,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 2586433689,
+          "c6": 102592931688387,
+          "delta": 3921874208962617600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -69258,
+            -29883,
+            99141
+          ],
+          "root_gap_gcd": 63,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 3027656025,
+          "c6": -9464462236125,
+          "delta": 16009283266156857600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -96330,
+            2085,
+            94245
+          ],
+          "root_gap_gcd": 45,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 3801933961,
+          "c6": -221586984460709,
+          "delta": 3388327635243995136000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -122563,
+            49469,
+            73094
+          ],
+          "root_gap_gcd": 21,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 5934205809,
+          "c6": 25970484375927,
+          "delta": 120542474686725640946073600,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -131943,
+            -2919,
+            134862
+          ],
+          "root_gap_gcd": 63,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 6386907681,
+          "c6": 398108431712079,
+          "delta": 59055660443386886400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -108834,
+            -46959,
+            155793
+          ],
+          "root_gap_gcd": 99,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 6690876025,
+          "c6": -547282201970125,
+          "delta": 10496641797734400000000,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -163595,
+            81430,
+            82165
+          ],
+          "root_gap_gcd": 15,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 7184538025,
+          "c6": -474967276335125,
+          "delta": 84059375192100000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -165235,
+            49805,
+            115430
+          ],
+          "root_gap_gcd": 105,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 9388449169,
+          "c6": -859860863898553,
+          "delta": 51021505442634338304000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -192599,
+            77737,
+            114862
+          ],
+          "root_gap_gcd": 33,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 13114117009,
+          "c6": 1501742362206023,
+          "delta": 79034842295145883238400,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -115031,
+            -114002,
+            229033
+          ],
+          "root_gap_gcd": 21,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 14653855161,
+          "c6": 100777593890259,
+          "delta": 1815130999825670963629670400,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -207339,
+            -4587,
+            211926
+          ],
+          "root_gap_gcd": 99,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 16483905025,
+          "c6": -120233723962625,
+          "delta": 2583643576104373305600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -224770,
+            4865,
+            219905
+          ],
+          "root_gap_gcd": 105,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 17457860025,
+          "c6": -2180338403950125,
+          "delta": 328053527613504000000000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -262635,
+            106005,
+            156630
+          ],
+          "root_gap_gcd": 45,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 17741410225,
+          "c6": -1843094591259625,
+          "delta": 1265767756416900000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -259655,
+            78265,
+            181390
+          ],
+          "root_gap_gcd": 165,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 32383839961,
+          "c6": 5827460886577891,
+          "delta": 1190108239349513689497600,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -180763,
+            -179146,
+            359909
+          ],
+          "root_gap_gcd": 33,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 34217405649,
+          "c6": 5982848580439143,
+          "delta": 2470090846092872454144000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -219282,
+            -148407,
+            367689
+          ],
+          "root_gap_gcd": 63,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 34773164041,
+          "c6": 5057451558416411,
+          "delta": 9530643889580279558400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -253946,
+            -109571,
+            363517
+          ],
+          "root_gap_gcd": 231,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 40705153225,
+          "c6": -466562934677125,
+          "delta": 38904556752093427718400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -353210,
+            7645,
+            345565
+          ],
+          "root_gap_gcd": 165,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 60217884225,
+          "c6": 14776619453193375,
+          "delta": 7652051870548377600000000,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -246495,
+            -244290,
+            490785
+          ],
+          "root_gap_gcd": 45,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 64660842225,
+          "c6": 12824116461048375,
+          "delta": 61279284515040900000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -346290,
+            -149415,
+            495705
+          ],
+          "root_gap_gcd": 315,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 79782100321,
+          "c6": 1280248692754031,
+          "delta": 292933260628930539369090662400,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -483791,
+            -10703,
+            494494
+          ],
+          "root_gap_gcd": 231,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 84496042521,
+          "c6": 23216243325260931,
+          "delta": 37194677467680432623616000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -344586,
+            -233211,
+            577797
+          ],
+          "root_gap_gcd": 99,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 95048349025,
+          "c6": -27698373057588625,
+          "delta": 52942619300687424000000000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -612815,
+            247345,
+            365470
+          ],
+          "root_gap_gcd": 105,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 118027053081,
+          "c6": -40547043779562621,
+          "delta": 57616400033161348880793600,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -687099,
+            342006,
+            345093
+          ],
+          "root_gap_gcd": 63,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 148355145225,
+          "c6": 3246310546990875,
+          "delta": 1883476166980088139782400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -659715,
+            -14595,
+            674310
+          ],
+          "root_gap_gcd": 315,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 159672692025,
+          "c6": 49763553964009875,
+          "delta": 922744694427920100000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -544170,
+            -234795,
+            778965
+          ],
+          "root_gap_gcd": 495,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 234711229225,
+          "c6": -107482607987319125,
+          "delta": 797211022541161536000000000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -962995,
+            388685,
+            574310
+          ],
+          "root_gap_gcd": 165,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 291454559649,
+          "c6": -157341443937603057,
+          "delta": 867588906485795479643750400,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -1079727,
+            537438,
+            542289
+          ],
+          "root_gap_gcd": 99,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 312958476369,
+          "c6": -136551192077243097,
+          "delta": 6947839395504023798073600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -1090551,
+            328713,
+            761838
+          ],
+          "root_gap_gcd": 693,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 327852925225,
+          "c6": 187717795275752875,
+          "delta": 1234919410861654425600000000,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -575155,
+            -570010,
+            1145165
+          ],
+          "root_gap_gcd": 105,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 366346379025,
+          "c6": 12597199236282375,
+          "delta": 28361421872276108806713600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -1036695,
+            -22935,
+            1059630
+          ],
+          "root_gap_gcd": 495,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 460034009281,
+          "c6": 294932276317203679,
+          "delta": 6002629093820487267127296000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -804034,
+            -544159,
+            1348193
+          ],
+          "root_gap_gcd": 231,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 718038902889,
+          "c6": -34566714704358837,
+          "delta": 213548346998490363200067092889600,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -1483482,
+            32109,
+            1451373
+          ],
+          "root_gap_gcd": 693,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 809595999025,
+          "c6": 728432610822236375,
+          "delta": 18595441239836151398400000000,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -903815,
+            -895730,
+            1799545
+          ],
+          "root_gap_gcd": 165,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 855435141225,
+          "c6": 747856072554892875,
+          "delta": 38595169470201132096000000000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -1096410,
+            -742035,
+            1838445
+          ],
+          "root_gap_gcd": 315,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 869329101025,
+          "c6": 632181444802051375,
+          "delta": 148916310774691868100000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -1269730,
+            -547855,
+            1817585
+          ],
+          "root_gap_gcd": 1155,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 1586808158089,
+          "c6": -1998819084096216613,
+          "delta": 140015044251230936055703142400,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -2519363,
+            1254022,
+            1265341
+          ],
+          "root_gap_gcd": 231,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 1994552508025,
+          "c6": 160031086594253875,
+          "delta": 4577082197327039677642041600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -2418955,
+            -53515,
+            2472470
+          ],
+          "root_gap_gcd": 1155,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 2112401063025,
+          "c6": 2902030415657616375,
+          "delta": 581166835432506759744000000000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -1722930,
+            -1166055,
+            2888985
+          ],
+          "root_gap_gcd": 495,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 2950676327025,
+          "c6": -5068380472445327625,
+          "delta": 900256250518146076262400000000,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -3435495,
+            1710030,
+            1725465
+          ],
+          "root_gap_gcd": 315,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 4140306083529,
+          "c6": -7963171460564499333,
+          "delta": 4375916609395135217735798784000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -4044579,
+            1632477,
+            2412102
+          ],
+          "root_gap_gcd": 693,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 7286363991225,
+          "c6": -19667680492200382125,
+          "delta": 13556076663840554369433600000000,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -5398635,
+            2687190,
+            2711445
+          ],
+          "root_gap_gcd": 495,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 7823961909225,
+          "c6": -17068899009655387125,
+          "delta": 108559990554750371844900000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -5452755,
+            1643565,
+            3809190
+          ],
+          "root_gap_gcd": 3465,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 11500850232025,
+          "c6": 36866534539650459875,
+          "delta": 93791079590945113548864000000000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -4020170,
+            -2720795,
+            6740965
+          ],
+          "root_gap_gcd": 1155,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 14281273422801,
+          "c6": 53968115270597848551,
+          "delta": 102070967259147352384607590809600,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -3796023,
+            -3762066,
+            7558089
+          ],
+          "root_gap_gcd": 693,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 17950972572225,
+          "c6": -4320839338044854625,
+          "delta": 3336692921851411925001048326400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -7417410,
+            160545,
+            7256865
+          ],
+          "root_gap_gcd": 3465,
+          "normalized_abc": [
+            2048,
+            2187,
+            4235
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 39670203952225,
+          "c6": -249852385512027076625,
+          "delta": 2187735066425483375870361600000000,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -12596815,
+            6270110,
+            6326705
+          ],
+          "root_gap_gcd": 1155,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 103507652088225,
+          "c6": -995396432570562416625,
+          "delta": 68373697021798987777121856000000000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -20222895,
+            8162385,
+            12060510
+          ],
+          "root_gap_gcd": 3465,
+          "normalized_abc": [
+            1125,
+            8192,
+            9317
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 357031835570025,
+          "c6": 6746014408824731068875,
+          "delta": 1594858863424177381009493606400000000,
+          "v2_delta": 20,
+          "S": [
+            2,
+            3,
+            5,
+            7,
+            11
+          ],
+          "roots": [
+            -18980115,
+            -18810330,
+            37790445
+          ],
+          "root_gap_gcd": 3465,
+          "normalized_abc": [
+            49,
+            16335,
+            16384
+          ],
+          "reason": "not the coprime semistable gap model"
+        }
+      ]
+    },
+    {
+      "file": "curves_maxNS_1000.txt.gz",
+      "source": "https://www.math.u-bordeaux.fr/~bmatschke/data/curves_maxNS_1000.txt",
+      "raw_sha256": "18e4efa02d1b8b11f91b0588455caa78e109127a90bfb4934fb62bbd9625473c",
+      "rows_checked": 1221342,
+      "sets_checked": 607,
+      "odd_c4_positive_square_delta_rows": 4722,
+      "distinct_high_valuation_candidates": 134,
+      "modular_nonsplitting_certificates": 106,
+      "normalized_split_triples": [
+        [
+          14,
+          23,
+          2025,
+          2048
+        ],
+        [
+          14,
+          139,
+          2048,
+          2187
+        ],
+        [
+          14,
+          243,
+          1805,
+          2048
+        ],
+        [
+          14,
+          625,
+          2048,
+          2673
+        ]
+      ],
+      "gap_sum_candidates": [
+        {
+          "G": 14,
+          "a": 243,
+          "b": 1805,
+          "c": 2048,
+          "c4": 3755689,
+          "c6": 6894061163
+        },
+        {
+          "G": 14,
+          "a": 23,
+          "b": 2025,
+          "c": 2048,
+          "c4": 4147729,
+          "c6": 8443618183
+        }
+      ],
+      "certificates": [
+        {
+          "c4": 3441,
+          "c6": 116343,
+          "delta": 15745024,
+          "v2_delta": 14,
+          "S": [
+            2,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 27937,
+          "c6": -4248881,
+          "delta": 2170814464,
+          "v2_delta": 18,
+          "S": [
+            2,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 30969,
+          "c6": -3141261,
+          "delta": 11478122496,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 48513,
+          "c6": 10652607,
+          "delta": 403849216,
+          "v2_delta": 14,
+          "S": [
+            2,
+            157
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 54873,
+          "c6": -718173,
+          "delta": 95317917696,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            67
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 86025,
+          "c6": 14542875,
+          "delta": 246016000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            5,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 116649,
+          "c6": 28929771,
+          "delta": 434207195136,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 141217,
+          "c6": -22233329,
+          "delta": 1343670452224,
+          "v2_delta": 24,
+          "S": [
+            2,
+            283
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 161121,
+          "c6": -61459857,
+          "delta": 234596859904,
+          "v2_delta": 20,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 168609,
+          "c6": -39905649,
+          "delta": 1852386328576,
+          "v2_delta": 14,
+          "S": [
+            2,
+            7,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 222777,
+          "c6": -104610285,
+          "delta": 65404993536,
+          "v2_delta": 16,
+          "S": [
+            2,
+            3,
+            37
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 251433,
+          "c6": 114719787,
+          "delta": 1582523744256,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 397449,
+          "c6": 250565211,
+          "delta": 224280576,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 416361,
+          "c6": -154852533,
+          "delta": 27893270462464,
+          "v2_delta": 14,
+          "S": [
+            2,
+            11,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 436617,
+          "c6": -287620389,
+          "delta": 294406078464,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            157
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 493857,
+          "c6": 19390671,
+          "delta": 69486762000384,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            67
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 578737,
+          "c6": -80322409,
+          "delta": 108442398490624,
+          "v2_delta": 18,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 581529,
+          "c6": 255605571,
+          "delta": 75998223548416,
+          "v2_delta": 14,
+          "S": [
+            2,
+            13,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 698425,
+          "c6": -531110125,
+          "delta": 33918976000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            5,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 774225,
+          "c6": -392657625,
+          "delta": 179345664000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 1049841,
+          "c6": -781103817,
+          "delta": 316537045254144,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 1181817,
+          "c6": -1267627725,
+          "delta": 25320379908096,
+          "v2_delta": 22,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 1368913,
+          "c6": 1457366183,
+          "delta": 255394150875136,
+          "v2_delta": 18,
+          "S": [
+            2,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 2004993,
+          "c6": 2824477695,
+          "delta": 47680240287744,
+          "v2_delta": 16,
+          "S": [
+            2,
+            3,
+            37
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 3306801,
+          "c6": -3465974313,
+          "delta": 13973766757433344,
+          "v2_delta": 14,
+          "S": [
+            2,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 3374001,
+          "c6": 6187661847,
+          "delta": 70643890520064,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 3577041,
+          "c6": -6765260697,
+          "delta": 163500539904,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 3755689,
+          "c6": 6894061163,
+          "delta": 3152005008998400,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "roots": [
+            -2291,
+            -1562,
+            3853
+          ],
+          "root_gap_gcd": 3,
+          "normalized_abc": [
+            243,
+            1805,
+            2048
+          ],
+          "reason": "gap-sum candidate",
+          "G": 14
+        },
+        {
+          "c4": 4147729,
+          "c6": 8443618183,
+          "delta": 35540674560000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            23
+          ],
+          "roots": [
+            -2071,
+            -2002,
+            4073
+          ],
+          "root_gap_gcd": 3,
+          "normalized_abc": [
+            23,
+            2025,
+            2048
+          ],
+          "reason": "gap-sum candidate",
+          "G": 14
+        },
+        {
+          "c4": 4498297,
+          "c6": -9402407245,
+          "delta": 1514074014498816,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            139
+          ],
+          "roots": [
+            -4235,
+            1909,
+            2326
+          ],
+          "root_gap_gcd": 3,
+          "normalized_abc": [
+            139,
+            2048,
+            2187
+          ],
+          "reason": "the largest root gap is odd"
+        },
+        {
+          "c4": 4721353,
+          "c6": -9334791557,
+          "delta": 10478106792165376,
+          "v2_delta": 18,
+          "S": [
+            2,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 5864929,
+          "c6": 11077953967,
+          "delta": 45727545600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            11
+          ],
+          "roots": [
+            -3298,
+            -1423,
+            4721
+          ],
+          "root_gap_gcd": 3,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "the largest root gap is odd"
+        },
+        {
+          "c4": 6030297,
+          "c6": -4753877661,
+          "delta": 113824810961731584,
+          "v2_delta": 36,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 7789537,
+          "c6": 13160344751,
+          "delta": 173292928142147584,
+          "v2_delta": 40,
+          "S": [
+            2,
+            397
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 9936225,
+          "c6": 31320651375,
+          "delta": 3504384000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 10636353,
+          "c6": 34225948575,
+          "delta": 18458556953001984,
+          "v2_delta": 22,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 12320217,
+          "c6": -39348886941,
+          "delta": 186182335987974144,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 14114529,
+          "c6": -38505525201,
+          "delta": 769224532822327296,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 19475001,
+          "c6": -85943867373,
+          "delta": 26386385485824,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 19495641,
+          "c6": 81803069667,
+          "delta": 415602647728390144,
+          "v2_delta": 20,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 19713681,
+          "c6": 63558706887,
+          "delta": 2095835197347201024,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 29761209,
+          "c6": 93581306451,
+          "delta": 10186875966168907776,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 30366009,
+          "c6": -167066869869,
+          "delta": 51499396189126656,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 33801201,
+          "c6": -186139651401,
+          "delta": 2297811651559833600,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "roots": [
+            -11559,
+            4686,
+            6873
+          ],
+          "root_gap_gcd": 9,
+          "normalized_abc": [
+            243,
+            1805,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 34222825,
+          "c6": 182170772875,
+          "delta": 3990533607424000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            5,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 37329561,
+          "c6": -227977690941,
+          "delta": 25909151754240000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            23
+          ],
+          "roots": [
+            -12219,
+            6006,
+            6213
+          ],
+          "root_gap_gcd": 9,
+          "normalized_abc": [
+            23,
+            2025,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 40484673,
+          "c6": 253864995615,
+          "delta": 1103759956569636864,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            139
+          ],
+          "roots": [
+            -6978,
+            -5727,
+            12705
+          ],
+          "root_gap_gcd": 9,
+          "normalized_abc": [
+            139,
+            2048,
+            2187
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 42492177,
+          "c6": 252039372039,
+          "delta": 7638539851488559104,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 48091329,
+          "c6": -333502295841,
+          "delta": 397326721499136,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 52784361,
+          "c6": -299104757109,
+          "delta": 33335380742400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            11
+          ],
+          "roots": [
+            -14163,
+            4269,
+            9894
+          ],
+          "root_gap_gcd": 9,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 54272673,
+          "c6": 128354696847,
+          "delta": 82978287191102324736,
+          "v2_delta": 36,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 57909033,
+          "c6": 434796309675,
+          "delta": 2978917375807586304,
+          "v2_delta": 22,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 67168881,
+          "c6": 550491768567,
+          "delta": 1082559502761984,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 70027177,
+          "c6": 106909126379,
+          "delta": 192112323912448344064,
+          "v2_delta": 18,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 82670025,
+          "c6": -433246789125,
+          "delta": 218340105584896000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            5,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 84350025,
+          "c6": 773457730875,
+          "delta": 1103810789376000000,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 89426025,
+          "c6": -845657587125,
+          "delta": 2554695936000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 93892225,
+          "c6": 861757645375,
+          "delta": 49250078265600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "roots": [
+            -11455,
+            -7810,
+            19265
+          ],
+          "root_gap_gcd": 15,
+          "normalized_abc": [
+            243,
+            1805,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 103693225,
+          "c6": 1055452272875,
+          "delta": 555323040000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            23
+          ],
+          "roots": [
+            -10355,
+            -10010,
+            20365
+          ],
+          "root_gap_gcd": 15,
+          "normalized_abc": [
+            23,
+            2025,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 118033825,
+          "c6": -1166848944625,
+          "delta": 163720418627584000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            5,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 127030761,
+          "c6": 1039649180427,
+          "delta": 560764684427476598784,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 146623225,
+          "c6": 1384744245875,
+          "delta": 714492900000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            11
+          ],
+          "roots": [
+            -16490,
+            -7115,
+            23605
+          ],
+          "root_gap_gcd": 15,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 162033249,
+          "c6": 1188829189359,
+          "delta": 1643999685245275488256,
+          "v2_delta": 14,
+          "S": [
+            2,
+            7,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 165326049,
+          "c6": -2122368013521,
+          "delta": 8311183075795009536,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            7,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 175275009,
+          "c6": 2320484419071,
+          "delta": 19235675019165696,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 177423129,
+          "c6": -1716085085949,
+          "delta": 1527863858866109546496,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 199727073,
+          "c6": -2784978111825,
+          "delta": 122216637623816945664,
+          "v2_delta": 22,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 231346297,
+          "c6": 3201833504051,
+          "delta": 1232738785991464321024,
+          "v2_delta": 18,
+          "S": [
+            2,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 246324897,
+          "c6": 215999865999,
+          "delta": 8622304626498055962624,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            67
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 297912729,
+          "c6": 4886488850499,
+          "delta": 1482971921608575287296,
+          "v2_delta": 20,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 304981713,
+          "c6": -5298824766105,
+          "delta": 167811319195789492224,
+          "v2_delta": 16,
+          "S": [
+            2,
+            3,
+            37
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 400122921,
+          "c6": 4613211810603,
+          "delta": 24755380210565372329984,
+          "v2_delta": 14,
+          "S": [
+            2,
+            11,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 432821961,
+          "c6": 9004561987707,
+          "delta": 289651179972870144,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 521181297,
+          "c6": -11739500361225,
+          "delta": 2171630766963730415616,
+          "v2_delta": 22,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 558849369,
+          "c6": -7614745565661,
+          "delta": 67448703148680081719296,
+          "v2_delta": 14,
+          "S": [
+            2,
+            13,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 604519929,
+          "c6": -14863277751309,
+          "delta": 789185877513486336,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 709656409,
+          "c6": -14744756730077,
+          "delta": 81009136410681600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            11
+          ],
+          "roots": [
+            -51931,
+            15653,
+            36278
+          ],
+          "root_gap_gcd": 33,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 729665937,
+          "c6": 6327411166791,
+          "delta": 201647595932176166682624,
+          "v2_delta": 36,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 744030225,
+          "c6": 11697663306375,
+          "delta": 159169936971389184000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            31
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 759150225,
+          "c6": -20883358733625,
+          "delta": 804678065455104000000,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 845030025,
+          "c6": -23267456425125,
+          "delta": 35903307055622400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "roots": [
+            -57795,
+            23430,
+            34365
+          ],
+          "root_gap_gcd": 45,
+          "normalized_abc": [
+            243,
+            1805,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 933239025,
+          "c6": -28497211367625,
+          "delta": 404830496160000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            23
+          ],
+          "roots": [
+            -61095,
+            30030,
+            31065
+          ],
+          "root_gap_gcd": 45,
+          "normalized_abc": [
+            23,
+            2025,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 1019120193,
+          "c6": -10444269221217,
+          "delta": 549410621973384665235456,
+          "v2_delta": 36,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 1070084713,
+          "c6": 6386193772363,
+          "delta": 685503770763563926552576,
+          "v2_delta": 18,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 1195796937,
+          "c6": 41224449261051,
+          "delta": 6048074867890362793984,
+          "v2_delta": 14,
+          "S": [
+            2,
+            157
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 1218014361,
+          "c6": -42441172608573,
+          "delta": 3323504066783959056384,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 1319609025,
+          "c6": -37388094638625,
+          "delta": 520865324100000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            11
+          ],
+          "roots": [
+            -70815,
+            21345,
+            49470
+          ],
+          "root_gap_gcd": 45,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 1355803729,
+          "c6": -47286365517017,
+          "delta": 148288852564742655590400,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "roots": [
+            -73207,
+            29678,
+            43529
+          ],
+          "root_gap_gcd": 57,
+          "normalized_abc": [
+            243,
+            1805,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 1487934441,
+          "c6": 57303936365067,
+          "delta": 6058852462254561951744,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            7,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 1679222025,
+          "c6": 68811471070875,
+          "delta": 16914992230656000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 1797543657,
+          "c6": 75194409019275,
+          "delta": 89095928827762553389056,
+          "v2_delta": 22,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 2082116673,
+          "c6": -86449504609377,
+          "delta": 898666574987777490026496,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 2194148641,
+          "c6": -102733502432561,
+          "delta": 5261295354149283840000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            23
+          ],
+          "roots": [
+            -93679,
+            46046,
+            47633
+          ],
+          "root_gap_gcd": 69,
+          "normalized_abc": [
+            23,
+            2025,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 2216924073,
+          "c6": -5831996381973,
+          "delta": 6285660072717082796752896,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            67
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 2385355401,
+          "c6": -84596638866597,
+          "delta": 3712899898047604793278464,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 2744835417,
+          "c6": 143068268684835,
+          "delta": 122334451693730539831296,
+          "v2_delta": 16,
+          "S": [
+            2,
+            3,
+            37
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 3011445273,
+          "c6": -165257849606013,
+          "delta": 26598569454616969216,
+          "v2_delta": 26,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 3291275169,
+          "c6": -188818676618481,
+          "delta": 127362042940444655616,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 5783657425,
+          "c6": 400229188006375,
+          "delta": 19261543531116630016000000,
+          "v2_delta": 18,
+          "S": [
+            2,
+            5,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 6386907681,
+          "c6": 398108431712079,
+          "delta": 59055660443386886400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            11
+          ],
+          "roots": [
+            -108834,
+            -46959,
+            155793
+          ],
+          "root_gap_gcd": 99,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 6566993433,
+          "c6": -170840101503357,
+          "delta": 147001097434556425511632896,
+          "v2_delta": 36,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 8127434601,
+          "c6": -732704543962677,
+          "delta": 1917820195272523137024,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 9172081737,
+          "c6": 281995268972859,
+          "delta": 400520343418597420956647424,
+          "v2_delta": 36,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 9786626577,
+          "c6": 955247492355975,
+          "delta": 14378665199804439840423936,
+          "v2_delta": 22,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 10762172433,
+          "c6": -1113060130048377,
+          "delta": 4409046578692074476814336,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            157
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 10962129249,
+          "c6": 1145911660431471,
+          "delta": 2422834464685506152103936,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 11309928313,
+          "c6": 503922559417523,
+          "delta": 690257890925970882146861056,
+          "v2_delta": 24,
+          "S": [
+            2,
+            283
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 12202233561,
+          "c6": 1276731868959459,
+          "delta": 108102573519697395925401600,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "roots": [
+            -130587,
+            -89034,
+            219621
+          ],
+          "root_gap_gcd": 171,
+          "normalized_abc": [
+            243,
+            1805,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 15112998225,
+          "c6": -1857909718913625,
+          "delta": 12331029336148224000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 17741410225,
+          "c6": -1843094591259625,
+          "delta": 1265767756416900000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            11
+          ],
+          "roots": [
+            -259655,
+            78265,
+            181390
+          ],
+          "root_gap_gcd": 165,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 19747337769,
+          "c6": 2773804565679147,
+          "delta": 3835484313174827919360000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            23
+          ],
+          "roots": [
+            -142899,
+            -138138,
+            281037
+          ],
+          "root_gap_gcd": 207,
+          "normalized_abc": [
+            23,
+            2025,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 21468198609,
+          "c6": 2284109249398119,
+          "delta": 2706704025676703894300000256,
+          "v2_delta": 18,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 29621476521,
+          "c6": 5098104268698987,
+          "delta": 92846929303584153944064,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 30450359025,
+          "c6": -5305146576071625,
+          "delta": 51929751043499360256000000,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 33895093225,
+          "c6": -5910795689627125,
+          "delta": 2317013321324103993600000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "roots": [
+            -366035,
+            148390,
+            217645
+          ],
+          "root_gap_gcd": 285,
+          "normalized_abc": [
+            243,
+            1805,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 36047440209,
+          "c6": -6503916660014169,
+          "delta": 2627175220416809244537389056,
+          "v2_delta": 20,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 54853716025,
+          "c6": -12841687804070125,
+          "delta": 82207739908582560000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            23
+          ],
+          "roots": [
+            -468395,
+            230230,
+            238165
+          ],
+          "root_gap_gcd": 345,
+          "normalized_abc": [
+            23,
+            2025,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 59682703689,
+          "c6": 14557322204740539,
+          "delta": 391006929953065999024521216,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            7,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 73146911409,
+          "c6": 19783022686992279,
+          "delta": 1398090922353669366890496,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 86911596337,
+          "c6": 25251283542909655,
+          "delta": 10920333644755754746329317376,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            139
+          ],
+          "roots": [
+            -323314,
+            -265351,
+            588665
+          ],
+          "root_gap_gcd": 417,
+          "normalized_abc": [
+            139,
+            2048,
+            2187
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 88079639193,
+          "c6": -25791682293611325,
+          "delta": 10482046930657436643669049344,
+          "v2_delta": 22,
+          "S": [
+            2,
+            3,
+            7,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 11
+        },
+        {
+          "c4": 123313543353,
+          "c6": 13901322333439827,
+          "delta": 973314430873791310929189666816,
+          "v2_delta": 36,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 129480250273,
+          "c6": -8500023911015153,
+          "delta": 1214411745637670073287408091136,
+          "v2_delta": 18,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 159672692025,
+          "c6": 49763553964009875,
+          "delta": 922744694427920100000000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            11
+          ],
+          "roots": [
+            -544170,
+            -234795,
+            778965
+          ],
+          "root_gap_gcd": 495,
+          "normalized_abc": [
+            625,
+            2048,
+            2673
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 274053231225,
+          "c6": 143238957553933875,
+          "delta": 37856788510711033626624000000,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 7
+        },
+        {
+          "c4": 305055839025,
+          "c6": 159591483619932375,
+          "delta": 1689102711245271811334400000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            19
+          ],
+          "roots": [
+            -652935,
+            -445170,
+            1098105
+          ],
+          "root_gap_gcd": 855,
+          "normalized_abc": [
+            243,
+            1805,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 364384878033,
+          "c6": 219958197825603303,
+          "delta": 47120988301590692601266176,
+          "v2_delta": 26,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 493683444225,
+          "c6": 346725570709893375,
+          "delta": 59929442393356686240000000000,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            5,
+            23
+          ],
+          "roots": [
+            -714495,
+            -690690,
+            1405185
+          ],
+          "root_gap_gcd": 1035,
+          "normalized_abc": [
+            23,
+            2025,
+            2048
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 537144333201,
+          "c6": -393047699527994553,
+          "delta": 285044051935785113288875966464,
+          "v2_delta": 28,
+          "S": [
+            2,
+            3,
+            7,
+            19
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 782204367033,
+          "c6": -681784655658560685,
+          "delta": 7960923227026945210074072367104,
+          "v2_delta": 14,
+          "S": [
+            2,
+            3,
+            139
+          ],
+          "roots": [
+            -1765995,
+            796053,
+            969942
+          ],
+          "root_gap_gcd": 1251,
+          "normalized_abc": [
+            139,
+            2048,
+            2187
+          ],
+          "reason": "not the coprime semistable gap model"
+        },
+        {
+          "c4": 1109821890177,
+          "c6": -375335703002875329,
+          "delta": 709546220106993865667379267108864,
+          "v2_delta": 36,
+          "S": [
+            2,
+            3,
+            11,
+            13
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 1227701137033,
+          "c6": 823452944016562523,
+          "delta": 678459426098345656496526444199936,
+          "v2_delta": 40,
+          "S": [
+            2,
+            397
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 5568162309777,
+          "c6": 13139155848625275591,
+          "delta": 168139214106675791650392899584,
+          "v2_delta": 26,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        },
+        {
+          "c4": 673747639483017,
+          "c6": -17488216434520241811621,
+          "delta": 297868874282036672131961695579930624,
+          "v2_delta": 26,
+          "S": [
+            2,
+            11,
+            43
+          ],
+          "reason": "no rational root",
+          "no_root_modulus": 5
+        }
+      ]
+    }
+  ],
+  "gap_case_exclusions": {
+    "all_oriented_branch_cases": [
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 2025,
+        "q": 23,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 23,
+        "q": 2025,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 3,
+        "m": 23,
+        "q": 675,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 5,
+        "m": 23,
+        "q": 405,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 9,
+        "m": 23,
+        "q": 225,
+        "v_min": 10,
+        "reason": "fixed difference of two factors",
+        "square_constant_root": 15,
+        "A_odd": 23,
+        "product_lower": 207165582859042816,
+        "product_upper": 3496
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 15,
+        "m": 23,
+        "q": 135,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 45,
+        "m": 23,
+        "q": 45,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 1,
+        "m": 6075,
+        "q": 69,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 1,
+        "m": 69,
+        "q": 6075,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 3,
+        "m": 69,
+        "q": 2025,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 5,
+        "m": 69,
+        "q": 1215,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 9,
+        "m": 69,
+        "q": 675,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 15,
+        "m": 69,
+        "q": 405,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 45,
+        "m": 69,
+        "q": 135,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 1,
+        "m": 18225,
+        "q": 207,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 1,
+        "m": 207,
+        "q": 18225,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 3,
+        "m": 207,
+        "q": 6075,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 5,
+        "m": 207,
+        "q": 3645,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 9,
+        "m": 207,
+        "q": 2025,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 15,
+        "m": 207,
+        "q": 1215,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 45,
+        "m": 207,
+        "q": 405,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 6075,
+        "q": 69,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 69,
+        "q": 6075,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 3,
+        "m": 69,
+        "q": 2025,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 5,
+        "m": 69,
+        "q": 1215,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 9,
+        "m": 69,
+        "q": 675,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 15,
+        "m": 69,
+        "q": 405,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 45,
+        "m": 69,
+        "q": 135,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 1805,
+        "q": 243,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 3,
+        "m": 1805,
+        "q": 81,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 9,
+        "m": 1805,
+        "q": 27,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 243,
+        "q": 1805,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 19,
+        "m": 243,
+        "q": 95,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 1,
+        "m": 5415,
+        "q": 729,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 3,
+        "m": 5415,
+        "q": 243,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 9,
+        "m": 5415,
+        "q": 81,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 1,
+        "m": 729,
+        "q": 5415,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 19,
+        "m": 729,
+        "q": 285,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 1,
+        "m": 16245,
+        "q": 2187,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 3,
+        "m": 16245,
+        "q": 729,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 9,
+        "m": 16245,
+        "q": 243,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 1,
+        "m": 2187,
+        "q": 16245,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 19,
+        "m": 2187,
+        "q": 855,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 5415,
+        "q": 729,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 3,
+        "m": 5415,
+        "q": 243,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 9,
+        "m": 5415,
+        "q": 81,
+        "v_min": 10,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 729,
+        "q": 5415,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 14,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 19,
+        "m": 729,
+        "q": 285,
+        "v_min": 10,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 16335,
+        "q": 49,
+        "v_min": 9,
+        "reason": "fixed difference of two factors",
+        "square_constant_root": 7,
+        "A_odd": 16335,
+        "product_lower": 73566299913097052160,
+        "product_upper": 1067786280
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 7,
+        "m": 16335,
+        "q": 7,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 49,
+        "q": 16335,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 3,
+        "m": 49,
+        "q": 5445,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 11,
+        "m": 49,
+        "q": 1485,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 33,
+        "m": 49,
+        "q": 495,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 1,
+        "m": 49005,
+        "q": 147,
+        "v_min": 9,
+        "reason": "fixed difference of two factors",
+        "square_constant_root": 21,
+        "A_odd": 147015,
+        "product_lower": 662096699217873469440,
+        "product_upper": 86465990160
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 7,
+        "m": 49005,
+        "q": 21,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 1,
+        "m": 147,
+        "q": 49005,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 3,
+        "m": 147,
+        "q": 16335,
+        "v_min": 9,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 11,
+        "m": 147,
+        "q": 4455,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 33,
+        "m": 147,
+        "q": 1485,
+        "v_min": 9,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 1,
+        "m": 147015,
+        "q": 441,
+        "v_min": 9,
+        "reason": "fixed difference of two factors",
+        "square_constant_root": 21,
+        "A_odd": 147015,
+        "product_lower": 662096699217873469440,
+        "product_upper": 86465990160
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 7,
+        "m": 147015,
+        "q": 63,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 1,
+        "m": 441,
+        "q": 147015,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 3,
+        "m": 441,
+        "q": 49005,
+        "v_min": 9,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 11,
+        "m": 441,
+        "q": 13365,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 33,
+        "m": 441,
+        "q": 4455,
+        "v_min": 9,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 17,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 49005,
+        "q": 147,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 7,
+        "m": 49005,
+        "q": 21,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 147,
+        "q": 49005,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 3,
+        "m": 147,
+        "q": 16335,
+        "v_min": 9,
+        "reason": "T is not coprime to the branch constants"
+      },
+      {
+        "G": 17,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 11,
+        "m": 147,
+        "q": 4455,
+        "v_min": 9,
+        "reason": "q is not c0*T^2 modulo 16"
+      },
+      {
+        "G": 17,
+        "gamma": 3,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 33,
+        "m": 147,
+        "q": 1485,
+        "v_min": 9,
+        "reason": "T is not coprime to the branch constants"
+      }
+    ],
+    "after_coprimality_and_mod16": [
+      {
+        "G": 14,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 9,
+        "m": 23,
+        "q": 225,
+        "v_min": 10,
+        "reason": "fixed difference of two factors",
+        "square_constant_root": 15,
+        "A_odd": 23,
+        "product_lower": 207165582859042816,
+        "product_upper": 3496
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 1,
+        "T": 1,
+        "m": 16335,
+        "q": 49,
+        "v_min": 9,
+        "reason": "fixed difference of two factors",
+        "square_constant_root": 7,
+        "A_odd": 16335,
+        "product_lower": 73566299913097052160,
+        "product_upper": 1067786280
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 1,
+        "delta2": 3,
+        "T": 1,
+        "m": 49005,
+        "q": 147,
+        "v_min": 9,
+        "reason": "fixed difference of two factors",
+        "square_constant_root": 21,
+        "A_odd": 147015,
+        "product_lower": 662096699217873469440,
+        "product_upper": 86465990160
+      },
+      {
+        "G": 17,
+        "gamma": 1,
+        "delta1": 3,
+        "delta2": 1,
+        "T": 1,
+        "m": 147015,
+        "q": 441,
+        "v_min": 9,
+        "reason": "fixed difference of two factors",
+        "square_constant_root": 21,
+        "A_odd": 147015,
+        "product_lower": 662096699217873469440,
+        "product_upper": 86465990160
+      }
+    ],
+    "remaining": 0
+  },
+  "growth": {
+    "bound": "G < (9/2)*R_F*ceil(log2(6*R_F))^2+52",
+    "threshold": "G>=2^20 implies R_F>sqrt(G)",
+    "threshold_ratio": "225805/262144",
+    "asymptotic": "R_F=o(G/(log(G))^2) is impossible as G tends to infinity",
+    "external_theorem": "von Kaenel arXiv:1310.7263v2, Corollary 6.2"
+  },
+  "external_dependencies": [
+    "Completeness of vKM full curve lists, arXiv:1605.06079 Section 4.2.5 / Algorithm 4.6; not independently recomputed.",
+    "von Kaenel conductor-height theorem; not proved by this audit.",
+    "Previously established even-j normalization, six-block identities and G>=14."
+  ],
+  "conclusions": [
+    "N_F>1000",
+    "R_F>166",
+    "m*T*P*W_star has a prime factor at least 13"
+  ],
+  "remaining": "R_F and G may both grow fast. No full solution of i=3 is claimed."
+}
