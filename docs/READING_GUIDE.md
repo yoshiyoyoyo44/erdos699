@@ -24,7 +24,8 @@
 
 | 方向 | 中心となるノート | 続き・関連 |
 |---|---|---|
-| 全てのGで平方枝を除く | [中心式の二係数と一様な因数分解](../research/i3/i3_gap_square_obstructions_2026-09-21.md) | 最新。$\delta_2TPW_*$ は非平方。先頭係数が平方なら $2G-u\ge7$、平方の $T$ では不可能。両非平方の枝は残る |
+| 9月22日の四つの進捗 | [全桁・非平方中心・二曲線の統合](../research/i3/i3_four_handoffs_integration_2026-09-22.md) | 原文4件への導線と、新規報告・未独立監査・残枝の区別。まずこの統合を読み、詳しい議論は各原文へ |
+| 全てのGで平方枝を除く | [中心式の二係数と一様な因数分解](../research/i3/i3_gap_square_obstructions_2026-09-21.md) | 9月21日の検算済み稿。$\delta_2TPW_*$ は非平方。先頭係数が平方なら $2G-u\ge7$、平方の $T$ では不可能。両非平方の枝は残る |
 | 増大する指数差 | [第二のFrey曲線と $mTPW_*$ の素数の積](../research/i3/i3_growing_gap_and_auxiliary_frey_2026-09-21.md) | $v_2(\Delta_{F,\min})=2G-14$、$N_F>1000$。$R_F=o(G/(\log G)^2)$ の枝を排除。両方が速く増える領域は未解決 |
 | 新成果と指数差の有効上限 | [商の同定、素数冪の合同式、固定Gの明示的有限化](../research/i3/i3_new_chat_integration_and_effective_gap_2026-09-21.md) | 偶数jで $u<(6561/4)2^G(G+10)^2+124$。指数差の増大が十分遅い枝も制限 |
 | 二次捻りとKummerの橋 | [3乗因子の除去、捻りの最適性、四つの補助因子](../research/i3/i3_quadratic_twist_and_kummer_support_2026-09-21.md) | 導手の量を $\operatorname{rad}_{\ge5}(ab)\operatorname{rad}_{\ge5}(\operatorname{cf}_3(G_0H_0))^2$ に還元。全領域の排除は未達 |
