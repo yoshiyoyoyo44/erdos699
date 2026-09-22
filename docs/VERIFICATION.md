@@ -17,6 +17,7 @@
 ## 最新の結果を短く検算する
 
 ```text
+python -X utf8 scripts/audit_i3_multiplicity_and_fresh_support.py
 python -X utf8 scripts/audit_i3_gap_square_obstructions.py
 python -X utf8 scripts/audit_i3_growing_gap_frey.py
 python -X utf8 scripts/audit_i3_new_chat_and_effective_gap.py
@@ -32,6 +33,8 @@ python -X utf8 scripts/audit_i3_mixed_parameter_bound.py
 ```
 
 出力は[検算結果](../data/results/)へ保存されます。標準出力にも確認項目を表示します。
+
+9月23日の[一般偶数枝の検算](../research/i3/i3_multiplicity_budget_and_fresh_support_2026-09-23.md)は、中心式と直接曲線の18恒等式、49個の素数指数パターン、17個の素数配置、1,000個の人工的な曲線、四分岐の定数を確認します。全指数を扱う証明は本文の指数公式と素数ごとの割当てです。一般の導手・判別式定理を使いますが、公開曲線表の再走査は不要です。
 
 指数差の平方枝の検算は、5恒等式、四分岐の定数証明書、256件の法16の条件、317件の平方差の人工的な診断を確認します。
 全ての $G$ に対する排除は[続稿の一般証明](../research/i3/i3_gap_square_obstructions_2026-09-21.md)によります。

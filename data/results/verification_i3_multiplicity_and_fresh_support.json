@@ -1,0 +1,486 @@
+{
+  "status": "passed",
+  "symbolic_identities": [
+    "center_sum",
+    "center_factor_plus",
+    "center_factor_minus",
+    "center_difference_of_squares",
+    "center_first_square",
+    "center_linear",
+    "center_m_norm",
+    "center_q_norm",
+    "lambda_center_ratio",
+    "exact_abP_squared",
+    "ab_q_bridge",
+    "ab_m_bridge",
+    "direct_c4",
+    "direct_c6",
+    "direct_discriminant",
+    "invariant_relation",
+    "c4_mod_z",
+    "c4_mod_z_minus_one"
+  ],
+  "multiplicity_patterns": [
+    {
+      "v_ab": 0,
+      "v_P": 0,
+      "v_Q": 0,
+      "v_defect": 0
+    },
+    {
+      "v_ab": 0,
+      "v_P": 1,
+      "v_Q": 2,
+      "v_defect": 0
+    },
+    {
+      "v_ab": 0,
+      "v_P": 2,
+      "v_Q": 2,
+      "v_defect": 2
+    },
+    {
+      "v_ab": 0,
+      "v_P": 3,
+      "v_Q": 0,
+      "v_defect": 6
+    },
+    {
+      "v_ab": 0,
+      "v_P": 4,
+      "v_Q": 2,
+      "v_defect": 6
+    },
+    {
+      "v_ab": 0,
+      "v_P": 5,
+      "v_Q": 2,
+      "v_defect": 8
+    },
+    {
+      "v_ab": 0,
+      "v_P": 6,
+      "v_Q": 0,
+      "v_defect": 12
+    },
+    {
+      "v_ab": 0,
+      "v_P": 7,
+      "v_Q": 2,
+      "v_defect": 12
+    },
+    {
+      "v_ab": 0,
+      "v_P": 8,
+      "v_Q": 2,
+      "v_defect": 14
+    },
+    {
+      "v_ab": 0,
+      "v_P": 9,
+      "v_Q": 0,
+      "v_defect": 18
+    },
+    {
+      "v_ab": 0,
+      "v_P": 10,
+      "v_Q": 2,
+      "v_defect": 18
+    },
+    {
+      "v_ab": 0,
+      "v_P": 11,
+      "v_Q": 2,
+      "v_defect": 20
+    },
+    {
+      "v_ab": 0,
+      "v_P": 12,
+      "v_Q": 0,
+      "v_defect": 24
+    },
+    {
+      "v_ab": 0,
+      "v_P": 13,
+      "v_Q": 2,
+      "v_defect": 24
+    },
+    {
+      "v_ab": 0,
+      "v_P": 14,
+      "v_Q": 2,
+      "v_defect": 26
+    },
+    {
+      "v_ab": 0,
+      "v_P": 15,
+      "v_Q": 0,
+      "v_defect": 30
+    },
+    {
+      "v_ab": 0,
+      "v_P": 16,
+      "v_Q": 2,
+      "v_defect": 30
+    },
+    {
+      "v_ab": 0,
+      "v_P": 17,
+      "v_Q": 2,
+      "v_defect": 32
+    },
+    {
+      "v_ab": 0,
+      "v_P": 18,
+      "v_Q": 0,
+      "v_defect": 36
+    },
+    {
+      "v_ab": 0,
+      "v_P": 19,
+      "v_Q": 2,
+      "v_defect": 36
+    },
+    {
+      "v_ab": 0,
+      "v_P": 20,
+      "v_Q": 2,
+      "v_defect": 38
+    },
+    {
+      "v_ab": 0,
+      "v_P": 21,
+      "v_Q": 0,
+      "v_defect": 42
+    },
+    {
+      "v_ab": 0,
+      "v_P": 22,
+      "v_Q": 2,
+      "v_defect": 42
+    },
+    {
+      "v_ab": 0,
+      "v_P": 23,
+      "v_Q": 2,
+      "v_defect": 44
+    },
+    {
+      "v_ab": 0,
+      "v_P": 24,
+      "v_Q": 0,
+      "v_defect": 48
+    },
+    {
+      "v_ab": 1,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 0
+    },
+    {
+      "v_ab": 2,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 1
+    },
+    {
+      "v_ab": 3,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 2
+    },
+    {
+      "v_ab": 4,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 3
+    },
+    {
+      "v_ab": 5,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 4
+    },
+    {
+      "v_ab": 6,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 5
+    },
+    {
+      "v_ab": 7,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 6
+    },
+    {
+      "v_ab": 8,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 7
+    },
+    {
+      "v_ab": 9,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 8
+    },
+    {
+      "v_ab": 10,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 9
+    },
+    {
+      "v_ab": 11,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 10
+    },
+    {
+      "v_ab": 12,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 11
+    },
+    {
+      "v_ab": 13,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 12
+    },
+    {
+      "v_ab": 14,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 13
+    },
+    {
+      "v_ab": 15,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 14
+    },
+    {
+      "v_ab": 16,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 15
+    },
+    {
+      "v_ab": 17,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 16
+    },
+    {
+      "v_ab": 18,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 17
+    },
+    {
+      "v_ab": 19,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 18
+    },
+    {
+      "v_ab": 20,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 19
+    },
+    {
+      "v_ab": 21,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 20
+    },
+    {
+      "v_ab": 22,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 21
+    },
+    {
+      "v_ab": 23,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 22
+    },
+    {
+      "v_ab": 24,
+      "v_P": 0,
+      "v_Q": 1,
+      "v_defect": 23
+    }
+  ],
+  "support_allocations": [
+    {
+      "block": "T",
+      "in_ab": 0,
+      "in_P": 0,
+      "left_exponent": 2,
+      "right_exponent": 2
+    },
+    {
+      "block": "T",
+      "in_ab": 0,
+      "in_P": 1,
+      "left_exponent": 2,
+      "right_exponent": 3
+    },
+    {
+      "block": "A",
+      "in_ab": 0,
+      "in_P": 0,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "A",
+      "in_ab": 1,
+      "in_P": 0,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "B",
+      "in_ab": 0,
+      "in_P": 0,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "B",
+      "in_ab": 0,
+      "in_P": 1,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "C",
+      "in_ab": 0,
+      "in_P": 0,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "C",
+      "in_ab": 0,
+      "in_P": 1,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "R",
+      "in_ab": 0,
+      "in_P": 0,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "R",
+      "in_ab": 0,
+      "in_P": 1,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "R",
+      "in_ab": 1,
+      "in_P": 0,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "S",
+      "in_ab": 0,
+      "in_P": 0,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "S",
+      "in_ab": 0,
+      "in_P": 1,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "S",
+      "in_ab": 1,
+      "in_P": 0,
+      "left_exponent": 1,
+      "right_exponent": 1
+    },
+    {
+      "block": "none",
+      "in_ab": 0,
+      "in_P": 0,
+      "left_exponent": 0,
+      "right_exponent": 0
+    },
+    {
+      "block": "none",
+      "in_ab": 0,
+      "in_P": 1,
+      "left_exponent": 0,
+      "right_exponent": 1
+    },
+    {
+      "block": "none",
+      "in_ab": 1,
+      "in_P": 0,
+      "left_exponent": 0,
+      "right_exponent": 1
+    }
+  ],
+  "synthetic_direct_curves": 1000,
+  "branch_constants": [
+    {
+      "branch": [
+        1,
+        1,
+        1
+      ],
+      "kappa": "1/16",
+      "budget_coefficient": "243/4",
+      "fresh_support_coefficient": "16/81"
+    },
+    {
+      "branch": [
+        1,
+        1,
+        3
+      ],
+      "kappa": "9/16",
+      "budget_coefficient": "2187/4",
+      "fresh_support_coefficient": "16/729"
+    },
+    {
+      "branch": [
+        1,
+        3,
+        1
+      ],
+      "kappa": "27/16",
+      "budget_coefficient": "6561/4",
+      "fresh_support_coefficient": "16/2187"
+    },
+    {
+      "branch": [
+        3,
+        1,
+        1
+      ],
+      "kappa": "3/16",
+      "budget_coefficient": "729/4",
+      "fresh_support_coefficient": "16/243"
+    }
+  ],
+  "external_input": "von Kaenel, arXiv:1310.7263v2, Corollary 6.2; inherited first-curve bound and normalization.",
+  "scope": "General necessary inequalities for all even-j branches, not elimination of the general branch. Finite diagnostics do not prove the infinite statements.",
+  "complete_solution": false
+}

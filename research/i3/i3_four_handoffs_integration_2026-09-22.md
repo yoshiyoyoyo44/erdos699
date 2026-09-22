@@ -6,6 +6,8 @@
 
 原文： [全桁 Kummer](../../sources/source_i3_full_digit_kummer_progress_2026-09-22.md)（担当1）、[マスター](../../sources/source_i3_master_progress_2026-09-22.md)、[非平方中心](../../sources/source_i3_nonsquare_center_progress_2026-09-22.md)（担当2）、[二曲線](../../sources/source_i3_two_curves_progress_2026-09-22.md)（担当3）。原文は改訂せず保存した。
 
+**9月23日追記：** [一般偶数枝の続稿](i3_multiplicity_budget_and_fresh_support_2026-09-23.md)で、中心比率と中心ノルムの恒等式、n−1,n−2 の直接曲線を独立に証明・検算し、T と高い冪の同時制約、補助因子の外の素数台の下界を得た。以下の「未監査」は9月22日の取り込み時点の分類であり、更新した範囲は続稿第8節に記載する。担当2原文の「少なくとも13個の素因数」は引用元の誤読で、正しくは「13以上の素因数が少なくとも一つ」である。
+
 ## 1. 共通の出発点と記号
 
 偶数 $j$ の仮想反例に対し、既存の正規化では
@@ -143,7 +145,7 @@ $$
 
 [マスター原文 §§14–22](../../sources/source_i3_master_progress_2026-09-22.md)は、$BC,W_*$ の fresh support、$A/BC/RS$ の Kummer ブロック、$u-G=4v$ を測る補曲線、桁遷移の shifted lemma、有限 lifting ladder を結ぶ。特に $T$ 用の shift-free 議論を $R,S,A,B,C$ に転用しない訂正が重要である。$L_{1000}$ に関する大きな桁和障壁は、保存された全 shifted-pattern 証明書とその再生器がこのリポジトリにまだないため、ここでは「原文報告」として扱う。$L_H\mid\operatorname{lcm}(1,\ldots,H+2)$ という一般形も原文の導出と適用条件を確認してから再利用する。
 
-マスター原文の第二曲線節にある「$\alpha,\beta,\chi$ は奇数」という記述は誤記である。$d=\gcd(m,T^2PW_*)$ は奇数なので $\alpha=m/d$, $\beta=T^2PW_*/d$ は奇数だが、$\chi=\alpha+\beta=3^r2^{G-3}$ は偶数である。この訂正は第二曲線の既存の式とも一致する。
+担当3「二曲線」原文の第2節にある「$\alpha,\beta,\chi$ は奇数」という記述は誤記である。$d=\gcd(m,T^2PW_*)$ は奇数なので $\alpha=m/d$, $\beta=T^2PW_*/d$ は奇数だが、$\chi=\alpha+\beta=3^r2^{G-3}$ は偶数である。この訂正は第二曲線の既存の式とも一致する。初版の統合ノートでは、この誤記の所在をマスター原文と取り違えていたため訂正した。
 
 ## 6. 今回の統合で維持する境界
 
