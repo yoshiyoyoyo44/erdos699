@@ -1,0 +1,251 @@
+{
+  "status": "passed",
+  "scope": "complete quartic polynomial classification; general i=3 remains open",
+  "symbolic_reduction": {
+    "identities": 17,
+    "names": [
+      "constant H: F formula",
+      "constant H: J formula",
+      "constant H: second fiber value",
+      "constant H: composed F",
+      "constant H: composed J",
+      "linear H: Bezout identity",
+      "double fiber proportionality",
+      "factorization of F-2",
+      "U modulo Q with exact quotient",
+      "remaining root value",
+      "remaining root trace",
+      "remaining root product",
+      "restore X=0",
+      "exceptional U",
+      "exceptional V",
+      "exceptional L",
+      "integrality Bezout"
+    ]
+  },
+  "scalar_cases": {
+    "fiber_cases": [
+      {
+        "double_J_value": 0,
+        "t": "1/4",
+        "R": "-5/4",
+        "beta_squared_over_alpha": "4/5",
+        "positive_ratio": true
+      },
+      {
+        "double_J_value": 1,
+        "t": "1/2",
+        "R": "-1/2",
+        "beta_squared_over_alpha": "-4",
+        "positive_ratio": false
+      },
+      {
+        "double_J_value": 2,
+        "t": "3/4",
+        "R": "1/4",
+        "beta_squared_over_alpha": "4/5",
+        "positive_ratio": true
+      }
+    ],
+    "origin_cases": [
+      {
+        "s": 0,
+        "r": "-5/4",
+        "beta": "5*alpha/4 - 1/4",
+        "origin_residual": "0",
+        "ratio_residual": "(125*alpha**2 - 114*alpha + 5)/80",
+        "discriminant": 10496,
+        "rational_alpha": false,
+        "allowed": false,
+        "reason": "quadratic discriminant is not a rational square"
+      },
+      {
+        "s": 1,
+        "r": "-1/4",
+        "beta": "alpha/4 + 3/4",
+        "origin_residual": "-4*(alpha - 5)/(5*(alpha + 3))",
+        "ratio_residual": "(alpha - 5)*(5*alpha - 9)/80",
+        "alpha": "5",
+        "beta_at_alpha_5": "2",
+        "allowed": false,
+        "reason": "positive leading coefficient requires beta<0"
+      },
+      {
+        "s": 2,
+        "r": "3/4",
+        "beta": "7/4 - 3*alpha/4",
+        "origin_residual": "-24*(alpha - 5)/(5*(3*alpha - 7))",
+        "ratio_residual": "(alpha - 5)*(45*alpha - 49)/80",
+        "alpha": "5",
+        "beta_at_alpha_5": "-2",
+        "allowed": true,
+        "reason": "positive leading coefficient requires beta<0"
+      }
+    ]
+  },
+  "families": {
+    "factorization_identities": 10,
+    "names": [
+      "quartic F-1",
+      "quartic F-2",
+      "quartic J",
+      "quartic J-1",
+      "quartic J-2",
+      "composed F-1",
+      "composed F-2",
+      "composed J",
+      "composed J-1",
+      "composed J-2"
+    ],
+    "nontrivial_polynomial_pairs": 100,
+    "integer_value_checks": 1050,
+    "second_quotient_denominators": {
+      "I": [
+        4
+      ],
+      "II": [
+        16
+      ]
+    }
+  },
+  "CRT_scan": {
+    "factor_pairs": 4575,
+    "nonnegative_F_pairs": 2578,
+    "coprime_pairs": 2555,
+    "CRT_polynomials": 7665,
+    "integer_coefficient_ordered": 62,
+    "both_divisibilities": 17,
+    "survivors": [
+      {
+        "family": "I",
+        "a": 0,
+        "b": 1,
+        "complement": true
+      },
+      {
+        "family": "I",
+        "a": 1,
+        "b": 1,
+        "complement": true
+      },
+      {
+        "family": "I",
+        "a": 0,
+        "b": 1,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 0,
+        "b": 2,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 0,
+        "b": 3,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 1,
+        "b": 1,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 1,
+        "b": 2,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 1,
+        "b": 3,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 2,
+        "b": 1,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 2,
+        "b": 2,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 2,
+        "b": 3,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 3,
+        "b": 1,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 3,
+        "b": 2,
+        "complement": false
+      },
+      {
+        "family": "I",
+        "a": 3,
+        "b": 3,
+        "complement": false
+      },
+      {
+        "family": "II",
+        "h": 1,
+        "complement": false
+      },
+      {
+        "family": "II",
+        "h": 2,
+        "complement": false
+      },
+      {
+        "family": "II",
+        "h": 3,
+        "complement": false
+      }
+    ],
+    "scope": "finite supplement only; unbounded completeness is the scalar-case proof"
+  },
+  "general_trace": {
+    "exact_Newton_diagnostics": 128,
+    "repeated_root_cases": 30,
+    "quintic_table": [
+      {
+        "degrees": [
+          2,
+          2,
+          1
+        ],
+        "t": "1/5"
+      },
+      {
+        "degrees": [
+          2,
+          1,
+          2
+        ],
+        "t": "2/5"
+      },
+      {
+        "degrees": [
+          1,
+          2,
+          2
+        ],
+        "t": "3/5"
+      }
+    ]
+  }
+}

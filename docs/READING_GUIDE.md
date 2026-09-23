@@ -24,7 +24,8 @@
 
 | 方向 | 中心となるノート | 続き・関連 |
 |---|---|---|
-| 全素因数の桁和と任意次数の分配 | [桁和・素因数個数の明示的不等式と因子の次数制限](../research/i3/i3_digit_height_budget_and_factor_degrees_2026-09-23.md) | j の偶奇を問わない結果。重複込みの個数と異なる素数の個数を区別。四次では2+2分配が残る |
+| 四次の完全分類と任意次数の係数比 | [2+2分配の全分類、二族の2進排除、Newtonの恒等式](../research/i3/i3_quartic_digit_classification_2026-09-23.md) | 四次を全係数で分類。桁和上界を m≤4 へ拡張し、五次の係数比を三通りへ限定 |
+| 全素因数の桁和と任意次数の分配 | [桁和・素因数個数の明示的不等式と因子の次数制限](../research/i3/i3_digit_height_budget_and_factor_degrees_2026-09-23.md) | j の偶奇を問わない結果。重複込みの個数と異なる素数の個数を区別。四次の残った2+2分配は上の続稿で分類 |
 | 一般偶数枝の高い冪と素数台 | [T・冪の重複の同時上界と、新しい Kummer 素数の積](../research/i3/i3_multiplicity_budget_and_fresh_support_2026-09-23.md) | 9月23日の証明と18恒等式の検算。T=1を仮定しない。一般枝を完全排除した結果ではない |
 | 9月22日の四つの進捗 | [全桁・非平方中心・二曲線の統合](../research/i3/i3_four_handoffs_integration_2026-09-22.md) | 原文4件への導線と、新規報告・未独立監査・残枝の区別。まずこの統合を読み、詳しい議論は各原文へ |
 | 全てのGで平方枝を除く | [中心式の二係数と一様な因数分解](../research/i3/i3_gap_square_obstructions_2026-09-21.md) | 9月21日の検算済み稿。$\delta_2TPW_*$ は非平方。先頭係数が平方なら $2G-u\ge7$、平方の $T$ では不可能。両非平方の枝は残る |
@@ -38,7 +39,7 @@
 | 三次整環と末尾 | [判別式と連分数末尾の統合](../research/i3/i3_cubic_discriminant_and_cf_tail_2026-09-21.md) | 判別式49、分母条件のない下界、最大公約数の訂正。判別式の定数は上の続稿で強化 |
 | 三次式と近似 | [既約性と有理近似](../research/i3/i3_irreducible_cubic_and_rational_gaps_2026-09-20.md) | [分母の2進付値と連分数](../research/i3/i3_dyadic_denominators_and_continued_fractions_2026-09-21.md) |
 | 全桁Kummer条件 | [六ブロックの桁和](../research/i3/i3_global_digit_constraints_2026-09-19.md) | [補数側の桁和の改善](../research/i3/i3_complement_digit_bounds_2026-09-20.md) |
-| 桁多項式 | [二つの法と桁の高さ](../research/i3/i3_cross_modulus_and_digit_height_2026-09-20.md) | [三次までの分類](../research/i3/i3_cubic_digit_classification_2026-09-20.md) |
+| 桁多項式 | [二つの法と桁の高さ](../research/i3/i3_cross_modulus_and_digit_height_2026-09-20.md) | [三次](../research/i3/i3_cubic_digit_classification_2026-09-20.md)・[四次](../research/i3/i3_quartic_digit_classification_2026-09-23.md)の分類 |
 | 降下の可否 | [更新式と上位桁の障害](../research/i3/i3_descent_kummer_obstruction_2026-09-20.md) | [有限個の素数だけを使う方法の限界](../research/i3/i3_finite_prime_obstruction_2026-09-20.md) |
 | 指数の差 | [正確な2進付値](../research/i3/i3_exact_gap_and_g9_continuation.md) | [$g=13$までの排除](../research/i3/i3_gap13_and_descent_continuation.md) |
 

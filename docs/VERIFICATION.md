@@ -17,6 +17,7 @@
 ## 最新の結果を短く検算する
 
 ```text
+python -X utf8 scripts/audit_i3_quartic_digit_classification.py
 python -X utf8 scripts/audit_i3_digit_height_budget.py
 python -X utf8 scripts/audit_i3_multiplicity_and_fresh_support.py
 python -X utf8 scripts/audit_i3_gap_square_obstructions.py
@@ -34,6 +35,8 @@ python -X utf8 scripts/audit_i3_mixed_parameter_bound.py
 ```
 
 出力は[検算結果](../data/results/)へ保存されます。標準出力にも確認項目を表示します。
+
+9月23日の[四次分類の検算](../research/i3/i3_quartic_digit_classification_2026-09-23.md)は、還元の17恒等式、10因数分解、三つの剰余分岐と三つの定数項分岐、100組の非自明な多項式、1,050整数値を確認します。個々の二次因子に負の係数も許す7,665個のCRT候補は、分類された二族だけを再検出しました。さらに128件のNewton恒等式診断を行います。全係数での分類は本文の証明によるもので、有限のCRT検査を一般化した主張ではありません。
 
 9月23日の[桁和と因子次数の検算](../research/i3/i3_digit_height_budget_and_factor_degrees_2026-09-23.md)は、13記号恒等式、800件の整数閾値比較、次数2〜12の32個の非自明な合成多項式、216件の有理数による診断、次数の分配表を確認します。一般証明は本文にあり、合成例は元問題の反例ではありません。
 
