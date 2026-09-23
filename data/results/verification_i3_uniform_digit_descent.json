@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "scope": "conditional all-degree descent; existence of a usable base remains unproved",
+  "valuation_transfer": {
+    "H_range": [
+      4,
+      192
+    ],
+    "all_indices_in_each_row": true,
+    "row_index_pairs": 18711,
+    "source_valuation_checks": 69187,
+    "lifted_valuation_checks": 138374,
+    "local_certificate_checks": 60805,
+    "maximum_shared_prime_exponent": 3,
+    "examples": {
+      "3_requires_modulus_9": {
+        "H": 9,
+        "A": 1,
+        "q": 3,
+        "first_carry_level": 1,
+        "certificate_exponent": 2,
+        "shared_exponent": 1
+      },
+      "shared_cube_or_higher": {
+        "H": 81,
+        "A": 1,
+        "q": 3,
+        "first_carry_level": 1,
+        "certificate_exponent": 2,
+        "shared_exponent": 3
+      }
+    }
+  },
+  "grouped_digits": {
+    "primes": [
+      3,
+      5,
+      7,
+      11,
+      13
+    ],
+    "degrees": [
+      2,
+      18
+    ],
+    "grouped_digit_checks": 3400,
+    "strict_decreases": 3400
+  },
+  "unbounded_family": {
+    "samples": 24,
+    "maximum_digit_degree": 148,
+    "base": 11,
+    "H": 8,
+    "A": 4,
+    "lifted_prime": 7,
+    "base_minus_one_condition_fails": true,
+    "claim": "finite diagnostics of the proved infinite non-counterexample family"
+  },
+  "range_and_modulus": {
+    "multiples_of_8_checked": 64,
+    "maximum_H": 512,
+    "strong_condition_examples": [
+      {
+        "p": 113,
+        "d": 1,
+        "H": 8,
+        "A": 4
+      },
+      {
+        "p": 13,
+        "d": 2,
+        "H": 8,
+        "A": 4
+      }
+    ]
+  }
+}

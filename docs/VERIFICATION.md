@@ -17,6 +17,7 @@
 ## 最新の結果を短く検算する
 
 ```text
+python -X utf8 scripts/audit_i3_uniform_digit_descent.py
 python -X utf8 scripts/audit_i3_quartic_digit_classification.py
 python -X utf8 scripts/audit_i3_digit_height_budget.py
 python -X utf8 scripts/audit_i3_multiplicity_and_fresh_support.py
@@ -35,6 +36,8 @@ python -X utf8 scripts/audit_i3_mixed_parameter_bound.py
 ```
 
 出力は[検算結果](../data/results/)へ保存されます。標準出力にも確認項目を表示します。
+
+9月23日の[任意次数の桁和降下](../research/i3/i3_uniform_digit_descent_2026-09-23.md)の検算は標準Pythonだけで実行できます。H=4〜192の全添字18,711組、69,187件の元の付値、138,374件の合同な大きい行への移行、60,805件の局所証明書を確認します。3の法9の補正、共有する素数の三乗、3,400件の桁の結合、基数11の無限族の24例も含みます。条件付き降下の一般証明は本文にあり、適用基数の存在は主張していません。
 
 9月23日の[四次分類の検算](../research/i3/i3_quartic_digit_classification_2026-09-23.md)は、還元の17恒等式、10因数分解、三つの剰余分岐と三つの定数項分岐、100組の非自明な多項式、1,050整数値を確認します。個々の二次因子に負の係数も許す7,665個のCRT候補は、分類された二族だけを再検出しました。さらに128件のNewton恒等式診断を行います。全係数での分類は本文の証明によるもので、有限のCRT検査を一般化した主張ではありません。
 
