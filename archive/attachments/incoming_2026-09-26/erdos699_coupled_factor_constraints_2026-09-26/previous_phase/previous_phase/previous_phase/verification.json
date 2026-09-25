@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "counts": {
+    "uniform_exponent_checks": 585,
+    "uniform_constant_checks": 1170,
+    "finite_threshold_comparisons": 267902,
+    "finite_offset_cells": 133951,
+    "analytic_exception_cells": 14,
+    "small_support_assignments": 5183,
+    "small_support_cases": 7,
+    "smooth_pair_diagnostic_pairs": 4,
+    "binomial_tuples": 19150,
+    "unconditional_common_divisor_checks": 95750,
+    "nontrivial_common_divisors": 86948,
+    "rational_form_divisibility_checks": 95750,
+    "centered_product_checks": 71793,
+    "local_prime_power_transfers": 19369,
+    "nonvacuous_binomial_tuples": 12452,
+    "prime_equals_i_transfers": 107,
+    "insufficient_layer_counterexamples": 1
+  },
+  "independent_claim": "All 3<=i<=119, n>=10^11: five rational neighborhoods excluded with constant 1/10.",
+  "inherited_claim": "With the repository A=100 near-collision theorem, n>=2*10^8 and constant 1/4.",
+  "inherited_source_commit": "f5a28d1037f35fdccc7a014e958db6fd666d220b",
+  "limits": "A=100 baseline certificate not replayed here. Infinite arguments and exceptional smooth-number classifications are proved in REPORT.md; finite probes alone do not prove them. No global resolution of any remaining i is claimed."
+}

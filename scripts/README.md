@@ -16,5 +16,13 @@
 
 最初に実行するものは[検算の案内](../docs/VERIFICATION.md)で選べます。
 全スクリプトをまとめて走らせる必要はありません。
+
+9月26日の統合・追加研究の入口：
+
+- [replay_september26_attachments.py](replay_september26_attachments.py)：添付の114ハッシュ項目と6監査を、原本を書き換えずに再生。
+- [replay_weighted_cover_extension.py](replay_weighted_cover_extension.py)：$i=29$、$35\le i\le119$ の全区間・小範囲例外・無限尾部を検証。
+- [audit_weighted_common_divisor.py](audit_weighted_common_divisor.py)：共通約数の下界と、線形の重み族内の最適化を監査。
+- [certify_weighted_cover_extension.py](certify_weighted_cover_extension.py)：拡張証明書を生成。再生器とは別の対数区間計算を使う。
+
 `run_magma_*.py`は指定した入力を外部のMagma計算サービスへ送るためのものです。
 保存済みの応答を検算するだけなら実行は不要です。

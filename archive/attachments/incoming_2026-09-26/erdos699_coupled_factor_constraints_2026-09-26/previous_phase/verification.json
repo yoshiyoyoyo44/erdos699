@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "counts": {
+    "prefix_count_constants": 1170,
+    "uniform_size_constants": 1170,
+    "regular_rows": 19431,
+    "row_part_matches": 14274,
+    "prefix_resonance_checks": 5890,
+    "nonzero_linear_products": 57984,
+    "nontrivial_elimination_divisibilities": 305,
+    "polynomial_cases": 1200,
+    "rational_remainder_checks": 2400,
+    "conditional_filter_checks": 5200
+  },
+  "random_polynomial_cases_with_strictly_improved_threshold": 1200,
+  "bridge_examples": [
+    {
+      "m": 2,
+      "r": 1,
+      "adaptive_threshold": "691202",
+      "old_threshold": "580188635138"
+    },
+    {
+      "m": 4,
+      "r": 2,
+      "adaptive_threshold": "8294402",
+      "old_threshold": "192492664610881538"
+    },
+    {
+      "m": 8,
+      "r": 4,
+      "adaptive_threshold": "1194393602",
+      "old_threshold": "21188690533618181863517454338"
+    },
+    {
+      "m": 12,
+      "r": 6,
+      "adaptive_threshold": "171992678402",
+      "old_threshold": "2332351767466058458652588938494933467138"
+    },
+    {
+      "m": 20,
+      "r": 10,
+      "adaptive_threshold": "3566440179302402",
+      "old_threshold": "28260114629295507054047654717131378095722098174974966141812738"
+    }
+  ],
+  "explicit_large_n_cofactor": {
+    "n_min": "10^200",
+    "a_min": 3474,
+    "i119_a_min": 5560
+  },
+  "missing_manuscript_bodies": [
+    "erdos699_all_degree_prime_power_bridge_2026-09-23.md",
+    "erdos699_uniform_three_quarter_obstruction_2026-09-25.md",
+    "erdos699_moving_quotient_and_ramification_2026-09-25.md"
+  ],
+  "scope": "General proofs are in REPORT.md. Degree filters retain the supplied index as a conditional input."
+}

@@ -2,17 +2,8 @@
 
 [入口](../README.md) · [読む順序](READING_GUIDE.md) · [詳細な成果表](RESULTS_CATALOG.md) · [検算](VERIFICATION.md)
 
-更新：2026年9月26日。**問題699の完全解決を主張していません。**
-最新の[添付統合と重み付き積](../research/general/weighted_cover_and_integration_2026-09-26.md)により、$i=29$ と $35\le i\le119$ の全ての $n,j$ を排除しました。
-既存の $i\ge120$ と合わせ、成立範囲は **$i=1,2,29$ および $i\ge35$**。未解決は31添字です。
-86添字について1,509,157区間、1,031,146組の小範囲例外、86件の無限尾部を再検証しています。
-添付の5添字を含み、従来の既解決4添字も再証明するため、添付統合後から追加で閉じたのは77添字です。
-
-原本5件とZIP内の前段3層を保存し、6監査の再実行結果は原本と一致しました。
-$i=3$ 索引の参照先3本文は未取得で、強い次数比評価の一般証明は未監査です。今回の86添字の証明には使っていません。
-第三者査読・Lean形式検証は未実施です。
-
-[$i=3$ の条件付き桁和降下](../research/i3/i3_uniform_digit_descent_2026-09-23.md)は引き続き研究対象です。全関連奇素数の付値と添字の範囲を扱いますが、適用できる基数の存在は未証明です。
+更新：2026年9月23日。**問題699の完全解決を主張していません。**
+最新の[任意次数の桁和降下](../research/i3/i3_uniform_digit_descent_2026-09-23.md)では、明示的な合同条件の下で反例を小さい反例へ移せることを証明しました。全関連奇素数の付値と添字の範囲を扱います。条件を満たす基数の存在は未証明であり、ここが現在の研究対象です。
 
 以下は、このリポジトリで記録した結論と根拠です。先行する[四次の分類](../research/i3/i3_quartic_digit_classification_2026-09-23.md)では、非自明な形を二族へ完全分類し、整数値での2進条件により両族を排除しました。任意次数の最高次係数比の関係も証明しています。前稿の[全素因数の桁和と因子次数の続稿](../research/i3/i3_digit_height_budget_and_factor_degrees_2026-09-23.md)は、j の偶奇を問わない桁和・素因数個数の明示的不等式と、任意次数の因子分配の制限を証明します。直前の[一般偶数枝の続稿](../research/i3/i3_multiplicity_budget_and_fresh_support_2026-09-23.md)では、高い冪と T の同時上界、補助因子の外に必要な Kummer 素数台の下界を証明しました。
 
@@ -27,11 +18,11 @@ $i=3$ 索引の参照先3本文は未取得で、強い次数比評価の一般�
 | 範囲 | 結論 | 主な根拠 |
 |---|---|---|
 | $i=1,2$ | 成立 | [初期の還元](../research/general/erdos699_continuation_2026-09-12.md) |
-| $i=29$、$35\le i\le119$ | 全ての $n,j$ で成立 | [三方向の重みと86添字の証明](../research/general/weighted_cover_and_integration_2026-09-26.md)。整数の整除性・付値公式・有限証明書。A=100や判別式に依存しない |
-| $i\ge120$ | 全ての $n,j$ で成立 | 既存の[臨界添字](../research/general/critical_indices_and_handoff_integration.md)。[区間評価](../research/general/interval_valuation_continuation.md)と[判別式](../research/general/discriminant_continuation.md)を使用 |
-| 未解決の固定した $i\ge5$ | 反例候補は有限個 | [臨界添字・第7節](../research/general/critical_indices_and_handoff_integration.md)。これらの添字の具体的な上限は未取得であり、候補が0個とは示していない |
+| $i\ge120$、$i=96,97,100,101$ | 全ての $n,j$ で成立 | [臨界添字](../research/general/critical_indices_and_handoff_integration.md)。[区間評価](../research/general/interval_valuation_continuation.md)と[判別式](../research/general/discriminant_continuation.md)を使用 |
+| $i=119$ | $n\le10^{87}$ で成立 | [有限範囲の証明](../research/i119/i119_a100_continuation.md)。上の範囲は未解決 |
+| 固定した $i\ge5$ | 反例候補は有限個 | [臨界添字・第7節](../research/general/critical_indices_and_handoff_integration.md)。具体的な上限は未取得であり、候補が0個とは示していない |
 
-未解決の添字は **$3\le i\le34$、ただし29を除く31個**。
+未解決の添字は **$3\le i\le119$、ただし96,97,100,101を除く**。
 特定の族や有限範囲を除いたことと、元の問題をその添字で解いたことを区別します。
 
 ## 現在の主対象：$i=3$
@@ -117,3 +108,4 @@ $u=49,50$ では14,194個の奇数部分、164個のCRT候補を全て排除し�
 - **Lean：** [三つの代数恒等式](../formal/AlgebraCertificates.lean)のみ。問題全体は形式化していません。
 
 過去の「最新」「次に試すこと」はその時点の記録です。現時点の入口にはこのページを使い、[過去の一覧](../archive/README.md)は経緯の確認に使ってください。
+

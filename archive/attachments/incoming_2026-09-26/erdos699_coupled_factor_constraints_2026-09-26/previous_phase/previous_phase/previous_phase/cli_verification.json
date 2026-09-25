@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "finite_cli_cases": 162,
+  "nontrivial_cli_divisors": 162,
+  "large_examples": 25,
+  "large_binomial_n_j_computed": false
+}

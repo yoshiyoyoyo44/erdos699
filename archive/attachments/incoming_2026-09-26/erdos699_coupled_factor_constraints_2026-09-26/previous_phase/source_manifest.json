@@ -1,0 +1,36 @@
+{
+  "github_commit": "f5a28d1037f35fdccc7a014e958db6fd666d220b",
+  "attached_index_library_id": "libfile_ed3ad69309548191aa5fe2db7b89ee76",
+  "available_sources": [
+    {
+      "name": "erdos699_i3_research_index_2026-09-25.md",
+      "bytes": 4898,
+      "sha256": "bedbf9727de3923a267965f54ada51ae7bd6cb99b4688547b1d93363d752215d"
+    },
+    {
+      "name": "i3_cross_modulus_and_digit_height_2026-09-20.md",
+      "bytes": 17237,
+      "sha256": "d26b91525baf8d72d96bc19de8ceb82459ad34712e65e2c9ccd54190d91fc778"
+    },
+    {
+      "name": "i3_digit_height_budget_and_factor_degrees_2026-09-23.md",
+      "bytes": 13116,
+      "sha256": "08efb52d451f7a10217057dd33193a2b16be13225186d01b9f6e2fd066b606fa"
+    },
+    {
+      "name": "i3_quartic_digit_classification_2026-09-23.md",
+      "bytes": 12371,
+      "sha256": "ae4d4832e007ab6af8917a437f3e57225e8024f04182b94caf411f6900c6dcb2"
+    },
+    {
+      "name": "i3_uniform_digit_descent_2026-09-23.md",
+      "bytes": 12823,
+      "sha256": "f5722cfa20eeba48c0c6a420912302fd50301c9e39649bc7fb0dff7b910db98c"
+    }
+  ],
+  "unavailable_manuscripts": [
+    "erdos699_all_degree_prime_power_bridge_2026-09-23.md",
+    "erdos699_uniform_three_quarter_obstruction_2026-09-25.md",
+    "erdos699_moving_quotient_and_ramification_2026-09-25.md"
+  ]
+}

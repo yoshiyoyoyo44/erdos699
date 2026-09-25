@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-26",
+  "files": [
+    {
+      "file": "archive/attachments/incoming_2026-09-26/erdos699_five_indices_complete_2026-09-26.md",
+      "sha256": "3034dd297060434d4424653df037d8b20ce3094f3288b486b74844f684f66118",
+      "bytes": 14361
+    },
+    {
+      "file": "archive/attachments/incoming_2026-09-26/erdos699_coupled_factor_constraints_2026-09-26.zip",
+      "sha256": "a3e224079a20804c38b1e4d1eab373fb4df395e2a6fe0fece4aca9474a776f2e",
+      "bytes": 2386980
+    },
+    {
+      "file": "archive/attachments/incoming_2026-09-26/erdos699_coupled_factor_constraints_2026-09-26.md",
+      "sha256": "e5359f842c743f8c42fdc95c684c98a389ed1cb7409f68350f6185c408893981",
+      "bytes": 16816
+    },
+    {
+      "file": "archive/attachments/incoming_2026-09-26/erdos699_five_indices_complete_2026-09-26.zip",
+      "sha256": "e909e35cf2408ef193cce970cbd7ded8fb83a5a6bab320be025d42639cdcf2f5",
+      "bytes": 3084313
+    },
+    {
+      "file": "archive/attachments/incoming_2026-09-26/erdos699_i3_research_index_2026-09-25.md",
+      "sha256": "bedbf9727de3923a267965f54ada51ae7bd6cb99b4688547b1d93363d752215d",
+      "bytes": 4898
+    }
+  ]
+}

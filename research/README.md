@@ -2,6 +2,9 @@
 
 [入口](../README.md) · [現在地](../docs/STATUS.md) · **[読む順序](../docs/READING_GUIDE.md)**
 
+最新：[三方向の重み付き積・添付統合と86添字への拡張](general/weighted_cover_and_integration_2026-09-26.md)。
+5添付の再検証、$i=29$ と $35\le i\le119$ の全範囲排除、共通約数の定量的下界をまとめています。
+
 | 分野 | 内容 |
 |---|---|
 | [general](general/) | 判別式、大きい添字、区間評価、臨界添字 |

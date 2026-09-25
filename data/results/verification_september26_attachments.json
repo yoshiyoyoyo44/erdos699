@@ -1,0 +1,393 @@
+{
+  "status": "PASS",
+  "original_attachments": 5,
+  "package_hash_entries": 114,
+  "runs": [
+    {
+      "script": "erdos699_five_indices_complete_2026-09-26/verify.py",
+      "result": {
+        "status": "PASS",
+        "proved_indices": [
+          95,
+          99,
+          103,
+          107,
+          119
+        ],
+        "domain": "All integers i<j<=n/2 for each listed i; all n.",
+        "uses_a100_certificate": false,
+        "uses_discriminant": false,
+        "verification_arithmetic": "exact integers and rigorous 128-bit log enclosures",
+        "interval_rows": [
+          {
+            "i": 95,
+            "tail_power": 19,
+            "interval_count": 11320,
+            "grid_cells_checked": 4560,
+            "minimum_log_margin_lower_numerator": "52227910572152422912248005597024012013",
+            "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+          },
+          {
+            "i": 99,
+            "tail_power": 19,
+            "interval_count": 12668,
+            "grid_cells_checked": 4950,
+            "minimum_log_margin_lower_numerator": "33831692722663422128449907339513406723",
+            "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+          },
+          {
+            "i": 103,
+            "tail_power": 19,
+            "interval_count": 17030,
+            "grid_cells_checked": 5356,
+            "minimum_log_margin_lower_numerator": "85293292454714742468521663245263222588",
+            "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+          },
+          {
+            "i": 107,
+            "tail_power": 19,
+            "interval_count": 18896,
+            "grid_cells_checked": 5778,
+            "minimum_log_margin_lower_numerator": "41895124569830041940680772691122173652",
+            "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+          },
+          {
+            "i": 119,
+            "tail_power": 20,
+            "interval_count": 22043,
+            "grid_cells_checked": 7140,
+            "minimum_log_margin_lower_numerator": "102445905543185100691925527760309886829",
+            "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+          }
+        ],
+        "small_range": {
+          "sieve_limit": 2000100,
+          "prime_count": 148939,
+          "exception_count": 888,
+          "per_index": {
+            "95": 322,
+            "99": 230,
+            "103": 168,
+            "107": 127,
+            "119": 41
+          },
+          "maximum_anchor_candidates": 26
+        },
+        "formula_tests": {
+          "valuation_checks": 64400,
+          "interval_intersection_checks": 205390
+        },
+        "independent_peer_review": false,
+        "formal_lean_verification": false
+      },
+      "matches_supplied_result": true
+    },
+    {
+      "script": "erdos699_five_indices_complete_2026-09-26/audit_cover.py",
+      "result": {
+        "status": "PASS",
+        "exhaustive_triples": 22035,
+        "nontrivial_covered_divisor_cases": 15836,
+        "prime_equals_i_active_cases": 1371,
+        "target_index_boundary_cases": [
+          [
+            192,
+            95,
+            96
+          ],
+          [
+            957,
+            95,
+            475
+          ],
+          [
+            9025,
+            95,
+            3003
+          ],
+          [
+            9119,
+            95,
+            4415
+          ],
+          [
+            200,
+            99,
+            100
+          ],
+          [
+            997,
+            99,
+            252
+          ],
+          [
+            9801,
+            99,
+            1624
+          ],
+          [
+            9899,
+            99,
+            2869
+          ],
+          [
+            208,
+            103,
+            104
+          ],
+          [
+            1037,
+            103,
+            116
+          ],
+          [
+            10609,
+            103,
+            1092
+          ],
+          [
+            10711,
+            103,
+            1889
+          ],
+          [
+            216,
+            107,
+            108
+          ],
+          [
+            1077,
+            107,
+            155
+          ],
+          [
+            11449,
+            107,
+            1019
+          ],
+          [
+            11555,
+            107,
+            5317
+          ],
+          [
+            240,
+            119,
+            120
+          ],
+          [
+            1197,
+            119,
+            182
+          ],
+          [
+            14161,
+            119,
+            4062
+          ],
+          [
+            14279,
+            119,
+            2878
+          ]
+        ],
+        "note": "Unconditional identities tested; infinite proof is in REPORT.md."
+      },
+      "matches_supplied_result": true
+    },
+    {
+      "script": "erdos699_coupled_factor_constraints_2026-09-26/verify.py",
+      "result": {
+        "independent_index_constant_checks": 117,
+        "prime_count_certificate_checks": 351,
+        "exhaustive_triples": 27643,
+        "full_row_factor_checks": 198669,
+        "active_pair_checks": 7924,
+        "prime_i_restorations": 2094,
+        "prime_i_exclusions": 9388,
+        "random_geometric_checks": 12000,
+        "constructed_zero_lines": 3007,
+        "capacity_integer_checks": 5572,
+        "negative_examples": [
+          {
+            "n": 535,
+            "i": 10,
+            "j": 214,
+            "first_cell": [
+              0,
+              0,
+              107
+            ],
+            "second_cell": [
+              5,
+              2,
+              53
+            ],
+            "product": 5671,
+            "pair_bound": 4734,
+            "determinant": 0
+          },
+          {
+            "n": 36,
+            "i": 3,
+            "j": 15,
+            "row": 1,
+            "cells": [
+              5,
+              7
+            ]
+          }
+        ],
+        "previous_package_hashes_verified": 31,
+        "status": "PASS",
+        "finite_test_note": "Infinite claims rely on REPORT.md proofs.",
+        "exhaustive_domain": "10<=n<=120, 3<=i<=min(12,floor(n/2)-1), i<j<=floor(n/2)"
+      },
+      "matches_supplied_result": true
+    },
+    {
+      "script": "erdos699_coupled_factor_constraints_2026-09-26/previous_phase/verify.py",
+      "result": {
+        "status": "PASS",
+        "counts": {
+          "prefix_count_constants": 1170,
+          "uniform_size_constants": 1170,
+          "regular_rows": 19431,
+          "row_part_matches": 14274,
+          "prefix_resonance_checks": 5890,
+          "nonzero_linear_products": 57984,
+          "nontrivial_elimination_divisibilities": 305,
+          "polynomial_cases": 1200,
+          "rational_remainder_checks": 2400,
+          "conditional_filter_checks": 5200
+        },
+        "random_polynomial_cases_with_strictly_improved_threshold": 1200,
+        "bridge_examples": [
+          {
+            "m": 2,
+            "r": 1,
+            "adaptive_threshold": "691202",
+            "old_threshold": "580188635138"
+          },
+          {
+            "m": 4,
+            "r": 2,
+            "adaptive_threshold": "8294402",
+            "old_threshold": "192492664610881538"
+          },
+          {
+            "m": 8,
+            "r": 4,
+            "adaptive_threshold": "1194393602",
+            "old_threshold": "21188690533618181863517454338"
+          },
+          {
+            "m": 12,
+            "r": 6,
+            "adaptive_threshold": "171992678402",
+            "old_threshold": "2332351767466058458652588938494933467138"
+          },
+          {
+            "m": 20,
+            "r": 10,
+            "adaptive_threshold": "3566440179302402",
+            "old_threshold": "28260114629295507054047654717131378095722098174974966141812738"
+          }
+        ],
+        "explicit_large_n_cofactor": {
+          "n_min": "10^200",
+          "a_min": 3474,
+          "i119_a_min": 5560
+        },
+        "missing_manuscript_bodies": [
+          "erdos699_all_degree_prime_power_bridge_2026-09-23.md",
+          "erdos699_uniform_three_quarter_obstruction_2026-09-25.md",
+          "erdos699_moving_quotient_and_ramification_2026-09-25.md"
+        ],
+        "scope": "General proofs are in REPORT.md. Degree filters retain the supplied index as a conditional input."
+      },
+      "matches_supplied_result": true
+    },
+    {
+      "script": "erdos699_coupled_factor_constraints_2026-09-26/previous_phase/previous_phase/verify.py",
+      "result": {
+        "status": "PASS",
+        "counts": {
+          "constant_checks": 234,
+          "denominator_6_7_checks": 234,
+          "passed_denominator_thresholds": 91337,
+          "first_failed_thresholds": 1170,
+          "row_divisor_checks": 10161,
+          "local_exact_carry_checks": 54101,
+          "projection_dominance_checks": 50805,
+          "cofactor_projection_checks": 8498
+        },
+        "examples": [
+          {
+            "i": 3,
+            "n": 9,
+            "j": 4,
+            "five_projection_divisor": 7,
+            "row_divisor": 21,
+            "actual_gcd": 42
+          },
+          {
+            "i": 3,
+            "n": 15,
+            "j": 4,
+            "five_projection_divisor": 91,
+            "row_divisor": 455,
+            "actual_gcd": 455
+          },
+          {
+            "i": 3,
+            "n": 151,
+            "j": 50,
+            "five_projection_divisor": 22499,
+            "row_divisor": 22499,
+            "actual_gcd": 112495
+          }
+        ],
+        "limitations": {
+          "higher_layers_may_add_common_factors": true,
+          "composite_row_may_split_between_j_minus_t": true,
+          "no_proof_that_row_divisor_always_exceeds_one": true
+        }
+      },
+      "matches_supplied_result": true
+    },
+    {
+      "script": "erdos699_coupled_factor_constraints_2026-09-26/previous_phase/previous_phase/previous_phase/verify.py",
+      "result": {
+        "status": "PASS",
+        "counts": {
+          "uniform_exponent_checks": 585,
+          "uniform_constant_checks": 1170,
+          "finite_threshold_comparisons": 267902,
+          "finite_offset_cells": 133951,
+          "analytic_exception_cells": 14,
+          "small_support_assignments": 5183,
+          "small_support_cases": 7,
+          "smooth_pair_diagnostic_pairs": 4,
+          "binomial_tuples": 19150,
+          "unconditional_common_divisor_checks": 95750,
+          "nontrivial_common_divisors": 86948,
+          "rational_form_divisibility_checks": 95750,
+          "centered_product_checks": 71793,
+          "local_prime_power_transfers": 19369,
+          "nonvacuous_binomial_tuples": 12452,
+          "prime_equals_i_transfers": 107,
+          "insufficient_layer_counterexamples": 1
+        },
+        "independent_claim": "All 3<=i<=119, n>=10^11: five rational neighborhoods excluded with constant 1/10.",
+        "inherited_claim": "With the repository A=100 near-collision theorem, n>=2*10^8 and constant 1/4.",
+        "inherited_source_commit": "f5a28d1037f35fdccc7a014e958db6fd666d220b",
+        "limits": "A=100 baseline certificate not replayed here. Infinite arguments and exceptional smooth-number classifications are proved in REPORT.md; finite probes alone do not prove them. No global resolution of any remaining i is claimed."
+      },
+      "matches_supplied_result": true
+    }
+  ],
+  "raw_files_unchanged": true,
+  "missing_i3_bodies_verified": false,
+  "a100_baseline_replayed": false
+}

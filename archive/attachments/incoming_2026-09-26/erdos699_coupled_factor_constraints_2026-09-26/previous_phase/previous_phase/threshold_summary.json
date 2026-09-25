@@ -1,0 +1,92 @@
+[
+  {
+    "n_power": 11,
+    "uses_a100": false,
+    "uniform_B": 10,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 14
+  },
+  {
+    "n_power": 11,
+    "uses_a100": true,
+    "uniform_B": 12,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 16
+  },
+  {
+    "n_power": 20,
+    "uses_a100": false,
+    "uniform_B": 17,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 30
+  },
+  {
+    "n_power": 20,
+    "uses_a100": true,
+    "uniform_B": 19,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 32
+  },
+  {
+    "n_power": 50,
+    "uses_a100": false,
+    "uniform_B": 42,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 82
+  },
+  {
+    "n_power": 50,
+    "uses_a100": true,
+    "uniform_B": 43,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 83
+  },
+  {
+    "n_power": 87,
+    "uses_a100": false,
+    "uniform_B": 70,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 147
+  },
+  {
+    "n_power": 87,
+    "uses_a100": true,
+    "uniform_B": 74,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 148
+  },
+  {
+    "n_power": 100,
+    "uses_a100": false,
+    "uniform_B": 79,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 170
+  },
+  {
+    "n_power": 100,
+    "uses_a100": true,
+    "uniform_B": 80,
+    "bottleneck_indices": [
+      4
+    ],
+    "i119_B": 171
+  }
+]

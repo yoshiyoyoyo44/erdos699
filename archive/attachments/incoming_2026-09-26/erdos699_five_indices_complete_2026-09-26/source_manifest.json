@@ -1,0 +1,10 @@
+{
+  "source_commit": "f5a28d1037f35fdccc7a014e958db6fd666d220b",
+  "frontier_source": "https://github.com/yoshiyoyoyo44/erdos699/blob/f5a28d1037f35fdccc7a014e958db6fd666d220b/docs/STATUS.md",
+  "classical_reference": "https://math.berkeley.edu/~gbergman/papers/nomial.pdf",
+  "new_proof_depends_on_a100": false,
+  "new_proof_depends_on_discriminant": false,
+  "new_proof_depends_on_missing_index_manuscripts": false,
+  "previous_research_file": "previous_research.zip",
+  "previous_research_library_id": "libfile_869eaff93c788191975a4177614855e2"
+}

@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "proved_indices": [
+    95,
+    99,
+    103,
+    107,
+    119
+  ],
+  "domain": "All integers i<j<=n/2 for each listed i; all n.",
+  "uses_a100_certificate": false,
+  "uses_discriminant": false,
+  "verification_arithmetic": "exact integers and rigorous 128-bit log enclosures",
+  "interval_rows": [
+    {
+      "i": 95,
+      "tail_power": 19,
+      "interval_count": 11320,
+      "grid_cells_checked": 4560,
+      "minimum_log_margin_lower_numerator": "52227910572152422912248005597024012013",
+      "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+    },
+    {
+      "i": 99,
+      "tail_power": 19,
+      "interval_count": 12668,
+      "grid_cells_checked": 4950,
+      "minimum_log_margin_lower_numerator": "33831692722663422128449907339513406723",
+      "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+    },
+    {
+      "i": 103,
+      "tail_power": 19,
+      "interval_count": 17030,
+      "grid_cells_checked": 5356,
+      "minimum_log_margin_lower_numerator": "85293292454714742468521663245263222588",
+      "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+    },
+    {
+      "i": 107,
+      "tail_power": 19,
+      "interval_count": 18896,
+      "grid_cells_checked": 5778,
+      "minimum_log_margin_lower_numerator": "41895124569830041940680772691122173652",
+      "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+    },
+    {
+      "i": 119,
+      "tail_power": 20,
+      "interval_count": 22043,
+      "grid_cells_checked": 7140,
+      "minimum_log_margin_lower_numerator": "102445905543185100691925527760309886829",
+      "minimum_log_margin_lower_denominator": "340282366920938463463374607431768211456"
+    }
+  ],
+  "small_range": {
+    "sieve_limit": 2000100,
+    "prime_count": 148939,
+    "exception_count": 888,
+    "per_index": {
+      "95": 322,
+      "99": 230,
+      "103": 168,
+      "107": 127,
+      "119": 41
+    },
+    "maximum_anchor_candidates": 26
+  },
+  "formula_tests": {
+    "valuation_checks": 64400,
+    "interval_intersection_checks": 205390
+  },
+  "independent_peer_review": false,
+  "formal_lean_verification": false
+}

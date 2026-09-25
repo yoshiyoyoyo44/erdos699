@@ -1,0 +1,20 @@
+{
+  "REPORT.md": "e700eb6fc6fd4b46327a2c2da76333f6698e0e2e5faf82e5eeef150e32b4d093",
+  "certificate.json": "88e33b31568a852f6f407754b99c65153ffd0f6dd6783fd0349b6a5687407245",
+  "generate_certificate.py": "225adb52acf2fa4e40c54b630995fb355def63ad5e12546f5cbf32325c9a2eaa",
+  "previous_phase/REPORT.md": "316a037a41b089f68b2c114549729600e10eabe268fb3776c879282f04b07685",
+  "previous_phase/SHA256.json": "ef07f8f76fa764a6ec294995a1505e31fcd2824afd2aecdd6c354b764f5e661c",
+  "previous_phase/baseline_sources/critical_indices_and_handoff_integration.md": "a44480b001a08f87c96c2d9ebd3c8172e9b38cf9b59800aead7a7c35f9f10b83",
+  "previous_phase/baseline_sources/i119_a100_continuation.md": "d34f1479d65d38c8350b535ccc07dd86d2a1927d8cb80f2987fe512d9b9f5f7f",
+  "previous_phase/certificate.json": "9cf75309e003016b1ba15d95adc6019e9b30c3ae976e335bf0203761c10a07ad",
+  "previous_phase/cli_verification.json": "8ae788c784921723855375a7048ba6f7ca1802af19356550124a24a74725ecf6",
+  "previous_phase/common_divisor.py": "fc5973a6f290ba581151ce840f4919c5cfc0e908dbf1d28e2a8a540673ebd3a5",
+  "previous_phase/generate_certificate.py": "74d69ba1c0db7b6d6f6162605cc291fedd6043496352650f1de85455de0c7b1f",
+  "previous_phase/large_examples.json": "dcd8d0dc2202455fc1581609138c1caadb99e199376aa3b9be85f13b1f9dcbc0",
+  "previous_phase/verification.json": "b7ec346a27494ae2e1a5345b97108e0bf0d1fa667bdaaae41b22fdfca2fea76e",
+  "previous_phase/verify.py": "531d8f77d3ff8e135e9f2dc0a67cb6255151b19294b4e90dcf552d052275fbec",
+  "row_common_divisor.py": "2ec7e94d71e8f51318b3b2d8f701e0701f43c906cbce02e4b4028afcd24ef194",
+  "threshold_summary.json": "004c506d88c6eadfbd7f1831817734241d91a010a711b1b36a452ae7cd8505f4",
+  "verification.json": "1e21dd8e1f6eafe208c3ca72287301107698ba047e72bd89343d2503f9b2c7e3",
+  "verify.py": "9d40e6e17f0670b60fc6fdb80d06d90a4b9c2fe6ab256df47bbd9c7d8e010617"
+}

@@ -1,0 +1,46 @@
+{
+  "independent_index_constant_checks": 117,
+  "prime_count_certificate_checks": 351,
+  "exhaustive_triples": 27643,
+  "full_row_factor_checks": 198669,
+  "active_pair_checks": 7924,
+  "prime_i_restorations": 2094,
+  "prime_i_exclusions": 9388,
+  "random_geometric_checks": 12000,
+  "constructed_zero_lines": 3007,
+  "capacity_integer_checks": 5572,
+  "negative_examples": [
+    {
+      "n": 535,
+      "i": 10,
+      "j": 214,
+      "first_cell": [
+        0,
+        0,
+        107
+      ],
+      "second_cell": [
+        5,
+        2,
+        53
+      ],
+      "product": 5671,
+      "pair_bound": 4734,
+      "determinant": 0
+    },
+    {
+      "n": 36,
+      "i": 3,
+      "j": 15,
+      "row": 1,
+      "cells": [
+        5,
+        7
+      ]
+    }
+  ],
+  "previous_package_hashes_verified": 31,
+  "status": "PASS",
+  "finite_test_note": "Infinite claims rely on REPORT.md proofs.",
+  "exhaustive_domain": "10<=n<=120, 3<=i<=min(12,floor(n/2)-1), i<j<=floor(n/2)"
+}

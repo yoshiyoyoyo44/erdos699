@@ -1,0 +1,17 @@
+{
+  "README.md": "04166c2dd73072839c88713879bdaeacd4d48d09ffc68ea30510b5854c81c9ed",
+  "REPORT.md": "3034dd297060434d4424653df037d8b20ce3094f3288b486b74844f684f66118",
+  "RESEARCH_LEDGER.md": "94becfab710759ef87d26b6d94d8fd828d1f1ce339a1d08c7a78d3943c3deb99",
+  "audit_cover.py": "eb2cf909cdcf3d5a74af110db4c1ec5fc1b30f55cfe81a1e7cdc533fa980fb4b",
+  "claims.json": "d5d7c587f1fc448d43ccddc182da57345b8a8a7c74cbb97bd458ec10635054af",
+  "cover_audit.json": "162d173641cc1204878848f0f179250e0ff77779f1ca08c3e3f55ada3b870de9",
+  "generate.py": "9ba2fb6ee98030e7da0bbe9e9c56f41dd505a3fadb0b99711d4ebfbcc53e952a",
+  "generate_small.py": "7a0805a9824ffc017ced75e75d3be1130bd2fe3c9a2b02c9f70c1c0d305414da",
+  "interval_certificate.json": "b260dd8d02875c1a731bc8d5300c5e86b3013ecbe88fb57e769581488c3c3ffa",
+  "previous_research.zip": "a3e224079a20804c38b1e4d1eab373fb4df395e2a6fe0fece4aca9474a776f2e",
+  "small_certificate.json": "01625d31aac03c53df32cd316ffa232ecf128d7d2ab18c8309ff4766e83dae6d",
+  "source_manifest.json": "5cae2378381a991197a06ebbdfc076c4ce01c8ed0a9813e128f68bb711a14caa",
+  "sources/STATUS_at_frozen_commit.md": "c63ebae65647d8c21b31b2ad980c87c81fa73227461afd9af8e2c234f5c26bd6",
+  "verification.json": "6cb8ddf36100403081c25fc19072173366d30f1f05a69c8aade9fb09998b5075",
+  "verify.py": "0d700b83ba845606f4d7c99db69ab2e2434c1a2283cae3fdc83848198bfc75f1"
+}

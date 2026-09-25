@@ -15,6 +15,7 @@
 
 - [当時の配布ZIP](attachments/erdos699_continuation_2026-09-12.zip)
 - [9月15日に追加したZIPの案内](attachments/incoming_2026-09-15/README.md)
+- [9月26日の5添付と依存資料](attachments/incoming_2026-09-26/README.md) — 原本保存、同梱114ハッシュ項目と6監査を再検証。
 - [当時のSHA-256一覧](SHA256_legacy.json)
 
 これらは当時の配布物であり、その後の全成果を含む最新パッケージではありません。

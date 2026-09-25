@@ -37,6 +37,7 @@ def check_layout():
     documents += list((ROOT/'research').rglob('*.md'))
     documents += [ROOT/name/'README.md' for name in ('scripts','data','magma','formal','sources','archive')]
     documents += [ROOT/'archive/FILE_MAP.md']
+    documents += [ROOT/'archive/attachments/incoming_2026-09-26/README.md']
     broken, links, commands = [], 0, 0
     for path in documents:
         text = path.read_text(encoding='utf-8')
@@ -56,7 +57,16 @@ def check_layout():
             commands += 1
         assert r'\[' not in without_code and r'\(' not in without_code, f'Old math delimiter: {path}'
     assert not broken, '\n'.join(broken)
+    from replay_september26_attachments import check_hashes
+    new_originals, package_hash_entries = check_hashes()
+    extension = ROOT/'data/certificates/weighted_cover_2026-09-26'
+    extension_manifest = json.loads((extension/'manifest.json').read_text())
+    for name, digest in extension_manifest['files'].items():
+        assert hashlib.sha256((extension/name).read_bytes()).hexdigest() == digest, name
     return {'legacy_paths': len(manifest['files']), 'byte_preserved_files': preserved,
+            'new_original_attachments': new_originals,
+            'new_package_hash_entries': package_hash_entries,
+            'extension_certificate_hashes': len(extension_manifest['files']),
             'python_files_parsed': len(python_files), 'documents_checked': len(documents),
             'local_links_checked': links, 'script_commands_checked': commands}
 

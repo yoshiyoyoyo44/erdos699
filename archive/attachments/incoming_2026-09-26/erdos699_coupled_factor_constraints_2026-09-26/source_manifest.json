@@ -1,0 +1,10 @@
+{
+  "source_commit": "f5a28d1037f35fdccc7a014e958db6fd666d220b",
+  "source_url": "https://github.com/yoshiyoyoyo44/erdos699/tree/f5a28d1037f35fdccc7a014e958db6fd666d220b",
+  "previous_package": "previous_phase",
+  "previous_report_library_id": "libfile_90c76e3085e08191a7df6aa04e6128ec",
+  "previous_zip_library_id": "libfile_598a37f91bf88191880e9d972cef13b2",
+  "new_results_depend_on_missing_index_manuscripts": false,
+  "new_results_depend_on_a100_certificate": false,
+  "source_status": "frozen prior source; no new current-status or global novelty claim"
+}

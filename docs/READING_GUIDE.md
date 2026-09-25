@@ -6,6 +6,9 @@
 
 ## 全体の証明を理解する
 
+最新の結果は[三方向の重み・86添字の完全被覆](../research/general/weighted_cover_and_integration_2026-09-26.md)から読めます。
+これは $i=29$ と $35\le i\le119$ の自足した証明です。従来の $i\ge120$ の経路は次のとおりです。
+
 1. [判別式の積公式と共通因子の下界](../research/general/discriminant_continuation.md) — 全体の基礎。
 2. [区間ごとの付値評価](../research/general/interval_valuation_continuation.md) — 大きい添字の範囲を改善。
 3. [臨界添字の処理](../research/general/critical_indices_and_handoff_integration.md) — $i\ge120$と追加の添字、非有効な有限性。
@@ -49,7 +52,7 @@
 ## 他の添字
 
 - **$i=4$：** [素数の直後の平方の族](../research/i4/i4_prime_neighbor_squares_2026-09-20.md)。一般の場合は未解決。
-- **$i=119$：** [$10^{87}$までの有限範囲](../research/i119/i119_a100_continuation.md)と[Hankel係数の還元](../research/i119/i119_hankel_content_continuation.md)。
+- **$i=119$：** [9月26日の重み付き積](../research/general/weighted_cover_and_integration_2026-09-26.md)で全範囲を閉じました。[$10^{87}$までの有限範囲](../research/i119/i119_a100_continuation.md)と[Hankel係数の還元](../research/i119/i119_hankel_content_continuation.md)は以前の経路です。
 
 ## 原本や過去の方針を確認する
 

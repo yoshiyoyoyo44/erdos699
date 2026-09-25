@@ -14,6 +14,36 @@
 
 必要に応じて `python -m pip install sympy` で導入できます。
 
+## 9月26日の添付統合と86添字の完全被覆
+
+次はPython標準ライブラリだけで実行できます。原本への書き込みや外部通信は行いません。
+全区間の再生は数分以上かかり、gzip圧縮された証明書を展開して計算するため、十分なメモリが必要です。
+
+```text
+python -X utf8 scripts/replay_september26_attachments.py
+python -X utf8 scripts/replay_weighted_cover_extension.py
+python -X utf8 scripts/audit_weighted_common_divisor.py
+python -X utf8 scripts/check_repository.py
+```
+
+| 再生 | 対象 |
+|---|---|
+| 添付 | 原本5件、同梱SHA-256の114項目、5添字と因子分配・前段3層の6監査。歴史的出力と一致することを確認 |
+| 86添字への拡張 | $i=29$、$35\le i\le119$。1,509,157整数区間の不等式と連続被覆、1,031,146組の小範囲例外、86件の無限尾部開始点 |
+| 無条件の共通約数 | 22,035組、172境界例、4,719通りの重み比較。全117添字で正の次数差になる集合も確認 |
+
+一般証明は[統合・追加研究](../research/general/weighted_cover_and_integration_2026-09-26.md)、
+有限データは[証明書](../data/certificates/weighted_cover_2026-09-26/manifest.json)、
+実行結果は[拡張の再生](../data/results/verification_weighted_cover_extension.json)と
+[添付の再生](../data/results/verification_september26_attachments.json)を参照してください。
+添付検証器は一時コピーで動かし、原本のハッシュを実行前後に照合します。
+添付にない $i=3$ の3本文や、前段のA=100基点証明書まで再認証したことにはなりません。
+
+再生成は `python scripts/certify_weighted_cover_extension.py` です。
+生成器は192ビット区間漸化式、再生器は128ビットの直接有理数和を用い、再生器は生成器をimportしません。
+探索時の余裕を持たせた尾部閾値と、再生成時の最初に通る閾値の違いにより、分割・ハッシュは一致しない場合があります。
+生成後は必ず再生器で全被覆を確認してください。Pythonの最適化オプション `-O` は使用しません。
+
 ## 最新の結果を短く検算する
 
 ```text

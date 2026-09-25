@@ -6,6 +6,9 @@
 提案・未検証の報告・後に訂正した主張も、原文の一部として含まれています。
 証明済みの結論は[現在地](../docs/STATUS.md)と[研究ノート](../research/README.md)を参照してください。
 
+9月26日の5添付は、ZIPの依存関係を保つため[原本フォルダ](../archive/attachments/incoming_2026-09-26/README.md)へ一括保存しています。
+[今回の統合稿](../research/general/weighted_cover_and_integration_2026-09-26.md)で、5添字の排除、因子分配、$i=3$ の本文未取得の報告を区別しました。
+
 | 原文 | 対応する統合・検討 |
 |---|---|
 | [9月22日・全桁 Kummer 担当1](source_i3_full_digit_kummer_progress_2026-09-22.md)、[マスター記録](source_i3_master_progress_2026-09-22.md) | [四つの進捗メモの統合](../research/i3/i3_four_handoffs_integration_2026-09-22.md)。添付原文をバイト保存。少数素数台の排除と有限 lifting は独立再監査前の報告 |

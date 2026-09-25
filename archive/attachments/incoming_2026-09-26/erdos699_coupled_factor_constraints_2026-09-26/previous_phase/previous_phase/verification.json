@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "counts": {
+    "constant_checks": 234,
+    "denominator_6_7_checks": 234,
+    "passed_denominator_thresholds": 91337,
+    "first_failed_thresholds": 1170,
+    "row_divisor_checks": 10161,
+    "local_exact_carry_checks": 54101,
+    "projection_dominance_checks": 50805,
+    "cofactor_projection_checks": 8498
+  },
+  "examples": [
+    {
+      "i": 3,
+      "n": 9,
+      "j": 4,
+      "five_projection_divisor": 7,
+      "row_divisor": 21,
+      "actual_gcd": 42
+    },
+    {
+      "i": 3,
+      "n": 15,
+      "j": 4,
+      "five_projection_divisor": 91,
+      "row_divisor": 455,
+      "actual_gcd": 455
+    },
+    {
+      "i": 3,
+      "n": 151,
+      "j": 50,
+      "five_projection_divisor": 22499,
+      "row_divisor": 22499,
+      "actual_gcd": 112495
+    }
+  ],
+  "limitations": {
+    "higher_layers_may_add_common_factors": true,
+    "composite_row_may_split_between_j_minus_t": true,
+    "no_proof_that_row_divisor_always_exceeds_one": true
+  }
+}
