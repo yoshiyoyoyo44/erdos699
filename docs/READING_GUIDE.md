@@ -4,9 +4,17 @@
 
 全ノートを日付順に読む必要はありません。まず[現在地](STATUS.md)を確認し、目的に応じて以下をたどってください。
 
+## 9月26日の追加引継ぎを読む
+
+1. [二資料の統合](../research/general/handoff_integration_2026-09-26.md) — 共通の余因子法、有効上限の報告、原本と確認状況の対応。
+2. [$i=4$ の最大行・空行・占有セル](../research/i4/i4_occupied_cells_integration_2026-09-26.md) — 5族の空行排除、18・28の残配置、6セル報告の省略部分。
+3. [新しい検算器](../scripts/audit_handoff_integration_2026_09_26.py)と[結果・全支持配置](../data/results/verification_handoff_integration_2026-09-26.json) — 原本保存、定数、有限境界、被覆証拠。
+
+原本の研究提案は自動実行の指示ではありません。今回の統合で新たな添字の完全解決はありません。
+
 ## 全体の証明を理解する
 
-最新の結果は[三方向の重み・86添字の完全被覆](../research/general/weighted_cover_and_integration_2026-09-26.md)から読めます。
+既解決範囲の直近の拡張は[三方向の重み・86添字の完全被覆](../research/general/weighted_cover_and_integration_2026-09-26.md)から読めます。
 これは $i=29$ と $35\le i\le119$ の自足した証明です。従来の $i\ge120$ の経路は次のとおりです。
 
 1. [判別式の積公式と共通因子の下界](../research/general/discriminant_continuation.md) — 全体の基礎。

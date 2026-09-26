@@ -1,0 +1,4052 @@
+{
+  "status": "passed",
+  "scope": "source preservation, arithmetic diagnostics, empty-q finite certificate, and exact two-line support enumeration",
+  "not_certified": [
+    "omitted occupied-q five-cell reductions for 18,20,27",
+    "i3 odd support identity with missing definitions",
+    "external S-part and Matveev theorems",
+    "complete solution of any remaining index"
+  ],
+  "source_hashes_checked": 2,
+  "cofactors": {
+    "beta_values": [
+      {
+        "i": 3,
+        "m": 1,
+        "b": 2,
+        "d": 4,
+        "S": 3,
+        "beta": "1/4"
+      },
+      {
+        "i": 4,
+        "m": 2,
+        "b": 2,
+        "d": 3,
+        "S": 3,
+        "beta": "1"
+      },
+      {
+        "i": 5,
+        "m": 2,
+        "b": 3,
+        "d": 5,
+        "S": 6,
+        "beta": "3/5"
+      },
+      {
+        "i": 6,
+        "m": 3,
+        "b": 4,
+        "d": 7,
+        "S": 10,
+        "beta": "9/7"
+      },
+      {
+        "i": 7,
+        "m": 3,
+        "b": 4,
+        "d": 6,
+        "S": 10,
+        "beta": "1"
+      },
+      {
+        "i": 8,
+        "m": 4,
+        "b": 5,
+        "d": 8,
+        "S": 15,
+        "beta": "13/8"
+      },
+      {
+        "i": 9,
+        "m": 4,
+        "b": 6,
+        "d": 10,
+        "S": 21,
+        "beta": "13/10"
+      },
+      {
+        "i": 10,
+        "m": 4,
+        "b": 6,
+        "d": 9,
+        "S": 21,
+        "beta": "1"
+      },
+      {
+        "i": 11,
+        "m": 4,
+        "b": 7,
+        "d": 11,
+        "S": 28,
+        "beta": "7/11"
+      },
+      {
+        "i": 12,
+        "m": 5,
+        "b": 8,
+        "d": 13,
+        "S": 36,
+        "beta": "17/13"
+      },
+      {
+        "i": 13,
+        "m": 5,
+        "b": 8,
+        "d": 12,
+        "S": 36,
+        "beta": "1"
+      },
+      {
+        "i": 14,
+        "m": 6,
+        "b": 9,
+        "d": 14,
+        "S": 45,
+        "beta": "23/14"
+      },
+      {
+        "i": 15,
+        "m": 6,
+        "b": 10,
+        "d": 16,
+        "S": 55,
+        "beta": "21/16"
+      },
+      {
+        "i": 16,
+        "m": 6,
+        "b": 10,
+        "d": 15,
+        "S": 55,
+        "beta": "1"
+      },
+      {
+        "i": 17,
+        "m": 6,
+        "b": 11,
+        "d": 17,
+        "S": 66,
+        "beta": "11/17"
+      },
+      {
+        "i": 18,
+        "m": 7,
+        "b": 12,
+        "d": 19,
+        "S": 78,
+        "beta": "25/19"
+      },
+      {
+        "i": 19,
+        "m": 7,
+        "b": 12,
+        "d": 18,
+        "S": 78,
+        "beta": "1"
+      },
+      {
+        "i": 20,
+        "m": 8,
+        "b": 13,
+        "d": 20,
+        "S": 91,
+        "beta": "33/20"
+      },
+      {
+        "i": 21,
+        "m": 8,
+        "b": 14,
+        "d": 22,
+        "S": 105,
+        "beta": "29/22"
+      },
+      {
+        "i": 22,
+        "m": 8,
+        "b": 14,
+        "d": 21,
+        "S": 105,
+        "beta": "1"
+      },
+      {
+        "i": 23,
+        "m": 8,
+        "b": 15,
+        "d": 23,
+        "S": 120,
+        "beta": "15/23"
+      },
+      {
+        "i": 24,
+        "m": 9,
+        "b": 16,
+        "d": 25,
+        "S": 136,
+        "beta": "33/25"
+      },
+      {
+        "i": 25,
+        "m": 9,
+        "b": 16,
+        "d": 24,
+        "S": 136,
+        "beta": "1"
+      },
+      {
+        "i": 26,
+        "m": 9,
+        "b": 17,
+        "d": 26,
+        "S": 153,
+        "beta": "17/26"
+      },
+      {
+        "i": 27,
+        "m": 9,
+        "b": 18,
+        "d": 28,
+        "S": 171,
+        "beta": "9/28"
+      },
+      {
+        "i": 28,
+        "m": 9,
+        "b": 18,
+        "d": 27,
+        "S": 171,
+        "beta": "0"
+      },
+      {
+        "i": 30,
+        "m": 10,
+        "b": 20,
+        "d": 31,
+        "S": 210,
+        "beta": "10/31"
+      },
+      {
+        "i": 31,
+        "m": 10,
+        "b": 20,
+        "d": 30,
+        "S": 210,
+        "beta": "0"
+      },
+      {
+        "i": 32,
+        "m": 11,
+        "b": 21,
+        "d": 32,
+        "S": 231,
+        "beta": "21/32"
+      },
+      {
+        "i": 33,
+        "m": 11,
+        "b": 22,
+        "d": 34,
+        "S": 253,
+        "beta": "11/34"
+      },
+      {
+        "i": 34,
+        "m": 11,
+        "b": 22,
+        "d": 33,
+        "S": 253,
+        "beta": "0"
+      }
+    ],
+    "local_n_i_diagnostics": 8143,
+    "diagnostic_n_max": 300,
+    "tie_choice_in_diagnostics": "first maximizing row"
+  },
+  "constants": {
+    "Matveev_coefficient_arithmetic_only": true,
+    "pure_2_power_diagnostics": 499,
+    "pure_3_power_diagnostics": 299,
+    "corrected_equality": "432*(3/2)^4 = 2187"
+  },
+  "empty_q": {
+    "tail_exponent": 32,
+    "tail_bound": "2^32-1 > 1458*32^3",
+    "finite_families_checked": 20,
+    "finite_candidates_excluded": 302,
+    "finite_certificate": [
+      {
+        "residue": 18,
+        "exponent": 4,
+        "n": 18,
+        "row_0": 1,
+        "rejected_candidates": [
+          {
+            "a": 5,
+            "j": 5,
+            "failing_row": 1
+          },
+          {
+            "a": 6,
+            "j": 6,
+            "failing_row": 1
+          },
+          {
+            "a": 7,
+            "j": 7,
+            "failing_row": 1
+          },
+          {
+            "a": 8,
+            "j": 8,
+            "failing_row": 1
+          },
+          {
+            "a": 9,
+            "j": 9,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 9,
+        "exponent": 9,
+        "n": 513,
+        "row_0": 19,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 19,
+            "failing_row": 2
+          },
+          {
+            "a": 2,
+            "j": 38,
+            "failing_row": 2
+          },
+          {
+            "a": 3,
+            "j": 57,
+            "failing_row": 2
+          },
+          {
+            "a": 4,
+            "j": 76,
+            "failing_row": 2
+          },
+          {
+            "a": 5,
+            "j": 95,
+            "failing_row": 2
+          },
+          {
+            "a": 6,
+            "j": 114,
+            "failing_row": 2
+          },
+          {
+            "a": 7,
+            "j": 133,
+            "failing_row": 2
+          },
+          {
+            "a": 8,
+            "j": 152,
+            "failing_row": 2
+          },
+          {
+            "a": 9,
+            "j": 171,
+            "failing_row": 2
+          },
+          {
+            "a": 10,
+            "j": 190,
+            "failing_row": 2
+          },
+          {
+            "a": 11,
+            "j": 209,
+            "failing_row": 2
+          },
+          {
+            "a": 12,
+            "j": 228,
+            "failing_row": 2
+          },
+          {
+            "a": 13,
+            "j": 247,
+            "failing_row": 2
+          }
+        ]
+      },
+      {
+        "residue": 9,
+        "exponent": 15,
+        "n": 32769,
+        "row_0": 3641,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 3641,
+            "failing_row": 2
+          },
+          {
+            "a": 2,
+            "j": 7282,
+            "failing_row": 2
+          },
+          {
+            "a": 3,
+            "j": 10923,
+            "failing_row": 2
+          },
+          {
+            "a": 4,
+            "j": 14564,
+            "failing_row": 2
+          }
+        ]
+      },
+      {
+        "residue": 9,
+        "exponent": 21,
+        "n": 2097153,
+        "row_0": 233017,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 233017,
+            "failing_row": 2
+          },
+          {
+            "a": 2,
+            "j": 466034,
+            "failing_row": 2
+          },
+          {
+            "a": 3,
+            "j": 699051,
+            "failing_row": 2
+          },
+          {
+            "a": 4,
+            "j": 932068,
+            "failing_row": 2
+          }
+        ]
+      },
+      {
+        "residue": 9,
+        "exponent": 27,
+        "n": 134217729,
+        "row_0": 1657009,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 1657009,
+            "failing_row": 2
+          },
+          {
+            "a": 2,
+            "j": 3314018,
+            "failing_row": 2
+          },
+          {
+            "a": 3,
+            "j": 4971027,
+            "failing_row": 2
+          },
+          {
+            "a": 4,
+            "j": 6628036,
+            "failing_row": 2
+          },
+          {
+            "a": 5,
+            "j": 8285045,
+            "failing_row": 2
+          },
+          {
+            "a": 6,
+            "j": 9942054,
+            "failing_row": 2
+          },
+          {
+            "a": 7,
+            "j": 11599063,
+            "failing_row": 2
+          },
+          {
+            "a": 8,
+            "j": 13256072,
+            "failing_row": 2
+          },
+          {
+            "a": 9,
+            "j": 14913081,
+            "failing_row": 2
+          },
+          {
+            "a": 10,
+            "j": 16570090,
+            "failing_row": 2
+          },
+          {
+            "a": 11,
+            "j": 18227099,
+            "failing_row": 2
+          },
+          {
+            "a": 12,
+            "j": 19884108,
+            "failing_row": 2
+          },
+          {
+            "a": 13,
+            "j": 21541117,
+            "failing_row": 2
+          },
+          {
+            "a": 14,
+            "j": 23198126,
+            "failing_row": 2
+          },
+          {
+            "a": 15,
+            "j": 24855135,
+            "failing_row": 2
+          },
+          {
+            "a": 16,
+            "j": 26512144,
+            "failing_row": 2
+          },
+          {
+            "a": 17,
+            "j": 28169153,
+            "failing_row": 2
+          },
+          {
+            "a": 18,
+            "j": 29826162,
+            "failing_row": 2
+          },
+          {
+            "a": 19,
+            "j": 31483171,
+            "failing_row": 2
+          },
+          {
+            "a": 20,
+            "j": 33140180,
+            "failing_row": 2
+          },
+          {
+            "a": 21,
+            "j": 34797189,
+            "failing_row": 2
+          },
+          {
+            "a": 22,
+            "j": 36454198,
+            "failing_row": 2
+          },
+          {
+            "a": 23,
+            "j": 38111207,
+            "failing_row": 2
+          },
+          {
+            "a": 24,
+            "j": 39768216,
+            "failing_row": 2
+          },
+          {
+            "a": 25,
+            "j": 41425225,
+            "failing_row": 2
+          },
+          {
+            "a": 26,
+            "j": 43082234,
+            "failing_row": 2
+          },
+          {
+            "a": 27,
+            "j": 44739243,
+            "failing_row": 2
+          },
+          {
+            "a": 28,
+            "j": 46396252,
+            "failing_row": 2
+          },
+          {
+            "a": 29,
+            "j": 48053261,
+            "failing_row": 2
+          },
+          {
+            "a": 30,
+            "j": 49710270,
+            "failing_row": 2
+          },
+          {
+            "a": 31,
+            "j": 51367279,
+            "failing_row": 2
+          },
+          {
+            "a": 32,
+            "j": 53024288,
+            "failing_row": 2
+          },
+          {
+            "a": 33,
+            "j": 54681297,
+            "failing_row": 2
+          },
+          {
+            "a": 34,
+            "j": 56338306,
+            "failing_row": 2
+          },
+          {
+            "a": 35,
+            "j": 57995315,
+            "failing_row": 2
+          },
+          {
+            "a": 36,
+            "j": 59652324,
+            "failing_row": 2
+          },
+          {
+            "a": 37,
+            "j": 61309333,
+            "failing_row": 2
+          },
+          {
+            "a": 38,
+            "j": 62966342,
+            "failing_row": 2
+          },
+          {
+            "a": 39,
+            "j": 64623351,
+            "failing_row": 2
+          },
+          {
+            "a": 40,
+            "j": 66280360,
+            "failing_row": 2
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 3,
+        "n": 27,
+        "row_0": 1,
+        "rejected_candidates": [
+          {
+            "a": 5,
+            "j": 5,
+            "failing_row": 1
+          },
+          {
+            "a": 6,
+            "j": 6,
+            "failing_row": 1
+          },
+          {
+            "a": 7,
+            "j": 7,
+            "failing_row": 1
+          },
+          {
+            "a": 8,
+            "j": 8,
+            "failing_row": 1
+          },
+          {
+            "a": 9,
+            "j": 9,
+            "failing_row": 1
+          },
+          {
+            "a": 10,
+            "j": 10,
+            "failing_row": 1
+          },
+          {
+            "a": 11,
+            "j": 11,
+            "failing_row": 1
+          },
+          {
+            "a": 12,
+            "j": 12,
+            "failing_row": 1
+          },
+          {
+            "a": 13,
+            "j": 13,
+            "failing_row": 2
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 5,
+        "n": 99,
+        "row_0": 11,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 11,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 22,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 33,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 44,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 7,
+        "n": 387,
+        "row_0": 43,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 43,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 86,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 129,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 172,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 9,
+        "n": 1539,
+        "row_0": 19,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 19,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 38,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 57,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 76,
+            "failing_row": 1
+          },
+          {
+            "a": 5,
+            "j": 95,
+            "failing_row": 1
+          },
+          {
+            "a": 6,
+            "j": 114,
+            "failing_row": 1
+          },
+          {
+            "a": 7,
+            "j": 133,
+            "failing_row": 1
+          },
+          {
+            "a": 8,
+            "j": 152,
+            "failing_row": 1
+          },
+          {
+            "a": 9,
+            "j": 171,
+            "failing_row": 1
+          },
+          {
+            "a": 10,
+            "j": 190,
+            "failing_row": 1
+          },
+          {
+            "a": 11,
+            "j": 209,
+            "failing_row": 1
+          },
+          {
+            "a": 12,
+            "j": 228,
+            "failing_row": 1
+          },
+          {
+            "a": 13,
+            "j": 247,
+            "failing_row": 1
+          },
+          {
+            "a": 14,
+            "j": 266,
+            "failing_row": 1
+          },
+          {
+            "a": 15,
+            "j": 285,
+            "failing_row": 1
+          },
+          {
+            "a": 16,
+            "j": 304,
+            "failing_row": 1
+          },
+          {
+            "a": 17,
+            "j": 323,
+            "failing_row": 1
+          },
+          {
+            "a": 18,
+            "j": 342,
+            "failing_row": 1
+          },
+          {
+            "a": 19,
+            "j": 361,
+            "failing_row": 1
+          },
+          {
+            "a": 20,
+            "j": 380,
+            "failing_row": 1
+          },
+          {
+            "a": 21,
+            "j": 399,
+            "failing_row": 1
+          },
+          {
+            "a": 22,
+            "j": 418,
+            "failing_row": 1
+          },
+          {
+            "a": 23,
+            "j": 437,
+            "failing_row": 1
+          },
+          {
+            "a": 24,
+            "j": 456,
+            "failing_row": 1
+          },
+          {
+            "a": 25,
+            "j": 475,
+            "failing_row": 1
+          },
+          {
+            "a": 26,
+            "j": 494,
+            "failing_row": 1
+          },
+          {
+            "a": 27,
+            "j": 513,
+            "failing_row": 1
+          },
+          {
+            "a": 28,
+            "j": 532,
+            "failing_row": 1
+          },
+          {
+            "a": 29,
+            "j": 551,
+            "failing_row": 1
+          },
+          {
+            "a": 30,
+            "j": 570,
+            "failing_row": 1
+          },
+          {
+            "a": 31,
+            "j": 589,
+            "failing_row": 1
+          },
+          {
+            "a": 32,
+            "j": 608,
+            "failing_row": 1
+          },
+          {
+            "a": 33,
+            "j": 627,
+            "failing_row": 1
+          },
+          {
+            "a": 34,
+            "j": 646,
+            "failing_row": 1
+          },
+          {
+            "a": 35,
+            "j": 665,
+            "failing_row": 1
+          },
+          {
+            "a": 36,
+            "j": 684,
+            "failing_row": 1
+          },
+          {
+            "a": 37,
+            "j": 703,
+            "failing_row": 1
+          },
+          {
+            "a": 38,
+            "j": 722,
+            "failing_row": 1
+          },
+          {
+            "a": 39,
+            "j": 741,
+            "failing_row": 1
+          },
+          {
+            "a": 40,
+            "j": 760,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 11,
+        "n": 6147,
+        "row_0": 683,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 683,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 1366,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 2049,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 2732,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 13,
+        "n": 24579,
+        "row_0": 2731,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 2731,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 5462,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 8193,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 10924,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 15,
+        "n": 98307,
+        "row_0": 3641,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 3641,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 7282,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 10923,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 14564,
+            "failing_row": 1
+          },
+          {
+            "a": 5,
+            "j": 18205,
+            "failing_row": 1
+          },
+          {
+            "a": 6,
+            "j": 21846,
+            "failing_row": 1
+          },
+          {
+            "a": 7,
+            "j": 25487,
+            "failing_row": 1
+          },
+          {
+            "a": 8,
+            "j": 29128,
+            "failing_row": 1
+          },
+          {
+            "a": 9,
+            "j": 32769,
+            "failing_row": 1
+          },
+          {
+            "a": 10,
+            "j": 36410,
+            "failing_row": 1
+          },
+          {
+            "a": 11,
+            "j": 40051,
+            "failing_row": 1
+          },
+          {
+            "a": 12,
+            "j": 43692,
+            "failing_row": 1
+          },
+          {
+            "a": 13,
+            "j": 47333,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 17,
+        "n": 393219,
+        "row_0": 43691,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 43691,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 87382,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 131073,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 174764,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 19,
+        "n": 1572867,
+        "row_0": 174763,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 174763,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 349526,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 524289,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 699052,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 21,
+        "n": 6291459,
+        "row_0": 233017,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 233017,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 466034,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 699051,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 932068,
+            "failing_row": 1
+          },
+          {
+            "a": 5,
+            "j": 1165085,
+            "failing_row": 1
+          },
+          {
+            "a": 6,
+            "j": 1398102,
+            "failing_row": 1
+          },
+          {
+            "a": 7,
+            "j": 1631119,
+            "failing_row": 1
+          },
+          {
+            "a": 8,
+            "j": 1864136,
+            "failing_row": 1
+          },
+          {
+            "a": 9,
+            "j": 2097153,
+            "failing_row": 1
+          },
+          {
+            "a": 10,
+            "j": 2330170,
+            "failing_row": 1
+          },
+          {
+            "a": 11,
+            "j": 2563187,
+            "failing_row": 1
+          },
+          {
+            "a": 12,
+            "j": 2796204,
+            "failing_row": 1
+          },
+          {
+            "a": 13,
+            "j": 3029221,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 23,
+        "n": 25165827,
+        "row_0": 2796203,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 2796203,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 5592406,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 8388609,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 11184812,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 25,
+        "n": 100663299,
+        "row_0": 11184811,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 11184811,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 22369622,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 33554433,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 44739244,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 27,
+        "n": 402653187,
+        "row_0": 1657009,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 1657009,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 3314018,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 4971027,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 6628036,
+            "failing_row": 1
+          },
+          {
+            "a": 5,
+            "j": 8285045,
+            "failing_row": 1
+          },
+          {
+            "a": 6,
+            "j": 9942054,
+            "failing_row": 1
+          },
+          {
+            "a": 7,
+            "j": 11599063,
+            "failing_row": 1
+          },
+          {
+            "a": 8,
+            "j": 13256072,
+            "failing_row": 1
+          },
+          {
+            "a": 9,
+            "j": 14913081,
+            "failing_row": 1
+          },
+          {
+            "a": 10,
+            "j": 16570090,
+            "failing_row": 1
+          },
+          {
+            "a": 11,
+            "j": 18227099,
+            "failing_row": 1
+          },
+          {
+            "a": 12,
+            "j": 19884108,
+            "failing_row": 1
+          },
+          {
+            "a": 13,
+            "j": 21541117,
+            "failing_row": 1
+          },
+          {
+            "a": 14,
+            "j": 23198126,
+            "failing_row": 1
+          },
+          {
+            "a": 15,
+            "j": 24855135,
+            "failing_row": 1
+          },
+          {
+            "a": 16,
+            "j": 26512144,
+            "failing_row": 1
+          },
+          {
+            "a": 17,
+            "j": 28169153,
+            "failing_row": 1
+          },
+          {
+            "a": 18,
+            "j": 29826162,
+            "failing_row": 1
+          },
+          {
+            "a": 19,
+            "j": 31483171,
+            "failing_row": 1
+          },
+          {
+            "a": 20,
+            "j": 33140180,
+            "failing_row": 1
+          },
+          {
+            "a": 21,
+            "j": 34797189,
+            "failing_row": 1
+          },
+          {
+            "a": 22,
+            "j": 36454198,
+            "failing_row": 1
+          },
+          {
+            "a": 23,
+            "j": 38111207,
+            "failing_row": 1
+          },
+          {
+            "a": 24,
+            "j": 39768216,
+            "failing_row": 1
+          },
+          {
+            "a": 25,
+            "j": 41425225,
+            "failing_row": 1
+          },
+          {
+            "a": 26,
+            "j": 43082234,
+            "failing_row": 1
+          },
+          {
+            "a": 27,
+            "j": 44739243,
+            "failing_row": 1
+          },
+          {
+            "a": 28,
+            "j": 46396252,
+            "failing_row": 1
+          },
+          {
+            "a": 29,
+            "j": 48053261,
+            "failing_row": 1
+          },
+          {
+            "a": 30,
+            "j": 49710270,
+            "failing_row": 1
+          },
+          {
+            "a": 31,
+            "j": 51367279,
+            "failing_row": 1
+          },
+          {
+            "a": 32,
+            "j": 53024288,
+            "failing_row": 1
+          },
+          {
+            "a": 33,
+            "j": 54681297,
+            "failing_row": 1
+          },
+          {
+            "a": 34,
+            "j": 56338306,
+            "failing_row": 1
+          },
+          {
+            "a": 35,
+            "j": 57995315,
+            "failing_row": 1
+          },
+          {
+            "a": 36,
+            "j": 59652324,
+            "failing_row": 1
+          },
+          {
+            "a": 37,
+            "j": 61309333,
+            "failing_row": 1
+          },
+          {
+            "a": 38,
+            "j": 62966342,
+            "failing_row": 1
+          },
+          {
+            "a": 39,
+            "j": 64623351,
+            "failing_row": 1
+          },
+          {
+            "a": 40,
+            "j": 66280360,
+            "failing_row": 1
+          },
+          {
+            "a": 41,
+            "j": 67937369,
+            "failing_row": 1
+          },
+          {
+            "a": 42,
+            "j": 69594378,
+            "failing_row": 1
+          },
+          {
+            "a": 43,
+            "j": 71251387,
+            "failing_row": 1
+          },
+          {
+            "a": 44,
+            "j": 72908396,
+            "failing_row": 1
+          },
+          {
+            "a": 45,
+            "j": 74565405,
+            "failing_row": 1
+          },
+          {
+            "a": 46,
+            "j": 76222414,
+            "failing_row": 1
+          },
+          {
+            "a": 47,
+            "j": 77879423,
+            "failing_row": 1
+          },
+          {
+            "a": 48,
+            "j": 79536432,
+            "failing_row": 1
+          },
+          {
+            "a": 49,
+            "j": 81193441,
+            "failing_row": 1
+          },
+          {
+            "a": 50,
+            "j": 82850450,
+            "failing_row": 1
+          },
+          {
+            "a": 51,
+            "j": 84507459,
+            "failing_row": 1
+          },
+          {
+            "a": 52,
+            "j": 86164468,
+            "failing_row": 1
+          },
+          {
+            "a": 53,
+            "j": 87821477,
+            "failing_row": 1
+          },
+          {
+            "a": 54,
+            "j": 89478486,
+            "failing_row": 1
+          },
+          {
+            "a": 55,
+            "j": 91135495,
+            "failing_row": 1
+          },
+          {
+            "a": 56,
+            "j": 92792504,
+            "failing_row": 1
+          },
+          {
+            "a": 57,
+            "j": 94449513,
+            "failing_row": 1
+          },
+          {
+            "a": 58,
+            "j": 96106522,
+            "failing_row": 1
+          },
+          {
+            "a": 59,
+            "j": 97763531,
+            "failing_row": 1
+          },
+          {
+            "a": 60,
+            "j": 99420540,
+            "failing_row": 1
+          },
+          {
+            "a": 61,
+            "j": 101077549,
+            "failing_row": 1
+          },
+          {
+            "a": 62,
+            "j": 102734558,
+            "failing_row": 1
+          },
+          {
+            "a": 63,
+            "j": 104391567,
+            "failing_row": 1
+          },
+          {
+            "a": 64,
+            "j": 106048576,
+            "failing_row": 1
+          },
+          {
+            "a": 65,
+            "j": 107705585,
+            "failing_row": 1
+          },
+          {
+            "a": 66,
+            "j": 109362594,
+            "failing_row": 1
+          },
+          {
+            "a": 67,
+            "j": 111019603,
+            "failing_row": 1
+          },
+          {
+            "a": 68,
+            "j": 112676612,
+            "failing_row": 1
+          },
+          {
+            "a": 69,
+            "j": 114333621,
+            "failing_row": 1
+          },
+          {
+            "a": 70,
+            "j": 115990630,
+            "failing_row": 1
+          },
+          {
+            "a": 71,
+            "j": 117647639,
+            "failing_row": 1
+          },
+          {
+            "a": 72,
+            "j": 119304648,
+            "failing_row": 1
+          },
+          {
+            "a": 73,
+            "j": 120961657,
+            "failing_row": 1
+          },
+          {
+            "a": 74,
+            "j": 122618666,
+            "failing_row": 1
+          },
+          {
+            "a": 75,
+            "j": 124275675,
+            "failing_row": 1
+          },
+          {
+            "a": 76,
+            "j": 125932684,
+            "failing_row": 1
+          },
+          {
+            "a": 77,
+            "j": 127589693,
+            "failing_row": 1
+          },
+          {
+            "a": 78,
+            "j": 129246702,
+            "failing_row": 1
+          },
+          {
+            "a": 79,
+            "j": 130903711,
+            "failing_row": 1
+          },
+          {
+            "a": 80,
+            "j": 132560720,
+            "failing_row": 1
+          },
+          {
+            "a": 81,
+            "j": 134217729,
+            "failing_row": 1
+          },
+          {
+            "a": 82,
+            "j": 135874738,
+            "failing_row": 1
+          },
+          {
+            "a": 83,
+            "j": 137531747,
+            "failing_row": 1
+          },
+          {
+            "a": 84,
+            "j": 139188756,
+            "failing_row": 1
+          },
+          {
+            "a": 85,
+            "j": 140845765,
+            "failing_row": 1
+          },
+          {
+            "a": 86,
+            "j": 142502774,
+            "failing_row": 1
+          },
+          {
+            "a": 87,
+            "j": 144159783,
+            "failing_row": 1
+          },
+          {
+            "a": 88,
+            "j": 145816792,
+            "failing_row": 1
+          },
+          {
+            "a": 89,
+            "j": 147473801,
+            "failing_row": 1
+          },
+          {
+            "a": 90,
+            "j": 149130810,
+            "failing_row": 1
+          },
+          {
+            "a": 91,
+            "j": 150787819,
+            "failing_row": 1
+          },
+          {
+            "a": 92,
+            "j": 152444828,
+            "failing_row": 1
+          },
+          {
+            "a": 93,
+            "j": 154101837,
+            "failing_row": 1
+          },
+          {
+            "a": 94,
+            "j": 155758846,
+            "failing_row": 1
+          },
+          {
+            "a": 95,
+            "j": 157415855,
+            "failing_row": 1
+          },
+          {
+            "a": 96,
+            "j": 159072864,
+            "failing_row": 1
+          },
+          {
+            "a": 97,
+            "j": 160729873,
+            "failing_row": 1
+          },
+          {
+            "a": 98,
+            "j": 162386882,
+            "failing_row": 1
+          },
+          {
+            "a": 99,
+            "j": 164043891,
+            "failing_row": 1
+          },
+          {
+            "a": 100,
+            "j": 165700900,
+            "failing_row": 1
+          },
+          {
+            "a": 101,
+            "j": 167357909,
+            "failing_row": 1
+          },
+          {
+            "a": 102,
+            "j": 169014918,
+            "failing_row": 1
+          },
+          {
+            "a": 103,
+            "j": 170671927,
+            "failing_row": 1
+          },
+          {
+            "a": 104,
+            "j": 172328936,
+            "failing_row": 1
+          },
+          {
+            "a": 105,
+            "j": 173985945,
+            "failing_row": 1
+          },
+          {
+            "a": 106,
+            "j": 175642954,
+            "failing_row": 1
+          },
+          {
+            "a": 107,
+            "j": 177299963,
+            "failing_row": 1
+          },
+          {
+            "a": 108,
+            "j": 178956972,
+            "failing_row": 1
+          },
+          {
+            "a": 109,
+            "j": 180613981,
+            "failing_row": 1
+          },
+          {
+            "a": 110,
+            "j": 182270990,
+            "failing_row": 1
+          },
+          {
+            "a": 111,
+            "j": 183927999,
+            "failing_row": 1
+          },
+          {
+            "a": 112,
+            "j": 185585008,
+            "failing_row": 1
+          },
+          {
+            "a": 113,
+            "j": 187242017,
+            "failing_row": 1
+          },
+          {
+            "a": 114,
+            "j": 188899026,
+            "failing_row": 1
+          },
+          {
+            "a": 115,
+            "j": 190556035,
+            "failing_row": 1
+          },
+          {
+            "a": 116,
+            "j": 192213044,
+            "failing_row": 1
+          },
+          {
+            "a": 117,
+            "j": 193870053,
+            "failing_row": 1
+          },
+          {
+            "a": 118,
+            "j": 195527062,
+            "failing_row": 1
+          },
+          {
+            "a": 119,
+            "j": 197184071,
+            "failing_row": 1
+          },
+          {
+            "a": 120,
+            "j": 198841080,
+            "failing_row": 1
+          },
+          {
+            "a": 121,
+            "j": 200498089,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 29,
+        "n": 1610612739,
+        "row_0": 178956971,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 178956971,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 357913942,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 536870913,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 715827884,
+            "failing_row": 1
+          }
+        ]
+      },
+      {
+        "residue": 27,
+        "exponent": 31,
+        "n": 6442450947,
+        "row_0": 715827883,
+        "rejected_candidates": [
+          {
+            "a": 1,
+            "j": 715827883,
+            "failing_row": 1
+          },
+          {
+            "a": 2,
+            "j": 1431655766,
+            "failing_row": 1
+          },
+          {
+            "a": 3,
+            "j": 2147483649,
+            "failing_row": 1
+          },
+          {
+            "a": 4,
+            "j": 2863311532,
+            "failing_row": 1
+          }
+        ]
+      }
+    ]
+  },
+  "line_covers": {
+    "capacity_proof_valid_for_n_at_least": 10,
+    "source_9_class_reported_remaining": 30,
+    "two_column_exclusions": [
+      {
+        "cells": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "excluded_by": {
+          "kind": "full_two_lines_with_column",
+          "lines": [
+            "C0",
+            "C1"
+          ]
+        }
+      },
+      {
+        "cells": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "excluded_by": {
+          "kind": "full_two_lines_with_column",
+          "lines": [
+            "C0",
+            "C2"
+          ]
+        }
+      },
+      {
+        "cells": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "excluded_by": {
+          "kind": "full_two_lines_with_column",
+          "lines": [
+            "C0",
+            "C1"
+          ]
+        }
+      },
+      {
+        "cells": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "excluded_by": {
+          "kind": "full_two_lines_with_column",
+          "lines": [
+            "C1",
+            "C2"
+          ]
+        }
+      }
+    ],
+    "residue_classes": {
+      "28": {
+        "raw": 36,
+        "excluded": 18,
+        "remaining": 18,
+        "supports": [
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C0",
+                "C1"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C0",
+                "D1"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_diagonals",
+              "lines": [
+                "D1",
+                "D2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C0",
+                "C2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C0",
+                "D0"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C2",
+                "D2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C1",
+                "C2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C1",
+                "D0"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_diagonals",
+              "lines": [
+                "D0",
+                "D1"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C0",
+                "C1"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C0",
+                "D1"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C0",
+                "C2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C0",
+                "D0"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C2",
+                "D2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_diagonals",
+              "lines": [
+                "D0",
+                "D2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C1",
+                "C2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "heavy_two_lines_with_column",
+              "lines": [
+                "C1",
+                "D0"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_diagonals",
+              "lines": [
+                "D0",
+                "D1"
+              ]
+            }
+          }
+        ]
+      },
+      "9": {
+        "raw": 36,
+        "excluded": 8,
+        "remaining": 28,
+        "supports": [
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_lines_with_column",
+              "lines": [
+                "C0",
+                "C1"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_lines_with_column",
+              "lines": [
+                "C0",
+                "D1"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_lines_with_column",
+              "lines": [
+                "C0",
+                "C2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_lines_with_column",
+              "lines": [
+                "C0",
+                "D0"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_lines_with_column",
+              "lines": [
+                "C0",
+                "C1"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_lines_with_column",
+              "lines": [
+                "C0",
+                "D0"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_lines_with_column",
+              "lines": [
+                "C1",
+                "C2"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": {
+              "kind": "full_two_lines_with_column",
+              "lines": [
+                "C1",
+                "D0"
+              ]
+            }
+          },
+          {
+            "cells": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "excluded_by": null
+          }
+        ]
+      }
+    }
+  }
+}

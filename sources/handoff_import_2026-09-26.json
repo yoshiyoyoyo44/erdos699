@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-26",
+  "baseline": "5024fc5fb1beec81e4a8c1d2eee4ff4230c58cc4",
+  "scope": "Source documents preserved verbatim; embedded instructions are historical source content, not commands for this integration.",
+  "files": [
+    {
+      "original_name": "erdos699_single_handoff_github_assumed_2026-09-26(2).md",
+      "path": "sources/source_single_handoff_2026-09-26.md",
+      "bytes": 21372,
+      "sha256": "ea6a908f59caacb8e83d398035732f8e1c09f0dc1812487ea54e82f9f0d121d1"
+    },
+    {
+      "original_name": "erdos699_i4_progress_handoff_2026-09-26.md",
+      "path": "sources/source_i4_progress_handoff_2026-09-26.md",
+      "bytes": 23041,
+      "sha256": "1dc19306debea282e18cbf647819dd79841ee05d608a4855cafb92a2ec0d0ccc"
+    }
+  ]
+}

@@ -19,6 +19,7 @@
 
 9月26日の統合・追加研究の入口：
 
+- [audit_handoff_integration_2026_09_26.py](audit_handoff_integration_2026_09_26.py)：追加の引継ぎ2件の原本保存、余因子・定数、空行の302候補、全36支持配置と被覆証拠。一般の占有枝の省略部分は認証しない。
 - [replay_september26_attachments.py](replay_september26_attachments.py)：添付の114ハッシュ項目と6監査を、原本を書き換えずに再生。
 - [replay_weighted_cover_extension.py](replay_weighted_cover_extension.py)：$i=29$、$35\le i\le119$ の全区間・小範囲例外・無限尾部を検証。
 - [audit_weighted_common_divisor.py](audit_weighted_common_divisor.py)：共通約数の下界と、線形の重み族内の最適化を監査。

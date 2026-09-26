@@ -14,7 +14,22 @@
 
 必要に応じて `python -m pip install sympy` で導入できます。
 
-## 9月26日の添付統合と86添字の完全被覆
+## 9月26日の追加引継ぎ2件の検算
+
+標準Pythonのみで、原本を書き換えずに実行できます。
+
+```text
+python -X utf8 scripts/audit_handoff_integration_2026_09_26.py
+python -X utf8 scripts/check_repository.py
+```
+
+[新しい検算器](../scripts/audit_handoff_integration_2026_09_26.py)は原本2件のSHA-256、31添字の $\beta_i$、8,143組の付値・余因子診断、定数・純冪の式を確認します。
+空 $q$ 行の20境界例に対する302候補と、9・28類の各36支持配置を全列挙し、除外理由を[結果JSON](../data/results/verification_handoff_integration_2026-09-26.json)へ保存します。
+28類で18配置、9類で28配置が残り、後者は原文の30から訂正しました。
+一般の尾部・容量の証明は[$i=4$ 統合稿](../research/i4/i4_occupied_cells_integration_2026-09-26.md)、原本報告との区別は[全体の統合稿](../research/general/handoff_integration_2026-09-26.md)にあります。
+未添付の過去スクリプトを再実行したものではなく、占有 $q$ 行の省略された全場合分け、$i=3$ の新しい恒等式、外部定理の適用を認証するものでもありません。
+
+## 9月26日の先行する添付統合と86添字の完全被覆
 
 次はPython標準ライブラリだけで実行できます。原本への書き込みや外部通信は行いません。
 全区間の再生は数分以上かかり、gzip圧縮された証明書を展開して計算するため、十分なメモリが必要です。
